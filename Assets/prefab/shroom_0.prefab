@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2482300833387917459}
   - component: {fileID: 6453530689963473132}
-  - component: {fileID: -2719467997614290994}
   - component: {fileID: -6106970771254196316}
+  - component: {fileID: -2719467997614290994}
   m_Layer: 0
   m_Name: shroom_0
   m_TagString: Ingredient
@@ -29,7 +29,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -24.41, y: 1.99, z: 0}
-  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -89,19 +89,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &-2719467997614290994
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4813095180932042483}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7cd106977aae2484a9bebf1343adcd87, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nameIngredient: shroom
 --- !u!60 &-6106970771254196316
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -225,3 +212,16 @@ PolygonCollider2D:
       - {x: 0.24499999, y: -1.35}
       - {x: 0.545, y: -1.25}
   m_UseDelaunayMesh: 0
+--- !u!114 &-2719467997614290994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4813095180932042483}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cd106977aae2484a9bebf1343adcd87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameIngredient: shroom

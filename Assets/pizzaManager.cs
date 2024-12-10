@@ -12,16 +12,17 @@ public class pizzaManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         // Check if the object entering is an ingredient
-        if (other.CompareTag("Ingredient"))
+        Debug.Log("DETECTED");
+        if (collision.CompareTag("Ingredient"))
         {
-            myPizza.AddIngredient(other.gameObject.GetComponent<Ingredient>().nameIngredient);
-            Destroy(other.gameObject); 
+            myPizza.AddIngredient(collision.gameObject.GetComponent<Ingredient>().nameIngredient);
+            Destroy(collision.gameObject);
         }
     }
 }

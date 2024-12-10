@@ -144,12 +144,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2924241}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13.1, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 6.3300004, y: 7.65, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 726876192}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2924243
 SpriteRenderer:
@@ -288,7 +288,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.14, y: -7.65, z: 1}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 338913586}
@@ -376,8 +376,8 @@ Transform:
   m_GameObject: {fileID: 235740828}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.0061860085, y: -4.43, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.0061860085, y: -4.43, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 726876192}
@@ -425,7 +425,7 @@ PolygonCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -594,8 +594,8 @@ GameObject:
   m_Component:
   - component: {fileID: 472389871}
   - component: {fileID: 472389870}
-  - component: {fileID: 472389872}
   - component: {fileID: 472389874}
+  - component: {fileID: 472389872}
   m_Layer: 0
   m_Name: shroom_0
   m_TagString: Untagged
@@ -667,8 +667,8 @@ Transform:
   m_GameObject: {fileID: 472389869}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.06, y: -8.86, z: 0}
-  m_LocalScale: {x: 0.7121, y: 0.7121, z: 0.7121}
+  m_LocalPosition: {x: -0.06, y: -8.86, z: 1}
+  m_LocalScale: {x: 0.7121, y: 0.7121, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 726876192}
@@ -716,7 +716,7 @@ PolygonCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -1008,7 +1008,7 @@ PolygonCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -1374,12 +1374,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 571511926}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.97, y: -3.08, z: 0}
-  m_LocalScale: {x: 0.2747, y: 0.2747, z: 0.2747}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.19999981, y: -10.73, z: 1}
+  m_LocalScale: {x: 0.2747, y: 0.2747, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 726876192}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &726876190
 GameObject:
@@ -1466,10 +1466,10 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 571511931}
   - {fileID: 235740830}
   - {fileID: 1275503533}
   - {fileID: 472389871}
-  - {fileID: 2924242}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1275503531
@@ -1482,8 +1482,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1275503533}
   - component: {fileID: 1275503532}
-  - component: {fileID: 1275503534}
   - component: {fileID: 1275503536}
+  - component: {fileID: 1275503534}
   m_Layer: 0
   m_Name: sausage_0
   m_TagString: Untagged
@@ -1555,8 +1555,8 @@ Transform:
   m_GameObject: {fileID: 1275503531}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.010000229, y: -6.69, z: 0}
-  m_LocalScale: {x: 0.3974, y: 0.3974, z: 0.3974}
+  m_LocalPosition: {x: -0.010000229, y: -6.69, z: 1}
+  m_LocalScale: {x: 0.3974, y: 0.3974, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 726876192}
@@ -1604,7 +1604,7 @@ PolygonCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -1719,8 +1719,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1467815006}
   - component: {fileID: 1467815005}
-  - component: {fileID: 1467815007}
   - component: {fileID: 1467815009}
+  - component: {fileID: 1467815007}
   m_Layer: 0
   m_Name: pizzaBase_0
   m_TagString: pizza
@@ -1793,7 +1793,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.14, y: -8.77, z: 0}
-  m_LocalScale: {x: 0.6180594, y: 0.6180594, z: 0.6180594}
+  m_LocalScale: {x: 0.6180594, y: 0.6180594, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 338913586}
@@ -1847,7 +1847,7 @@ CapsuleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: -0.000000834465}
-  m_Size: {x: 6, y: 6.12}
+  m_Size: {x: 6, y: 6}
   m_Direction: 0
 --- !u!1 &1915514903
 GameObject:
@@ -1931,7 +1931,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 3}
-  m_LocalScale: {x: 3, y: 3, z: 1}
+  m_LocalScale: {x: 3, y: 3, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1944,4 +1944,4 @@ SceneRoots:
   - {fileID: 338913586}
   - {fileID: 565992374}
   - {fileID: 1915514905}
-  - {fileID: 571511931}
+  - {fileID: 2924242}

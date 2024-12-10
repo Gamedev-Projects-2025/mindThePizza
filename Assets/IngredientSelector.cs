@@ -35,10 +35,7 @@ public class IngredientSelector : MonoBehaviour
                 Debug.Log("Holding something");
                 Destroy(currentIngredient);
             }
-            // Spawn the new ingredient slightly behind the current object
-            Vector3 spawnPosition = transform.position;
-            spawnPosition.z = -1f; // Set a lower Z value to avoid blocking clicks
-            currentIngredient = Instantiate(ingredientPrefab, spawnPosition, Quaternion.identity);
+            currentIngredient = Instantiate(ingredientPrefab);
         }
     }
 

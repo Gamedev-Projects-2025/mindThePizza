@@ -41,7 +41,7 @@ public class pizzaManager : MonoBehaviour
                 cloneSpriteRenderer.sprite = originalSpriteRenderer.sprite; // Copy the sprite
 
                 // Position the clone at the center of the pizza (you can adjust the position as needed)
-                ingredientClone.transform.position = gameObject.transform.position;
+                ingredientClone.transform.position = new Vector3(gameObject.transform.position.x,gameObject.transform.position.y,-1f);
 
                 // Scale up the clone (adjust the scale factor as needed)
                 ingredientClone.transform.localScale = ingredientClone.transform.localScale * 3f;

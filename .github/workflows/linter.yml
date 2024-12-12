@@ -22,5 +22,5 @@ jobs:
         run: dotnet tool install -g dotnet-format
 
       - name: Run dotnet-format
-        # Run dotnet-format in check mode to identify issues only in .cs files in Assets/Scripts and subfolders
+        # Run dotnet-format in check mode to identify issues only in .cs files in Assets/scripts and subfolders
         run: dotnet-format Assets/Scripts --check --folder --include **/*.cs --verbosity diagnostic

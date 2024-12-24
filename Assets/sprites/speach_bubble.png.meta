@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 04c007eef4ed6c646b751383295eb657
+guid: 60458dd83948eef4eb6a66ccf843464e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4470592730861715767
-    second: cheese_0
+      213: -5566090578706602689
+    second: speach_bubble_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: cheese_0
+      name: speach_bubble_0
       rect:
         serializedVersion: 2
-        x: 44
-        y: 53
-        width: 289
-        height: 263
+        x: 8
+        y: 7
+        width: 287
+        height: 240
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9ce3b85f89345f1c0800000000000000
-      internalID: -4470592730861715767
+      spriteID: f356b8ceb1641c2b0800000000000000
+      internalID: -5566090578706602689
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      cheese_0: -4470592730861715767
+      speach_bubble_0: -5566090578706602689
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

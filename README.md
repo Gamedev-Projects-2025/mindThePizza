@@ -6,4 +6,5 @@ now added instructions, tutorial, and try again buttons
 
 https://lidx7.itch.io/mindthepizza-version-02
 
-playtest.md
+[playtest.md
+](https://github.com/Gamedev-Projects-2025/mindThePizza/blob/main/playtest.md)

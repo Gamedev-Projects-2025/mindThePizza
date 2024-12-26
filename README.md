@@ -11,13 +11,19 @@ now added instructions, tutorial, and try again buttons
 
 https://lidx7.itch.io/mindthepizza-version-02
 
-[playtest.md
+[playtest
 ](https://github.com/Gamedev-Projects-2025/mindThePizza/blob/main/playtest.md)
 
 
 ## Game elements:
-[formal-elements.md
+[formal elements
 ](https://github.com/Gamedev-Projects-2025/mindThePizza/blob/main/formal-elements.md)
+
+[Flow chart
+](https://github.com/Gamedev-Projects-2025/mindThePizza/blob/main/flow_chart.pdf)
+
+[Dramatic elements
+](https://github.com/Gamedev-Projects-2025/mindThePizza/blob/main/dramatic-elements.md)
 ### יוצרים:
 איוון גורבצ'וב  
 

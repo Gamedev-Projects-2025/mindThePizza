@@ -9,6 +9,9 @@ assemble the perfect pizza using cheese, tomatoes, and mushrooms.
 
 now added instructions, tutorial, and try again buttons
 
+![Untitled Diagram drawio](https://github.com/user-attachments/assets/7b76a2d4-3fab-4c0b-b443-d13422957a7f)
+
+
 https://lidx7.itch.io/mindthepizza-version-02
 
 [playtest

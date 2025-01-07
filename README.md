@@ -22,6 +22,8 @@ https://lidx7.itch.io/mindthepizza-version-02
 [formal elements
 ](https://github.com/Gamedev-Projects-2025/mindThePizza/blob/main/formal-elements.md)
 
+[Dynamic](https://github.com/Gamedev-Projects-2025/mindThePizza/blob/main/dynamic.md)
+
 [Flow chart
 ](https://github.com/Gamedev-Projects-2025/mindThePizza/blob/main/flow_chart.pdf)
 

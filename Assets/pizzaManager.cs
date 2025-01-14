@@ -68,7 +68,7 @@ public class pizzaManager : MonoBehaviour
 
                 if (cloneSpriteRenderer.sprite.name == "tomato")
                 {
-                    cloneSpriteRenderer = Resources.Load<Sprite>("tomato_sauce");
+                    cloneSpriteRenderer.sprite = Resources.Load<Sprite>("tomato_sauce");
                 }
 
                 // Position the clone at the center of the pizza (you can adjust the position as needed)

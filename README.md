@@ -40,4 +40,18 @@ https://lidx7.itch.io/mindthepizza-version-02
 
 צופית גרינולד  
 
+## Credits
+
+Thanks to all the creators of the game for all their help!
+
+Thanks ChatGPT for helping code the game!
+
+Thanks remove.bg and GIMP for helping edit the sprites!
+
+Thanks google images for providing most of the sprites and assets on the game!
+
+Thanks Inshot for helping edit the game trailer!
+
+Thank god!
+
 </div>

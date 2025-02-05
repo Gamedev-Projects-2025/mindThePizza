@@ -1,4 +1,6 @@
 using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
 
 public class pizzaManager : MonoBehaviour
 {
@@ -7,31 +9,34 @@ public class pizzaManager : MonoBehaviour
     private float ingredOffsetX;
     private float ingredOffsetY;
     [SerializeField] public int numOfIngred = 3;
+    private int ingredCountSaver;
 
+    [SerializeField] private Sprite tomatoSprite;
+    [SerializeField] private Sprite tomatoSauceSprite;
+    private Sprite originalPizzaSprite;
+
+    private List<GameObject> ingredientClones = new List<GameObject>();
 
     void Start()
     {
-    }
-
-    void Update()
-    {
+        originalPizzaSprite = GetComponent<SpriteRenderer>().sprite;
+        ingredCountSaver = numOfIngred;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag(target))
         {
-            // Add ingredient to pizza
-            myPizza.AddIngredient(collision.gameObject.GetComponent<Ingredient>().nameIngredient);
+            string ingredientName = collision.gameObject.GetComponent<Ingredient>().nameIngredient;
+            myPizza.AddIngredient(ingredientName);
 
-            // Clone the collided object
             GameObject ingredientClone = Instantiate(collision.gameObject);
+            ingredientClones.Add(ingredientClone);
 
-            // Remove the collider from the cloned object
             Collider2D cloneCollider = ingredientClone.GetComponent<Collider2D>();
             if (cloneCollider != null)
             {
-                Destroy(cloneCollider); // or cloneCollider.enabled = false;
+                Destroy(cloneCollider);
             }
 
             switch (numOfIngred % 4)
@@ -40,17 +45,14 @@ public class pizzaManager : MonoBehaviour
                     ingredOffsetX = 2f;
                     ingredOffsetY = 0;
                     break;
-
                 case 1:
                     ingredOffsetX = -2f;
                     ingredOffsetY = 0;
                     break;
-
                 case 2:
                     ingredOffsetX = 0;
                     ingredOffsetY = 2f;
                     break;
-
                 case 3:
                     ingredOffsetX = 0;
                     ingredOffsetY = -2f;
@@ -58,28 +60,48 @@ public class pizzaManager : MonoBehaviour
             }
             numOfIngred--;
 
-            // Copy the sprite renderer and set it to the center of the pizza
             SpriteRenderer originalSpriteRenderer = collision.gameObject.GetComponent<SpriteRenderer>();
             SpriteRenderer cloneSpriteRenderer = ingredientClone.GetComponent<SpriteRenderer>();
 
             if (originalSpriteRenderer != null && cloneSpriteRenderer != null)
             {
-                cloneSpriteRenderer.sprite = originalSpriteRenderer.sprite; // Copy the sprite
+                cloneSpriteRenderer.sprite = originalSpriteRenderer.sprite;
 
-                if (cloneSpriteRenderer.sprite.name == "tomato")
+                if (cloneSpriteRenderer.sprite == tomatoSprite)
                 {
-                    cloneSpriteRenderer.sprite = Resources.Load<Sprite>("tomato_sauce");
+                    cloneSpriteRenderer.sprite = tomatoSauceSprite;
+                    GetComponent<SpriteRenderer>().sprite = tomatoSauceSprite;
+                    Destroy(ingredientClone);
+                }
+                else
+                {
+                    ingredientClone.transform.position = new Vector3(gameObject.transform.position.x + ingredOffsetX, gameObject.transform.position.y + ingredOffsetY, -1f);
                 }
 
-                // Position the clone at the center of the pizza (you can adjust the position as needed)
-                ingredientClone.transform.position = new Vector3(gameObject.transform.position.x + ingredOffsetX, gameObject.transform.position.y + ingredOffsetY, -1f);
-
-                // Scale up the clone (adjust the scale factor as needed)
-                ingredientClone.transform.localScale = ingredientClone.transform.localScale * 3f;
+                ingredientClone.transform.localScale *= 2f;
             }
 
-            // Destroy the original ingredient (collided object)
             Destroy(collision.gameObject);
         }
+    }
+
+    public void ClearPizza()
+    {
+        StartCoroutine(ClearPizzaWithDelay(0.15f));
+    }
+
+    private IEnumerator ClearPizzaWithDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        myPizza.ClearIngredients();
+
+        foreach (GameObject clone in ingredientClones)
+        {
+            Destroy(clone);
+        }
+        ingredientClones.Clear();
+
+        GetComponent<SpriteRenderer>().sprite = originalPizzaSprite;
+        numOfIngred = ingredCountSaver;
     }
 }

@@ -28,6 +28,7 @@ public class Pizza
         if (ingredients.Count != otherPizza.ingredients.Count)
         {
             return false;
+
         }
 
         foreach (var ingredient in ingredients)
@@ -46,6 +47,12 @@ public class Pizza
     {
         return ingredients;
     }
+
+    public void ClearIngredients()
+    {
+        ingredients.Clear(); // Assuming 'ingredients' is the List storing the ingredient names
+    }
+
 
 
 }

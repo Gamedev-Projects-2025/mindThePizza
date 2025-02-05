@@ -1171,7 +1171,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b886738449f2d64794ccb361641133d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: work
+  sceneName: work_left
 --- !u!1 &520802590
 GameObject:
   m_ObjectHideFlags: 0
@@ -2521,7 +2521,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b886738449f2d64794ccb361641133d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: tutorial
+  sceneName: tutorial_left
 --- !u!1 &1334670723
 GameObject:
   m_ObjectHideFlags: 0

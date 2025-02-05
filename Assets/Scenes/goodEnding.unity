@@ -149,7 +149,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b886738449f2d64794ccb361641133d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: work
+  sceneName: choose_side
 --- !u!4 &6049975
 Transform:
   m_ObjectHideFlags: 0

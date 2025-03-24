@@ -337,8 +337,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d3e903305d6d3c4aa550c776782847e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myPizza:
-    ingredients: []
   displayPizza: {fileID: 1076685314}
   numOfIngredients: 3
   pizzasToMake: 3
@@ -1727,7 +1725,7 @@ GameObject:
   - component: {fileID: 1076685314}
   - component: {fileID: 1076685313}
   m_Layer: 0
-  m_Name: pizzaBase_0
+  m_Name: PizzaIdeal
   m_TagString: pizza
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1791,6 +1789,7 @@ MonoBehaviour:
     ingredients: []
   targetTag: 
   maxIngredients: 3
+  PizzaChecker: {fileID: 0}
 --- !u!212 &1076685315
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2289,7 +2288,7 @@ GameObject:
   - component: {fileID: 1467815007}
   - component: {fileID: 1467815010}
   m_Layer: 0
-  m_Name: pizzaBase_0
+  m_Name: PizzaPlayer
   m_TagString: pizza
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2381,6 +2380,7 @@ MonoBehaviour:
     ingredients: []
   targetTag: Ingredient
   maxIngredients: 3
+  PizzaChecker: {fileID: 1334670724}
 --- !u!70 &1467815009
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

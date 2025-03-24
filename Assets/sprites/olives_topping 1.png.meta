@@ -250,6 +250,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -1322,7 +1335,55 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      olives_topping 1_0: 3686216386565180487
+      olives_topping 1_1: 8334767457332965718
+      olives_topping 1_10: 2433347647806392545
+      olives_topping 1_11: -7802583436994082731
+      olives_topping 1_12: 6704228469806635857
+      olives_topping 1_13: -6424112669991242274
+      olives_topping 1_14: 3336761126295499262
+      olives_topping 1_15: 7597486667170248064
+      olives_topping 1_16: -4413854374557829632
+      olives_topping 1_17: 882047892490927698
+      olives_topping 1_18: 4415575639306374899
+      olives_topping 1_19: 3791316478984427339
+      olives_topping 1_2: -9183513259758062114
+      olives_topping 1_20: -2642910695965696575
+      olives_topping 1_21: -3875401724073900615
+      olives_topping 1_22: -3178996854029549145
+      olives_topping 1_23: 160903628314851971
+      olives_topping 1_24: -7624726212634024427
+      olives_topping 1_25: 6011808418815331939
+      olives_topping 1_26: -4698462246615758951
+      olives_topping 1_27: 1628385520697306007
+      olives_topping 1_28: -4275718081198233459
+      olives_topping 1_29: -5587076767743359021
+      olives_topping 1_3: 6858132641922691976
+      olives_topping 1_30: -1337679338961167717
+      olives_topping 1_31: -5078603589406990940
+      olives_topping 1_32: -6239483381773031643
+      olives_topping 1_33: 8948406132284519450
+      olives_topping 1_34: 2546034688508899733
+      olives_topping 1_35: -407485154436188528
+      olives_topping 1_36: -5349801017532708897
+      olives_topping 1_37: -1145267806277133263
+      olives_topping 1_38: 7364209569252614647
+      olives_topping 1_39: 621953851159852428
+      olives_topping 1_4: 7248861254959957004
+      olives_topping 1_40: -4180911182025702500
+      olives_topping 1_41: -7481286496020470009
+      olives_topping 1_42: 744633474025004332
+      olives_topping 1_43: 801657968986946521
+      olives_topping 1_44: 515887082021080852
+      olives_topping 1_45: -6617762021162541239
+      olives_topping 1_46: 3538737967709986061
+      olives_topping 1_47: -4707659073584017604
+      olives_topping 1_5: 2861535547226846425
+      olives_topping 1_6: 2353631248709568268
+      olives_topping 1_7: 2012944555679270672
+      olives_topping 1_8: -2626509622152288118
+      olives_topping 1_9: -5406169560340637350
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

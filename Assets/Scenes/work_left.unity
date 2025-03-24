@@ -145,12 +145,13 @@ Transform:
   m_GameObject: {fileID: 2924241}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.3300004, y: 7.65, z: 0}
+  m_LocalPosition: {x: 4.96, y: 7.65, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 47072222}
   - {fileID: 1334670725}
+  - {fileID: 1076685312}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2924243
@@ -338,13 +339,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myPizza:
     ingredients: []
-  numOfIngred: 4
+  displayPizza: {fileID: 1076685314}
+  numOfIngredients: 3
   pizzasToMake: 3
+  victoryScene: goodEnding
   shroomSprite: {fileID: -2643051324994869849, guid: 0f2bf3ba91e124f498a00306ec44d5dc, type: 3}
   sauceSprite: {fileID: -3962807554240710951, guid: 365ac80bf0b8e8b42b1accbc67063564, type: 3}
   cheeseSprite: {fileID: -4470592730861715767, guid: 04c007eef4ed6c646b751383295eb657, type: 3}
   sausageSprite: {fileID: -4808505331019995094, guid: 1b85257924f34f543a2d9cc24b7326aa, type: 3}
-  victoryScene: goodEnding
 --- !u!1 &189694254
 GameObject:
   m_ObjectHideFlags: 0
@@ -816,7 +818,7 @@ Transform:
   m_GameObject: {fileID: 338913584}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.18, y: 8.44, z: 0}
+  m_LocalPosition: {x: -4.63, y: 8.44, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1712,6 +1714,138 @@ Transform:
   - {fileID: 472389871}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!1 &1076685311
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1076685312}
+  - component: {fileID: 1076685315}
+  - component: {fileID: 1076685314}
+  - component: {fileID: 1076685313}
+  m_Layer: 0
+  m_Name: pizzaBase_0
+  m_TagString: pizza
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1076685312
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1076685311}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.06, y: -6.4846005, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2924242}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &1076685313
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1076685311}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!114 &1076685314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1076685311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4981a44da663bd409c975c963c83817, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myPizza:
+    ingredients: []
+  targetTag: 
+  maxIngredients: 3
+--- !u!212 &1076685315
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1076685311}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: -692400885447187085, guid: edf5913e308c9274ba5f4725ca655236, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 6, y: 6.12}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &1275503531
 GameObject:
   m_ObjectHideFlags: 0
@@ -1982,7 +2116,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pizzaObjectToCheck: {fileID: 1467815004}
   perfectPizzaObject: {fileID: 47072221}
-  gameover: badEnding
+  gameoverScene: badEnding
 --- !u!224 &1334670725
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2245,10 +2379,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myPizza:
     ingredients: []
-  target: Ingredient
-  numOfIngred: 3
-  tomatoSprite: {fileID: -3962807554240710951, guid: 365ac80bf0b8e8b42b1accbc67063564, type: 3}
-  tomatoSauceSprite: {fileID: -2166188948959795005, guid: 4bc96d470b0c0f64ba6bba8fe558abdd, type: 3}
+  targetTag: Ingredient
+  maxIngredients: 3
 --- !u!70 &1467815009
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

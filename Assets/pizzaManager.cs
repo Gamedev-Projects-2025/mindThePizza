@@ -5,103 +5,68 @@ using System.Collections.Generic;
 public class pizzaManager : MonoBehaviour
 {
     public Pizza myPizza;
-    [SerializeField] private string target;
-    private float ingredOffsetX;
-    private float ingredOffsetY;
-    [SerializeField] public int numOfIngred = 3;
-    private int ingredCountSaver;
+    [SerializeField] private string targetTag;
+    [SerializeField] private int maxIngredients = 3;
 
-    [SerializeField] private Sprite tomatoSprite;
-    [SerializeField] private Sprite tomatoSauceSprite;
+    private int ingredientCounter;
+    private List<GameObject> ingredientClones = new List<GameObject>();
     private Sprite originalPizzaSprite;
 
-    private List<GameObject> ingredientClones = new List<GameObject>();
+    public PizzaChecker PizzaChecker;
+    private Vector2[] ingredientPositions = new Vector2[]
+    {
+        new Vector2(-1.5f, 1.5f),
+        new Vector2(1.5f, 1.5f),
+        new Vector2(0f, -1.5f),
+        new Vector2(0f, 0f)
+    };
 
     void Start()
     {
         originalPizzaSprite = GetComponent<SpriteRenderer>().sprite;
-        ingredCountSaver = numOfIngred;
+        ingredientCounter = 0;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag(target))
+        if (collision.CompareTag(targetTag))
         {
-            string ingredientName = collision.gameObject.GetComponent<Ingredient>().nameIngredient;
-            myPizza.AddIngredient(ingredientName);
-
-            GameObject ingredientClone = Instantiate(collision.gameObject);
-            ingredientClones.Add(ingredientClone);
-
-            Collider2D cloneCollider = ingredientClone.GetComponent<Collider2D>();
-            if (cloneCollider != null)
+            SpriteRenderer spriteRenderer = collision.GetComponent<SpriteRenderer>();
+            if (spriteRenderer != null)
             {
-                Destroy(cloneCollider);
+                AddIngredientManually(spriteRenderer.sprite);
+                Destroy(collision.gameObject);
+                PizzaChecker.check();
             }
-
-            switch (numOfIngred % 4)
-            {
-                case 0:
-                    ingredOffsetX = 2f;
-                    ingredOffsetY = 0;
-                    break;
-                case 1:
-                    ingredOffsetX = -2f;
-                    ingredOffsetY = 0;
-                    break;
-                case 2:
-                    ingredOffsetX = 0;
-                    ingredOffsetY = 2f;
-                    break;
-                case 3:
-                    ingredOffsetX = 0;
-                    ingredOffsetY = -2f;
-                    break;
-            }
-            numOfIngred--;
-
-            SpriteRenderer originalSpriteRenderer = collision.gameObject.GetComponent<SpriteRenderer>();
-            SpriteRenderer cloneSpriteRenderer = ingredientClone.GetComponent<SpriteRenderer>();
-
-            if (originalSpriteRenderer != null && cloneSpriteRenderer != null)
-            {
-                cloneSpriteRenderer.sprite = originalSpriteRenderer.sprite;
-
-                if (cloneSpriteRenderer.sprite == tomatoSprite)
-                {
-                    cloneSpriteRenderer.sprite = tomatoSauceSprite;
-                    GetComponent<SpriteRenderer>().sprite = tomatoSauceSprite;
-                    Destroy(ingredientClone);
-                }
-                else
-                {
-                    ingredientClone.transform.position = new Vector3(gameObject.transform.position.x + ingredOffsetX, gameObject.transform.position.y + ingredOffsetY, -1f);
-                }
-
-                ingredientClone.transform.localScale *= 2f;
-            }
-
-            Destroy(collision.gameObject);
         }
+    }
+
+    public void AddIngredientManually(Sprite ingredientSprite)
+    {
+        if (ingredientCounter >= maxIngredients) return;
+
+        myPizza.AddIngredient(ingredientSprite.name);
+
+        GameObject clone = new GameObject("IngredientClone");
+        clone.transform.position = (Vector2)transform.position + ingredientPositions[ingredientCounter % ingredientPositions.Length];
+        clone.transform.localScale = Vector3.one * 0.5f;
+        clone.AddComponent<SpriteRenderer>().sprite = ingredientSprite;
+
+        ingredientClones.Add(clone);
+        ingredientCounter++;
     }
 
     public void ClearPizza()
     {
-        StartCoroutine(ClearPizzaWithDelay(0.15f));
-    }
-
-    private IEnumerator ClearPizzaWithDelay(float delay)
-    {
-        yield return new WaitForSeconds(delay);
         myPizza.ClearIngredients();
+        ingredientCounter = 0;
 
-        foreach (GameObject clone in ingredientClones)
+        foreach (var clone in ingredientClones)
         {
             Destroy(clone);
         }
         ingredientClones.Clear();
-
         GetComponent<SpriteRenderer>().sprite = originalPizzaSprite;
-        numOfIngred = ingredCountSaver;
     }
+
 }

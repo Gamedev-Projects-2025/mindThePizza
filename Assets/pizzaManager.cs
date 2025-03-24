@@ -40,7 +40,7 @@ public class pizzaManager : MonoBehaviour
             }
         }
     }
-
+    //zig
     public void AddIngredientManually(Sprite ingredientSprite)
     {
         if (ingredientCounter >= maxIngredients) return;

@@ -129,6 +129,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2924242}
   - component: {fileID: 2924243}
+  - component: {fileID: 2924244}
   m_Layer: 0
   m_Name: ControlChef
   m_TagString: Untagged
@@ -207,6 +208,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2924244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2924241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed96d556df3975347aff5db80bf51438, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &114352671
 GameObject:
   m_ObjectHideFlags: 0
@@ -2026,6 +2039,7 @@ GameObject:
   m_Component:
   - component: {fileID: 726876192}
   - component: {fileID: 726876191}
+  - component: {fileID: 726876193}
   m_Layer: 0
   m_Name: ContolParts
   m_TagString: Untagged
@@ -2107,6 +2121,18 @@ Transform:
   - {fileID: 472389871}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &726876193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 726876190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed96d556df3975347aff5db80bf51438, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1248346722
 GameObject:
   m_ObjectHideFlags: 0
@@ -2767,10 +2793,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myPizza:
     ingredients: []
-  target: Ingredient
-  numOfIngred: 3
-  tomatoSprite: {fileID: 0}
-  tomatoSauceSprite: {fileID: 0}
+  targetTag: 
+  maxIngredients: 3
+  PizzaChecker: {fileID: 0}
 --- !u!70 &1467815009
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

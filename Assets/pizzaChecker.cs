@@ -1,38 +1,41 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class pizzaChecker : MonoBehaviour
+public class PizzaChecker : MonoBehaviour
 {
     [SerializeField] private GameObject pizzaObjectToCheck;
     [SerializeField] private GameObject perfectPizzaObject;
-    private Pizza perfectPizza;
+    [SerializeField] private string gameoverScene;
+
     private Pizza pizzaToCheck;
-    private perfectPizzaManager perfectPizzaManagerScript;
-    [SerializeField] private string gameover;
+    private Pizza perfectPizza;
+    private PerfectPizzaManager perfectPizzaManagerScript;
 
     void Start()
     {
+        if (pizzaObjectToCheck == null || perfectPizzaObject == null)
+        {
+            Debug.LogError("Missing GameObject references!");
+            return;
+        }
+
         pizzaToCheck = pizzaObjectToCheck.GetComponent<pizzaManager>().myPizza;
-        perfectPizza = perfectPizzaObject.GetComponent<perfectPizzaManager>().myPizza;
-        perfectPizzaManagerScript = perfectPizzaObject.GetComponent<perfectPizzaManager>(); // Reference to perfectPizzaManager
+        perfectPizza = perfectPizzaObject.GetComponent<PerfectPizzaManager>().displayPizza.myPizza;
+        perfectPizzaManagerScript = perfectPizzaObject.GetComponent<PerfectPizzaManager>();
     }
 
-    void Update()
+    public void check()
     {
-        Debug.Log("Current pizza ingredients: " + string.Join(", ", pizzaToCheck.GetIngredients()));
-        Debug.Log("Perfect pizza ingredients: " + string.Join(", ", perfectPizza.GetIngredients()));
-
-        if (perfectPizza.GetIngredients().Count == pizzaToCheck.GetIngredients().Count)
+        if (pizzaToCheck.GetIngredients().Count == perfectPizza.GetIngredients().Count)
         {
             if (perfectPizza.CompareTo(pizzaToCheck))
             {
-                pizzaObjectToCheck.GetComponent<pizzaManager>().ClearPizza(); // Clear pizza ingredients
-                perfectPizzaManagerScript.CheckPizzaCorrect(); // Progress to next pizza
+                pizzaObjectToCheck.GetComponent<pizzaManager>().ClearPizza();
+                perfectPizzaManagerScript.CheckPizzaCorrect();
             }
             else
             {
-                Debug.Log("Pizza is incorrect. Loading gameover...");
-                SceneManager.LoadSceneAsync(gameover);
+                SceneManager.LoadSceneAsync(gameoverScene);
             }
         }
     }

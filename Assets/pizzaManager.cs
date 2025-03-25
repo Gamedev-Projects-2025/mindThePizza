@@ -6,7 +6,6 @@ public class pizzaManager : MonoBehaviour
 {
     public Pizza myPizza;
     [SerializeField] private string targetTag;
-    [SerializeField] private int maxIngredients = 3;
 
     private int ingredientCounter;
     private List<GameObject> ingredientClones = new List<GameObject>();
@@ -31,7 +30,6 @@ public class pizzaManager : MonoBehaviour
     }
     public void AddIngredientManually(Ingredient ingredient)
     {
-        if (ingredientCounter >= maxIngredients) return;
 
         myPizza.AddIngredient(ingredient);
 
@@ -39,6 +37,7 @@ public class pizzaManager : MonoBehaviour
         clone.transform.position = new Vector3(transform.position.x, transform.position.y, ingredient.ingredientSprite.GetComponent<Transform>().position.z);
         clone.transform.localScale = ingredient.ingredientSprite.GetComponent<Transform>().localScale;
         clone.AddComponent<SpriteRenderer>().sprite = ingredient.ingredientSprite.GetComponent<SpriteRenderer>().sprite;
+        clone.GetComponent<SpriteRenderer>().color = ingredient.ingredientSprite.GetComponent<SpriteRenderer>().color;
 
         ingredientClones.Add(clone);
         ingredientCounter++;

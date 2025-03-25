@@ -21,7 +21,7 @@ public class IngredientSelector : MonoBehaviour
             Vector3 worldPosition = mainCamera.ScreenToWorldPoint(mousePosition);
 
             // Adjust Z position to avoid blocking clicks
-            worldPosition.y += 0.5f;
+            worldPosition.y += 0.75f;
 
             currentIngredient.transform.position = worldPosition;
         }

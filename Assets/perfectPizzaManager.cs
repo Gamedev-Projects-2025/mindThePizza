@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine.SceneManagement;
+using Unity.VisualScripting;
+using UnityEngine.U2D;
 
 public class PerfectPizzaManager : MonoBehaviour
 {
@@ -11,21 +13,13 @@ public class PerfectPizzaManager : MonoBehaviour
     [SerializeField] private int pizzasToMake = 3;
     [SerializeField] private string victoryScene;
 
-    [SerializeField] private Sprite shroomSprite;
-    [SerializeField] private Sprite sauceSprite;
-    [SerializeField] private Sprite cheeseSprite;
-    [SerializeField] private Sprite sausageSprite;
 
-    private Dictionary<string, Sprite> ingredientSprites = new Dictionary<string, Sprite>();
-    private List<string> allIngredients = new List<string> { "shroom", "cheese", "sausage" };
+    [SerializeField] private List<GameObject> ingredients;
+
     private List<string> lastPizzaIngredients = new List<string>();
 
     void Start()
     {
-        ingredientSprites["shroom"] = shroomSprite;
-        ingredientSprites["sauce"] = sauceSprite;
-        ingredientSprites["cheese"] = cheeseSprite;
-        ingredientSprites["sausage"] = sausageSprite;
         GenerateRandomPerfectPizza();
     }
 
@@ -47,7 +41,7 @@ public class PerfectPizzaManager : MonoBehaviour
 
     private void GenerateRandomPerfectPizza()
     {
-        Debug.Log("NEWPIZA");
+        Debug.Log("NEWPIZZA");
         ClearPreviousIngredients();
 
         List<string> selectedIngredients;
@@ -57,8 +51,14 @@ public class PerfectPizzaManager : MonoBehaviour
         {
             selectedIngredients = new List<string> { "sauce" };
             int extra = Random.Range(1, numOfIngredients);
-            selectedIngredients.AddRange(allIngredients.OrderBy(x => Random.value).Take(extra));
 
+            List<string> ingredientNames = ingredients
+                .OrderBy(x => Random.value)
+                .Take(extra)
+                .Select(x => x.GetComponent<Ingredient>().getName())
+                .ToList();
+
+            selectedIngredients.AddRange(ingredientNames);
             selectedIngredients.Sort();
             attempts++;
 
@@ -68,20 +68,22 @@ public class PerfectPizzaManager : MonoBehaviour
 
         for (int i = 0; i < selectedIngredients.Count; i++)
         {
-            AddIngredientManually(selectedIngredients[i], i);
+            int index = ingredients.FindIndex(x => x.GetComponent<Ingredient>().getName() == selectedIngredients[i]);
+            if (index >= 0)
+            {
+                AddIngredientManually(index);
+            }
+            else
+            {
+                Debug.LogError($"Ingredient not found: {selectedIngredients[i]}");
+            }
         }
     }
 
-    private void AddIngredientManually(string ingredient, int index)
+
+    private void AddIngredientManually(int index)
     {
-        if (ingredientSprites.TryGetValue(ingredient, out Sprite sprite))
-        {
-            displayPizza.AddIngredientManually(sprite);
-        }
-        else
-        {
-            Debug.LogError($"Sprite not found for ingredient: {ingredient}");
-        }
+        displayPizza.AddIngredientManually(ingredients[index].GetComponent<Ingredient>());
     }
 
     private void ClearPreviousIngredients()

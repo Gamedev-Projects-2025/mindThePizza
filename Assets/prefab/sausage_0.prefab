@@ -237,3 +237,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nameIngredient: sausage
+  ingredientSprite: {fileID: 3773906347334658104, guid: 2bd8777bf18e46d458638e9019672160, type: 3}

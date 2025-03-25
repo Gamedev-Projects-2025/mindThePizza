@@ -433,3 +433,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nameIngredient: sauce
+  ingredientSprite: {fileID: 2832677455041144814, guid: a2012e13daeaa6044b3d28c2e48da308, type: 3}

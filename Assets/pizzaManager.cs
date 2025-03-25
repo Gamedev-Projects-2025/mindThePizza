@@ -13,13 +13,6 @@ public class pizzaManager : MonoBehaviour
     private Sprite originalPizzaSprite;
 
     public PizzaChecker PizzaChecker;
-    private Vector2[] ingredientPositions = new Vector2[]
-    {
-        new Vector2(-1.5f, 1.5f),
-        new Vector2(1.5f, 1.5f),
-        new Vector2(0f, -1.5f),
-        new Vector2(0f, 0f)
-    };
 
     void Start()
     {
@@ -31,26 +24,21 @@ public class pizzaManager : MonoBehaviour
     {
         if (collision.CompareTag(targetTag))
         {
-            SpriteRenderer spriteRenderer = collision.GetComponent<SpriteRenderer>();
-            if (spriteRenderer != null)
-            {
-                AddIngredientManually(spriteRenderer.sprite);
-                Destroy(collision.gameObject);
-                PizzaChecker.check();
-            }
+            AddIngredientManually(collision.GetComponent<Ingredient>());
+            Destroy(collision.gameObject);
+            PizzaChecker.check();
         }
     }
-    //zig
-    public void AddIngredientManually(Sprite ingredientSprite)
+    public void AddIngredientManually(Ingredient ingredient)
     {
         if (ingredientCounter >= maxIngredients) return;
 
-        myPizza.AddIngredient(ingredientSprite.name);
+        myPizza.AddIngredient(ingredient);
 
         GameObject clone = new GameObject("IngredientClone");
-        clone.transform.position = (Vector2)transform.position + ingredientPositions[ingredientCounter % ingredientPositions.Length];
-        clone.transform.localScale = Vector3.one * 0.5f;
-        clone.AddComponent<SpriteRenderer>().sprite = ingredientSprite;
+        clone.transform.position = new Vector3(transform.position.x, transform.position.y, ingredient.ingredientSprite.GetComponent<Transform>().position.z);
+        clone.transform.localScale = ingredient.ingredientSprite.GetComponent<Transform>().localScale;
+        clone.AddComponent<SpriteRenderer>().sprite = ingredient.ingredientSprite.GetComponent<SpriteRenderer>().sprite;
 
         ingredientClones.Add(clone);
         ingredientCounter++;

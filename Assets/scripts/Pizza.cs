@@ -1,14 +1,15 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 [System.Serializable]
 public class Pizza
 {
-    [SerializeField] private List<string> ingredients = new List<string>(); // List of ingredient names
+    [SerializeField] private List<Ingredient> ingredients = new List<Ingredient>(); // List of ingredient names
 
     // Add ingredient to the pizza
-    public void AddIngredient(string ingredient)
+    public void AddIngredient(Ingredient ingredient)
     {
         if (!ingredients.Contains(ingredient))
         {
@@ -24,26 +25,44 @@ public class Pizza
     // Compare two pizzas based on their ingredients
     public bool CompareTo(Pizza otherPizza)
     {
-        // Check if both pizzas have the same ingredients (unordered)
-        if (ingredients.Count != otherPizza.ingredients.Count)
-        {
-            return false;
+        // Get the ingredient names for both pizzas
+        List<string> currentPizzaNames = ingredients.Select(i => i.getName()).ToList();
+        List<string> otherPizzaNames = otherPizza.ingredients.Select(i => i.getName()).ToList();
 
+        // Print ingredients of both pizzas for debugging
+        Debug.Log("Current Pizza Ingredients: " + string.Join(", ", currentPizzaNames));
+        Debug.Log("Other Pizza Ingredients: " + string.Join(", ", otherPizzaNames));
+
+        // Check if both pizzas have the same ingredient count
+        if (currentPizzaNames.Count != otherPizzaNames.Count)
+        {
+            Debug.Log("Mismatch in ingredient count.");
+            return false;
         }
 
-        foreach (var ingredient in ingredients)
+        // Sort both lists to ensure order doesn't matter
+        currentPizzaNames.Sort();
+        otherPizzaNames.Sort();
+
+        // Compare the sorted lists
+        for (int i = 0; i < currentPizzaNames.Count; i++)
         {
-            if (!otherPizza.ingredients.Contains(ingredient))
+            if (currentPizzaNames[i] != otherPizzaNames[i])
             {
+                Debug.Log($"Mismatch found: {currentPizzaNames[i]} is not in the same place as {otherPizzaNames[i]}.");
                 return false;
             }
         }
-        
+
+        Debug.Log("Pizzas are the same.");
         return true;
     }
 
+
+
+
     // To visualize the ingredients in the Unity Inspector
-    public List<string> GetIngredients()
+    public List<Ingredient> GetIngredients()
     {
         return ingredients;
     }

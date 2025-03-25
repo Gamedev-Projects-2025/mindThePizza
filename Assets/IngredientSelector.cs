@@ -3,6 +3,7 @@ using UnityEngine;
 public class IngredientSelector : MonoBehaviour
 {
     public GameObject ingredientPrefab; // Assign the ingredient prefab in the Inspector
+    public GameObject ingredientSprite;
     private static GameObject currentIngredient; // Tracks the currently selected ingredient
     private Camera mainCamera;
 

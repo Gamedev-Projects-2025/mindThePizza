@@ -26,12 +26,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/choose_side.unity
     guid: 28522fbaa3bbfec47aa2210394b079cd
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/instructions_right.unity
     guid: 6942cc2e953f4544eaf04118be7abb5d
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/tutorial_right.unity
     guid: e345f92aae9861b498a09b42b7ef0538
+  - enabled: 1
+    path: Assets/Scenes/stats.unity
+    guid: 56b931dae7ad2b0488efc665b4efa2ec
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

@@ -10,7 +10,9 @@ public class PerfectPizzaManager : MonoBehaviour
 {
     public pizzaManager displayPizza;
     [SerializeField] private int numOfIngredients = 3;
-    [SerializeField] private int pizzasToMake = 3;
+    [SerializeField] private int difficultyThreshold = 3;
+    [SerializeField] private int minNumOfIngredients = 3;
+    [SerializeField] private int maxNumOfIngredients = 6;
     [SerializeField] private string victoryScene;
 
 
@@ -25,18 +27,9 @@ public class PerfectPizzaManager : MonoBehaviour
 
     public void CheckPizzaCorrect()
     {
-        pizzasToMake--;
-        Debug.Log("Correct pizza! Pizzas left: " + pizzasToMake);
-
-        if (pizzasToMake <= 0)
-        {
-            Debug.Log("Victory! Loading scene: " + victoryScene);
-            SceneManager.LoadScene(victoryScene);
-        }
-        else
-        {
-            GenerateRandomPerfectPizza();
-        }
+        GenerateRandomPerfectPizza();
+        
+        numOfIngredients = Mathf.Min(minNumOfIngredients+gameManager.piesMade/difficultyThreshold,maxNumOfIngredients);
     }
 
     private void GenerateRandomPerfectPizza()

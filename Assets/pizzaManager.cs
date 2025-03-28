@@ -21,9 +21,16 @@ public class pizzaManager : MonoBehaviour
 
     private void OnMouseEnter()
     {
-        AddIngredientManually(IngredientSelector.currentIngredient.GetComponent<Ingredient>());
-        Destroy(IngredientSelector.currentIngredient);
-        PizzaChecker.check();
+        if (IngredientSelector.currentIngredient != null)
+        {
+            AddIngredientManually(IngredientSelector.currentIngredient.GetComponent<Ingredient>());
+            Destroy(IngredientSelector.currentIngredient);
+            if (PizzaChecker != null)
+            {
+                PizzaChecker.check();
+
+            }
+        }
     }
 
     public void AddIngredientManually(Ingredient ingredient)

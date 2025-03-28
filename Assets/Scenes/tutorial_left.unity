@@ -403,7 +403,7 @@ Transform:
   m_GameObject: {fileID: 189694254}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.14, y: -7.65, z: 1}
+  m_LocalPosition: {x: 0.14, y: -7.65, z: 4}
   m_LocalScale: {x: 1.5, y: 1.5, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2595,9 +2595,9 @@ MonoBehaviour:
   pizzaObjectToCheck: {fileID: 1467815004}
   perfectPizza:
     ingredients:
-    - shroom
-    - sauce
-    - cheese
+    - {fileID: 7986483541803857258, guid: 37a889c65e178c844adca3a51b1e6e60, type: 3}
+    - {fileID: 8009329264795992329, guid: 248f52277e1f45f4cbd21f0af4db0af0, type: 3}
+    - {fileID: -2719467997614290994, guid: 42a29e5934195db47a715c600b7bbad8, type: 3}
   speechBubbleText: {fileID: 695730013}
   victoryMessage: Great! Ready to start playing?
   gameoverMessage: These are not the right ingredients. Try again.
@@ -2773,7 +2773,7 @@ Transform:
   m_GameObject: {fileID: 1467815004}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.14, y: -8.77, z: 0}
+  m_LocalPosition: {x: 0.14, y: -8.77, z: 3}
   m_LocalScale: {x: 0.6180594, y: 0.6180594, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2794,7 +2794,6 @@ MonoBehaviour:
   myPizza:
     ingredients: []
   targetTag: 
-  maxIngredients: 3
   PizzaChecker: {fileID: 0}
 --- !u!70 &1467815009
 CapsuleCollider2D:
@@ -2941,7 +2940,7 @@ Transform:
   m_GameObject: {fileID: 1915514903}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 3}
+  m_LocalPosition: {x: 0, y: 0, z: 5}
   m_LocalScale: {x: 3, y: 3, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2973,8 +2972,8 @@ Transform:
   m_GameObject: {fileID: 1968771070}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.12, y: -10.39, z: 0}
-  m_LocalScale: {x: 0.6973036, y: 0.5337131, z: 1}
+  m_LocalPosition: {x: -2.72, y: -9.58, z: 0}
+  m_LocalScale: {x: 0.5175387, y: 0.39612186, z: 0.7422}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1426954048}

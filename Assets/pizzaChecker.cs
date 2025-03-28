@@ -1,5 +1,5 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
+using System.Linq;
 
 public class PizzaChecker : MonoBehaviour
 {
@@ -10,6 +10,8 @@ public class PizzaChecker : MonoBehaviour
     private Pizza pizzaToCheck;
     private Pizza perfectPizza;
     private PerfectPizzaManager perfectPizzaManagerScript;
+    bool hadIngredient = false;
+    private float startTime;
 
     void Start()
     {
@@ -22,6 +24,8 @@ public class PizzaChecker : MonoBehaviour
         pizzaToCheck = pizzaObjectToCheck.GetComponent<pizzaManager>().myPizza;
         perfectPizza = perfectPizzaObject.GetComponent<PerfectPizzaManager>().displayPizza.myPizza;
         perfectPizzaManagerScript = perfectPizzaObject.GetComponent<PerfectPizzaManager>();
+
+        startTime = Time.time; // Start timer
     }
 
     public void check()
@@ -30,13 +34,39 @@ public class PizzaChecker : MonoBehaviour
         {
             if (perfectPizza.CompareTo(pizzaToCheck))
             {
+                gameManager.piesMade++;
+
+                // Calculate time taken for this successful pie
+                float timeTaken = Time.time - startTime;
+                gameManager.timeTakenToAssemble = (int)(gameManager.timeTakenToAssemble + timeTaken) / gameManager.piesMade;
+
+                // Restart timer
+                startTime = Time.time;
+
                 pizzaObjectToCheck.GetComponent<pizzaManager>().ClearPizza();
                 perfectPizzaManagerScript.CheckPizzaCorrect();
             }
             else
             {
-                SceneManager.LoadSceneAsync(gameoverScene);
+                gameManager.piesFailed++;
+                pizzaObjectToCheck.GetComponent<pizzaManager>().ClearPizza();
+                //SceneManager.LoadSceneAsync(gameoverScene);
             }
+        }
+        else
+        {
+            foreach(Ingredient ingredient in perfectPizza.GetIngredients())
+            {
+                if (pizzaToCheck.GetIngredients().Last<Ingredient>().name == ingredient.name)
+                {
+                    hadIngredient = true;
+                }
+            }
+            if (!hadIngredient)
+            {
+                gameManager.timesPutWrongIngredient++;
+            }
+            hadIngredient = false;
         }
     }
 }

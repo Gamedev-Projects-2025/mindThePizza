@@ -19,15 +19,13 @@ public class pizzaManager : MonoBehaviour
         ingredientCounter = 0;
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnMouseEnter()
     {
-        if (collision.CompareTag(targetTag))
-        {
-            AddIngredientManually(collision.GetComponent<Ingredient>());
-            Destroy(collision.gameObject);
-            PizzaChecker.check();
-        }
+        AddIngredientManually(IngredientSelector.currentIngredient.GetComponent<Ingredient>());
+        Destroy(IngredientSelector.currentIngredient);
+        PizzaChecker.check();
     }
+
     public void AddIngredientManually(Ingredient ingredient)
     {
 

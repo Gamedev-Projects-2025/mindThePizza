@@ -30,6 +30,23 @@ public class PizzaChecker : MonoBehaviour
 
     public void check()
     {
+        foreach (Ingredient ingredient in perfectPizza.GetIngredients())
+        {
+            if (pizzaToCheck.GetIngredients().Last<Ingredient>().nameIngredient == ingredient.nameIngredient)
+            {
+                Debug.Log("found it!");
+                hadIngredient = true;
+            }
+            Debug.Log(pizzaToCheck.GetIngredients().Last<Ingredient>().nameIngredient + "=/=" + ingredient.nameIngredient);
+        }
+        if (!hadIngredient)
+        {
+            gameManager.timesPutWrongIngredient++;
+            Debug.Log("oh no");
+
+        }
+        hadIngredient = false;
+
         if (pizzaToCheck.GetIngredients().Count == perfectPizza.GetIngredients().Count)
         {
             if (perfectPizza.CompareTo(pizzaToCheck))
@@ -53,20 +70,6 @@ public class PizzaChecker : MonoBehaviour
                 //SceneManager.LoadSceneAsync(gameoverScene);
             }
         }
-        else
-        {
-            foreach(Ingredient ingredient in perfectPizza.GetIngredients())
-            {
-                if (pizzaToCheck.GetIngredients().Last<Ingredient>().name == ingredient.name)
-                {
-                    hadIngredient = true;
-                }
-            }
-            if (!hadIngredient)
-            {
-                gameManager.timesPutWrongIngredient++;
-            }
-            hadIngredient = false;
-        }
+
     }
 }

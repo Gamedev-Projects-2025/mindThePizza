@@ -17,10 +17,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/work_left.unity
     guid: 65e5616444a752a4ea55a90c1cdd5989
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/goodEnding.unity
     guid: f0dd734b0a9750940acf131fb8a7d0dc
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/badEnding.unity
     guid: 59f6d5a302f06104f9d0789ab4a7058b
   - enabled: 1

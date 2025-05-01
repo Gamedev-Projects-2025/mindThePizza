@@ -6,7 +6,7 @@ public class pizzaManager : MonoBehaviour
 {
     public Pizza myPizza;
     [SerializeField] private string targetTag;
-
+    public GameObject parent;
     private int ingredientCounter;
     private List<GameObject> ingredientClones = new List<GameObject>();
     private Sprite originalPizzaSprite;
@@ -27,8 +27,7 @@ public class pizzaManager : MonoBehaviour
             Destroy(IngredientSelector.currentIngredient);
             if (PizzaChecker != null)
             {
-                PizzaChecker.check();
-
+                StartCoroutine(PizzaChecker.Check());
             }
         }
     }
@@ -43,9 +42,13 @@ public class pizzaManager : MonoBehaviour
         clone.transform.localScale = ingredient.ingredientSprite.GetComponent<Transform>().localScale;
         clone.AddComponent<SpriteRenderer>().sprite = ingredient.ingredientSprite.GetComponent<SpriteRenderer>().sprite;
         clone.GetComponent<SpriteRenderer>().color = ingredient.ingredientSprite.GetComponent<SpriteRenderer>().color;
-
         ingredientClones.Add(clone);
         ingredientCounter++;
+        if(parent!=null)
+        {
+            clone.transform.parent = parent.transform;
+
+        }
     }
 
     public void ClearPizza()

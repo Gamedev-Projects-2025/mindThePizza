@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Linq;
+using System.Collections;
 
 public class PizzaChecker : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class PizzaChecker : MonoBehaviour
     bool hadIngredient = false;
     private float startTime;
 
+    public SlideItem slideObject;
     void Start()
     {
         if (pizzaObjectToCheck == null || perfectPizzaObject == null)
@@ -28,7 +30,7 @@ public class PizzaChecker : MonoBehaviour
         startTime = Time.time; // Start timer
     }
 
-    public void check()
+    public IEnumerator Check()
     {
         foreach (Ingredient ingredient in perfectPizza.GetIngredients())
         {
@@ -49,6 +51,7 @@ public class PizzaChecker : MonoBehaviour
 
         if (pizzaToCheck.GetIngredients().Count == perfectPizza.GetIngredients().Count)
         {
+            yield return StartCoroutine(slideObject.SlideRoutine());
             if (perfectPizza.CompareTo(pizzaToCheck))
             {
                 gameManager.piesMade++;

@@ -14,6 +14,12 @@ public class PizzaChecker : MonoBehaviour
     bool hadIngredient = false;
     private float startTime;
 
+    public GameObject successImage;
+    public GameObject failureImage;
+    public float flashDuration = 2f;
+    public float waitTime = 2f;
+    public AudioClip right, wrong;
+
     public SlideItem slideObject;
     void Start()
     {
@@ -51,9 +57,11 @@ public class PizzaChecker : MonoBehaviour
 
         if (pizzaToCheck.GetIngredients().Count == perfectPizza.GetIngredients().Count)
         {
-            yield return StartCoroutine(slideObject.SlideRoutine());
+            yield return StartCoroutine(slideObject.SlideRoutineUP());
             if (perfectPizza.CompareTo(pizzaToCheck))
             {
+                gameObject.GetComponent<AudioSource>().resource = right;
+
                 gameManager.piesMade++;
 
                 // Calculate time taken for this successful pie
@@ -65,14 +73,32 @@ public class PizzaChecker : MonoBehaviour
 
                 pizzaObjectToCheck.GetComponent<pizzaManager>().ClearPizza();
                 perfectPizzaManagerScript.CheckPizzaCorrect();
+                StartCoroutine(FlashImage(successImage));
+                gameObject.GetComponent<AudioSource>().Play();
+                yield return new WaitForSeconds(waitTime);
+                yield return StartCoroutine(slideObject.SlideRoutineDOWN());
             }
             else
             {
+                gameObject.GetComponent<AudioSource>().resource = wrong;
                 gameManager.piesFailed++;
                 pizzaObjectToCheck.GetComponent<pizzaManager>().ClearPizza();
                 //SceneManager.LoadSceneAsync(gameoverScene);
+                StartCoroutine(FlashImage(failureImage));
+                gameObject.GetComponent<AudioSource>().Play();
+                yield return new WaitForSeconds(waitTime);
+                yield return StartCoroutine(slideObject.SlideRoutineDOWN());
             }
+
         }
 
+
+    }
+
+    private IEnumerator FlashImage(GameObject image)
+    {
+        image.SetActive(true);
+        yield return new WaitForSeconds(flashDuration);
+        image.SetActive(false);
     }
 }

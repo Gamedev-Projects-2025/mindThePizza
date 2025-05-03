@@ -32,6 +32,19 @@ public class SlideItem : MonoBehaviour
         yield return StartCoroutine(SlideToPosition(originalPosition));
     }
 
+    public IEnumerator SlideRoutineUP()
+    {
+        Vector3 targetPosition = originalPosition + Vector3.up * slideDistance;
+        yield return StartCoroutine(SlideToPosition(targetPosition));
+    }
+
+    public IEnumerator SlideRoutineDOWN()
+    {
+        yield return StartCoroutine(SlideToPosition(originalPosition));
+    }
+
+
+
     public IEnumerator SlideToPosition(Vector3 target)
     {
         Vector3 start = transform.position;

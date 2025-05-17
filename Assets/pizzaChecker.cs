@@ -55,46 +55,52 @@ public class PizzaChecker : MonoBehaviour
         }
         hadIngredient = false;
 
-        if (pizzaToCheck.GetIngredients().Count == perfectPizza.GetIngredients().Count)
+        if ((pizzaToCheck.GetIngredients().Count == perfectPizza.GetIngredients().Count) && gameManager.autoDeliver)
         {
-            yield return StartCoroutine(slideObject.SlideRoutineUP());
-            if (perfectPizza.CompareTo(pizzaToCheck))
-            {
-                gameObject.GetComponent<AudioSource>().resource = right;
-
-                gameManager.piesMade++;
-
-                // Calculate time taken for this successful pie
-                float timeTaken = Time.time - startTime;
-                gameManager.timeTakenToAssemble = (int)(gameManager.timeTakenToAssemble + timeTaken) / gameManager.piesMade;
-
-                // Restart timer
-                startTime = Time.time;
-
-                pizzaObjectToCheck.GetComponent<pizzaManager>().ClearPizza();
-                perfectPizzaManagerScript.CheckPizzaCorrect();
-                StartCoroutine(FlashImage(successImage));
-                gameObject.GetComponent<AudioSource>().Play();
-                yield return new WaitForSeconds(waitTime);
-                yield return StartCoroutine(slideObject.SlideRoutineDOWN());
-            }
-            else
-            {
-                gameObject.GetComponent<AudioSource>().resource = wrong;
-                gameManager.piesFailed++;
-                pizzaObjectToCheck.GetComponent<pizzaManager>().ClearPizza();
-                //SceneManager.LoadSceneAsync(gameoverScene);
-                StartCoroutine(FlashImage(failureImage));
-                gameObject.GetComponent<AudioSource>().Play();
-                yield return new WaitForSeconds(waitTime);
-                yield return StartCoroutine(slideObject.SlideRoutineDOWN());
-            }
-
+            yield return StartCoroutine(CheckFunction());
         }
 
 
     }
+    public IEnumerator CheckFunction()
+    {
+        yield return StartCoroutine(slideObject.SlideRoutineUP());
+        if (perfectPizza.CompareTo(pizzaToCheck))
+        {
+            gameObject.GetComponent<AudioSource>().resource = right;
 
+            gameManager.piesMade++;
+
+            // Calculate time taken for this successful pie
+            float timeTaken = Time.time - startTime;
+            gameManager.timeTakenToAssemble = (int)(gameManager.timeTakenToAssemble + timeTaken) / gameManager.piesMade;
+
+            // Restart timer
+            startTime = Time.time;
+
+            pizzaObjectToCheck.GetComponent<pizzaManager>().ClearPizza();
+            perfectPizzaManagerScript.CheckPizzaCorrect();
+            StartCoroutine(FlashImage(successImage));
+            gameObject.GetComponent<AudioSource>().Play();
+            yield return new WaitForSeconds(waitTime);
+            yield return StartCoroutine(slideObject.SlideRoutineDOWN());
+        }
+        else
+        {
+            gameObject.GetComponent<AudioSource>().resource = wrong;
+            gameManager.piesFailed++;
+            pizzaObjectToCheck.GetComponent<pizzaManager>().ClearPizza();
+            //SceneManager.LoadSceneAsync(gameoverScene);
+            StartCoroutine(FlashImage(failureImage));
+            gameObject.GetComponent<AudioSource>().Play();
+            yield return new WaitForSeconds(waitTime);
+            yield return StartCoroutine(slideObject.SlideRoutineDOWN());
+        }
+    }
+    public void checkButton()
+    {
+        StartCoroutine(CheckFunction());
+    }
     private IEnumerator FlashImage(GameObject image)
     {
         image.SetActive(true);

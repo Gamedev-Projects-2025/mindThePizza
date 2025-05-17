@@ -1,4 +1,6 @@
+using System.Data;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class gameManager : MonoBehaviour
 {
@@ -11,9 +13,24 @@ public class gameManager : MonoBehaviour
     public static void setRight() 
         { left = false; }
 
+    public static void setSide()
+    {
+        left = !left;
+    }
+
     public static void usedReset()
     {
         timesReset++;
+    }
+
+    public static void setTimer(int timeInput)
+    {
+        timeLeft = timeInput;
+    }
+
+    public static void toggleTimedRounds()
+    {
+        timedMatch = !timedMatch;
     }
 
     public static void resetStats()
@@ -24,6 +41,8 @@ public class gameManager : MonoBehaviour
         piesMade = 0;
         hintsGiven = 0;
         piesFailed = 0;
+        autoDeliver = true;  
+        timedMatch = false;
     }
     public static string GetStatsString()
     {
@@ -34,5 +53,12 @@ public class gameManager : MonoBehaviour
                $"Hints Given: {hintsGiven}\n" +
                $"Pies Failed: {piesFailed}";
     }
+
+    public static void setAutoDeliver()
+    {
+        autoDeliver = !autoDeliver;
+        
+    }
+
 
 }

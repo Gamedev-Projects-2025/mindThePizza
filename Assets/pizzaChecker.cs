@@ -12,7 +12,7 @@ public class PizzaChecker : MonoBehaviour
     private Pizza perfectPizza;
     private PerfectPizzaManager perfectPizzaManagerScript;
     bool hadIngredient = false;
-    private float startTime;
+    private float startTime = 0;
 
     public GameObject successImage;
     public GameObject failureImage;
@@ -87,6 +87,8 @@ public class PizzaChecker : MonoBehaviour
         }
         else
         {
+            // Restart timer
+            startTime = Time.time;
             gameObject.GetComponent<AudioSource>().resource = wrong;
             gameManager.piesFailed++;
             pizzaObjectToCheck.GetComponent<pizzaManager>().ClearPizza();

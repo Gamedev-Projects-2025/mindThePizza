@@ -42,6 +42,7 @@ public class gameManager : MonoBehaviour
         piesMade = 0;
         hintsGiven = 0;
         piesFailed = 0;
+        totalTime = 0;
         autoDeliver = true;  
         timedMatch = false;
         left = true;

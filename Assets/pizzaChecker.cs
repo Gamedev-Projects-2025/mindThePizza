@@ -73,7 +73,8 @@ public class PizzaChecker : MonoBehaviour
 
             // Calculate time taken for this successful pie
             float timeTaken = Time.time - startTime;
-            gameManager.timeTakenToAssemble = (int)(gameManager.timeTakenToAssemble + timeTaken) / gameManager.piesMade;
+            gameManager.totalTime += timeTaken;
+            gameManager.timeTakenToAssemble = (int)(gameManager.totalTime) / gameManager.piesMade;
 
             // Restart timer
             startTime = Time.time;

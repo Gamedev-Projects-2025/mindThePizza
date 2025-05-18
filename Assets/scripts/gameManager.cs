@@ -5,7 +5,8 @@ using UnityEngine.UI;
 public class gameManager : MonoBehaviour
 {
     public static bool left = true;
-    public static int timesReset=0, timesPutWrongIngredient=0, timeTakenToAssemble=0, piesMade=0, hintsGiven=0, piesFailed=0;
+    public static int timesReset = 0, timesPutWrongIngredient = 0, timeTakenToAssemble = 0, piesMade = 0, hintsGiven = 0, piesFailed = 0;
+    public static float totalTime = 0;
     public static float timeLeft = 1;
     public static bool autoDeliver = true,  timedMatch = false;
     public static void setLeft()
@@ -43,6 +44,7 @@ public class gameManager : MonoBehaviour
         piesFailed = 0;
         autoDeliver = true;  
         timedMatch = false;
+        left = true;
     }
     public static string GetStatsString()
     {

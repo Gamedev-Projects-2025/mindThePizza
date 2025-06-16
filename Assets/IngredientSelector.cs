@@ -27,6 +27,8 @@ public class IngredientSelector : MonoBehaviour
     {
         if (ingredientPrefab != null)
         {
+            UIAudioManager.Instance.PlayClick();
+
             if (currentIngredient != null)
             {
                 Debug.Log("Holding something");

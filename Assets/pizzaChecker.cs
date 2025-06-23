@@ -27,6 +27,7 @@ public class PizzaChecker : MonoBehaviour
     [SerializeField] private float hintFlashTime = 0.3f;
     [SerializeField] private int hintFlashCount = 6;
     [SerializeField] private int hintFailsCount = 3; // Times of failed attempts before flashing
+    [SerializeField] private GameObject flashingPizzaObject;
     [SerializeField] private List<SpriteRenderer> allBarIngredients;
 
     // Clone sprite name → Bar sprite name
@@ -40,6 +41,19 @@ public class PizzaChecker : MonoBehaviour
         { "cornSprite_0", "corn" },
         { "pineappleSlices", "pine_0" }
     };
+
+    // FlashingPizzaObject sprite name → Bar sprite name
+    private readonly Dictionary<string, string> flashingSpriteMap = new Dictionary<string, string>()
+    {
+        { "shroom_topping", "shroomSlice_0" },
+        { "grated_cheese", "Gratedcheese_0" },
+        { "olives_topping", "oliceSliced_0" },
+        { "tomato_sauce_0", "Paste_0" },
+        { "sausage_topping", "pep_0" },
+        { "cornSprite_0", "corn" },
+        { "pineappleSlices", "pine_0" }
+    };
+
 
     void Start()
     {
@@ -136,72 +150,128 @@ public class PizzaChecker : MonoBehaviour
         image.SetActive(false);
     }
 
+    //private IEnumerator FlashHint()
+    //{
+    //    Debug.Log("entered FlashHint");
+
+    //    if (pizzaObjectToCheck == null || perfectPizzaObject == null)
+    //    {
+    //        Debug.LogWarning("Missing required GameObjects");
+    //        yield break;
+    //    }
+
+    //    var placedIngredients = new HashSet<string>(
+    //        pizzaObjectToCheck.GetComponent<pizzaManager>().myPizza.GetIngredients().Select(i => i.nameIngredient)
+    //    );
+
+    //    var neededIngredients = perfectPizzaObject.GetComponent<PerfectPizzaManager>()
+    //                                              .displayPizza.myPizza.GetIngredients();
+
+    //    var missingIngredients = neededIngredients
+    //        .Where(ingredient => !placedIngredients.Contains(ingredient.nameIngredient))
+    //        .Select(ingredient => ingredient.ingredientSprite.GetComponent<SpriteRenderer>().sprite.name)
+    //        .ToList();
+
+    //    Debug.Log("Missing Ingredients: " + string.Join(", ", missingIngredients));
+
+    //    // Map missing ingredient sprite names to bar button names
+    //    var mappedBarNames = new HashSet<string>();
+    //    foreach (var missing in missingIngredients)
+    //    {
+    //        if (spriteNameMap.TryGetValue(missing, out var barName))
+    //        {
+    //            mappedBarNames.Add(barName);
+    //            Debug.Log($"Mapped missing: {missing} → {barName}");
+    //        }
+    //        else
+    //        {
+    //            Debug.LogWarning($"No spriteNameMap match for missing: {missing}");
+    //        }
+    //    }
+
+    //    // Find bar sprites to flash
+    //    var flashTargets = allBarIngredients
+    //        .Where(sr => sr != null && sr.sprite != null && mappedBarNames.Contains(sr.sprite.name))
+    //        .ToList();
+
+    //    Debug.Log($"Total flash targets: {flashTargets.Count}");
+
+    //    // Flash
+    //    for (int i = 0; i < hintFlashCount; i++)
+    //    {
+    //        foreach (var sr in flashTargets)
+    //            sr.enabled = false;
+
+    //        yield return new WaitForSeconds(hintFlashTime);
+
+    //        foreach (var sr in flashTargets)
+    //            sr.enabled = true;
+
+    //        yield return new WaitForSeconds(hintFlashTime);
+    //    }
+    //}
+
     private IEnumerator FlashHint()
     {
         Debug.Log("entered FlashHint");
 
-        if (pizzaObjectToCheck == null || ingredientParentObject == null)
+        if (flashingPizzaObject == null || allBarIngredients == null)
         {
-            Debug.LogWarning("Missing required GameObjects");
+            Debug.LogWarning("Missing flashingPizzaObject or allBarIngredients");
             yield break;
         }
 
-        var pizzaManager = pizzaObjectToCheck.GetComponent<pizzaManager>();
+        var pizzaManager = flashingPizzaObject.GetComponent<pizzaManager>();
         if (pizzaManager == null)
         {
-            Debug.LogWarning("pizzaManager component missing");
+            Debug.LogWarning("pizzaManager missing on flashingPizzaObject");
             yield break;
         }
 
-        var clones = pizzaManager.GetIngredientClones();
-        var mappedBarNames = new HashSet<string>();
+        // Extract ingredients (the ones that should flash)
+        var flashIngredientObjects = pizzaManager.GetIngredientClones();
+        var flashNames = new List<string>();
 
-        // Step 1: Map clone sprite names to bar sprite names
-        foreach (var clone in clones)
+        foreach (var obj in flashIngredientObjects)
         {
-            var sr = clone.GetComponent<SpriteRenderer>();
+            var sr = obj.GetComponent<SpriteRenderer>();
             if (sr != null && sr.sprite != null)
             {
-                string cloneSpriteName = sr.sprite.name;
-                Debug.Log($"Clone sprite name: {cloneSpriteName}");
-
-                if (spriteNameMap.TryGetValue(cloneSpriteName, out string barSpriteName))
-                {
-                    Debug.Log($"Mapped {cloneSpriteName} → {barSpriteName}");
-                    mappedBarNames.Add(barSpriteName);
-                }
-                else
-                {
-                    Debug.LogWarning($"No mapping found for: {cloneSpriteName}");
-                }
+                string spriteName = sr.sprite.name;
+                flashNames.Add(spriteName);
+                Debug.Log($"Need to flash ingredient sprite: {spriteName}");
             }
         }
 
-        // Step 2: Find matching bar objects by sprite name
-        var flashTargets = new List<SpriteRenderer>();
-        //foreach (Transform child in ingredientParentObject.transform)
-        //{
-        //    var sr = child.GetComponent<SpriteRenderer>();
-        //    if (sr != null && sr.sprite != null && mappedBarNames.Contains(sr.sprite.name))
-        //    {
-        //        Debug.Log($"Matched bar sprite: {sr.sprite.name} → {child.name}");
-        //        flashTargets.Add(sr);
-        //    }
-        //}
+        // Map ingredient sprite names to bar sprite names
+        var mappedBarNames = new HashSet<string>();
+        foreach (var name in flashNames)
+        {
+            if (flashingSpriteMap.TryGetValue(name, out var mapped))
+            {
+                mappedBarNames.Add(mapped);
+                Debug.Log($"Mapped {name} → {mapped}");
+            }
+            else
+            {
+                Debug.LogWarning($"No mapping found for: {name}");
+            }
+        }
 
+        // Find matching bar ingredient sprites
+        var flashTargets = new List<SpriteRenderer>();
         foreach (var sr in allBarIngredients)
         {
             if (sr != null && sr.sprite != null && mappedBarNames.Contains(sr.sprite.name))
             {
-                Debug.Log($"Matched manually assigned bar sprite: {sr.sprite.name}");
+                Debug.Log($"Matched bar sprite: {sr.sprite.name}");
                 flashTargets.Add(sr);
             }
         }
 
-
         Debug.Log($"Total flash targets: {flashTargets.Count}");
 
-        // Step 3: Flash by enabling/disabling sprite renderers
+        // Flash them
         for (int i = 0; i < hintFlashCount; i++)
         {
             foreach (var sr in flashTargets)
@@ -215,4 +285,6 @@ public class PizzaChecker : MonoBehaviour
             yield return new WaitForSeconds(hintFlashTime);
         }
     }
+
+
 }

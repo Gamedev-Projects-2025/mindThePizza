@@ -358,6 +358,7 @@ MonoBehaviour:
   ingredientParentObject: {fileID: 726876190}
   hintFlashTime: 0.3
   hintFlashCount: 6
+  hintFailsCount: 3
   allBarIngredients:
   - {fileID: 571511930}
   - {fileID: 235740829}
@@ -366,6 +367,7 @@ MonoBehaviour:
   - {fileID: 795634157}
   - {fileID: 1813446735}
   - {fileID: 2098429311}
+  flashingPizzaObject: {fileID: 1076685311}
 --- !u!1 &47072221
 GameObject:
   m_ObjectHideFlags: 0

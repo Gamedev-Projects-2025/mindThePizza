@@ -64,4 +64,10 @@ public class pizzaManager : MonoBehaviour
         GetComponent<SpriteRenderer>().sprite = originalPizzaSprite;
     }
 
+    public List<GameObject> GetIngredientClones()
+    {
+        return ingredientClones;
+    }
+
+
 }

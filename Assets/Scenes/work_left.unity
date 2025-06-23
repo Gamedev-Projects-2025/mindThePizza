@@ -355,6 +355,17 @@ MonoBehaviour:
   right: {fileID: 8300000, guid: dc9ef47d7a9174f48abfcf8a5f852914, type: 3}
   wrong: {fileID: 8300000, guid: a4b796d69761fb741ab569fbbecf4462, type: 3}
   slideObject: {fileID: 338913588}
+  ingredientParentObject: {fileID: 726876190}
+  hintFlashTime: 0.3
+  hintFlashCount: 6
+  allBarIngredients:
+  - {fileID: 571511930}
+  - {fileID: 235740829}
+  - {fileID: 1275503532}
+  - {fileID: 472389870}
+  - {fileID: 795634157}
+  - {fileID: 1813446735}
+  - {fileID: 2098429311}
 --- !u!1 &47072221
 GameObject:
   m_ObjectHideFlags: 0
@@ -1148,7 +1159,7 @@ GameObject:
   - component: {fileID: 312285225}
   - component: {fileID: 312285226}
   m_Layer: 0
-  m_Name: text (1)
+  m_Name: time
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

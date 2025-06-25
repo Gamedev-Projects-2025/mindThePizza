@@ -26,10 +26,21 @@ public class PizzaChecker : MonoBehaviour
     [SerializeField] private GameObject ingredientParentObject; // Bar object
     [SerializeField] private float hintFlashTime = 0.3f;
     [SerializeField] private int hintFlashCount = 6;
-    [SerializeField] private int hintFailsCount = 3; // Times of failed attempts before flashing
+    [SerializeField] private int flashFailsCount = 3; // Times of failed attempts before flashing
     [SerializeField] private GameObject flashingPizzaObject;
     [SerializeField] private List<SpriteRenderer> allBarIngredients;
 
+    [SerializeField] private int audioFailsCount = 1; // Times of failed attempts before audio 
+    [SerializeField] private AudioSource hintAudioSource;
+
+    [System.Serializable]
+    public class IngredientAudioEntry
+    {
+        public string ingredientSpriteName;
+        public AudioClip clip;
+    }
+
+    [SerializeField] private List<IngredientAudioEntry> ingredientAudioList;
     // Clone sprite name → Bar sprite name
     private readonly Dictionary<string, string> spriteNameMap = new Dictionary<string, string>()
     {
@@ -54,6 +65,17 @@ public class PizzaChecker : MonoBehaviour
         { "pineappleSlices", "pine_0" }
     };
 
+    // sprite name → audio clip name 
+    private Dictionary<string, AudioClip> ingredientAudioMap = new Dictionary<string, AudioClip>()
+    {
+        { "shroom_topping", null },
+        { "grated_cheese", null },
+        { "olives_topping", null },
+        { "tomato_sauce_0", null },
+        { "sausage_topping", null },
+        { "cornSprite_0", null },
+        { "pineappleSlices", null }
+    };
 
     void Start()
     {
@@ -68,6 +90,15 @@ public class PizzaChecker : MonoBehaviour
         perfectPizzaManagerScript = perfectPizzaObject.GetComponent<PerfectPizzaManager>();
 
         startTime = Time.time;
+
+        foreach (var entry in ingredientAudioList)
+        {
+            if (!string.IsNullOrEmpty(entry.ingredientSpriteName) && entry.clip != null)
+            {
+                ingredientAudioMap[entry.ingredientSpriteName] = entry.clip;
+            }
+        }
+
     }
 
     public IEnumerator Check()
@@ -129,8 +160,13 @@ public class PizzaChecker : MonoBehaviour
 
             hint_timer++;
 
-            if (hint_timer % hintFailsCount == 0)
+            if (hint_timer % audioFailsCount == 0)
+                yield return StartCoroutine(PlayAudioHint());
+
+
+            if (hint_timer % flashFailsCount == 0)
                 yield return StartCoroutine(FlashHint());
+
 
             pizzaObjectToCheck.GetComponent<pizzaManager>().ClearPizza();
             yield return new WaitForSeconds(waitTime);
@@ -149,67 +185,6 @@ public class PizzaChecker : MonoBehaviour
         yield return new WaitForSeconds(flashDuration);
         image.SetActive(false);
     }
-
-    //private IEnumerator FlashHint()
-    //{
-    //    Debug.Log("entered FlashHint");
-
-    //    if (pizzaObjectToCheck == null || perfectPizzaObject == null)
-    //    {
-    //        Debug.LogWarning("Missing required GameObjects");
-    //        yield break;
-    //    }
-
-    //    var placedIngredients = new HashSet<string>(
-    //        pizzaObjectToCheck.GetComponent<pizzaManager>().myPizza.GetIngredients().Select(i => i.nameIngredient)
-    //    );
-
-    //    var neededIngredients = perfectPizzaObject.GetComponent<PerfectPizzaManager>()
-    //                                              .displayPizza.myPizza.GetIngredients();
-
-    //    var missingIngredients = neededIngredients
-    //        .Where(ingredient => !placedIngredients.Contains(ingredient.nameIngredient))
-    //        .Select(ingredient => ingredient.ingredientSprite.GetComponent<SpriteRenderer>().sprite.name)
-    //        .ToList();
-
-    //    Debug.Log("Missing Ingredients: " + string.Join(", ", missingIngredients));
-
-    //    // Map missing ingredient sprite names to bar button names
-    //    var mappedBarNames = new HashSet<string>();
-    //    foreach (var missing in missingIngredients)
-    //    {
-    //        if (spriteNameMap.TryGetValue(missing, out var barName))
-    //        {
-    //            mappedBarNames.Add(barName);
-    //            Debug.Log($"Mapped missing: {missing} → {barName}");
-    //        }
-    //        else
-    //        {
-    //            Debug.LogWarning($"No spriteNameMap match for missing: {missing}");
-    //        }
-    //    }
-
-    //    // Find bar sprites to flash
-    //    var flashTargets = allBarIngredients
-    //        .Where(sr => sr != null && sr.sprite != null && mappedBarNames.Contains(sr.sprite.name))
-    //        .ToList();
-
-    //    Debug.Log($"Total flash targets: {flashTargets.Count}");
-
-    //    // Flash
-    //    for (int i = 0; i < hintFlashCount; i++)
-    //    {
-    //        foreach (var sr in flashTargets)
-    //            sr.enabled = false;
-
-    //        yield return new WaitForSeconds(hintFlashTime);
-
-    //        foreach (var sr in flashTargets)
-    //            sr.enabled = true;
-
-    //        yield return new WaitForSeconds(hintFlashTime);
-    //    }
-    //}
 
     private IEnumerator FlashHint()
     {
@@ -285,6 +260,46 @@ public class PizzaChecker : MonoBehaviour
             yield return new WaitForSeconds(hintFlashTime);
         }
     }
+
+    private IEnumerator PlayAudioHint()
+    {
+        if (flashingPizzaObject == null || hintAudioSource == null || ingredientAudioMap == null)
+            yield break;
+
+        var pizzaManager = flashingPizzaObject.GetComponent<pizzaManager>();
+        if (pizzaManager == null)
+            yield break;
+
+        var clones = pizzaManager.GetIngredientClones();
+        if (clones.Count == 0)
+            yield break;
+
+        foreach (var clone in clones)
+        {
+            var sr = clone.GetComponent<SpriteRenderer>();
+            if (sr == null || sr.sprite == null)
+                continue;
+
+            string spriteName = sr.sprite.name;
+
+            if (ingredientAudioMap.TryGetValue(spriteName, out AudioClip clip) && clip != null)
+            {
+                hintAudioSource.Stop();
+                hintAudioSource.clip = clip;
+                hintAudioSource.Play();
+                Debug.Log($"Playing audio hint for: {spriteName}");
+
+                yield return new WaitWhile(() => hintAudioSource.isPlaying); // Wait until it finishes
+                yield return new WaitForSeconds(0.1f); // Short delay between clips
+            }
+            else
+            {
+                Debug.LogWarning($"No audio clip mapped for: {spriteName}");
+            }
+        }
+    }
+
+
 
 
 }

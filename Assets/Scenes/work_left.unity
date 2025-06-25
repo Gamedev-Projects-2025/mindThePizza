@@ -358,7 +358,8 @@ MonoBehaviour:
   ingredientParentObject: {fileID: 726876190}
   hintFlashTime: 0.3
   hintFlashCount: 6
-  hintFailsCount: 3
+  flashFailsCount: 3
+  flashingPizzaObject: {fileID: 1076685311}
   allBarIngredients:
   - {fileID: 571511930}
   - {fileID: 235740829}
@@ -367,7 +368,23 @@ MonoBehaviour:
   - {fileID: 795634157}
   - {fileID: 1813446735}
   - {fileID: 2098429311}
-  flashingPizzaObject: {fileID: 1076685311}
+  audioFailsCount: 1
+  hintAudioSource: {fileID: 140518383}
+  ingredientAudioList:
+  - ingredientSpriteName: pineappleSlices
+    clip: {fileID: 8300000, guid: 4fbac00ee6fc60242869ed37a8be8f18, type: 3}
+  - ingredientSpriteName: grated_cheese
+    clip: {fileID: 8300000, guid: 73ee531ec4b3b55438fd9b91926368f9, type: 3}
+  - ingredientSpriteName: cornSprite_0
+    clip: {fileID: 8300000, guid: 9c4a0801d8e61984eaddf654701d501b, type: 3}
+  - ingredientSpriteName: shroom_topping
+    clip: {fileID: 8300000, guid: 190fe8209749db444bd5a6e2f1d4f727, type: 3}
+  - ingredientSpriteName: olives_topping
+    clip: {fileID: 8300000, guid: 0c7443c28c2817c41bd97f29e3c9c9c4, type: 3}
+  - ingredientSpriteName: tomato_sauce_0
+    clip: {fileID: 8300000, guid: ef73d360db75d8147835536a0df6afab, type: 3}
+  - ingredientSpriteName: sausage_topping
+    clip: {fileID: 8300000, guid: 24a40d1d4869e964e8f4edea6a23b954, type: 3}
 --- !u!1 &47072221
 GameObject:
   m_ObjectHideFlags: 0

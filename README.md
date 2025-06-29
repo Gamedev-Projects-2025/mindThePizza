@@ -29,10 +29,15 @@ https://lidx7.itch.io/mindthepizza-version-02
 
 [Dramatic elements
 ](https://github.com/Gamedev-Projects-2025/mindThePizza/blob/main/dramatic-elements.md)
-### יוצרים:
+## יוצרים:
+
+### צוות פיתוח:
+
 איוון גורבצ'וב  
 
 לידור בורופקר  
+
+### ייעוץ רפואי-שיקומי
 
 מוריה יונגר  
 
@@ -51,6 +56,12 @@ Thanks remove.bg and GIMP for helping edit the sprites!
 Thanks google images for providing most of the sprites and assets on the game!
 
 Thanks Inshot for helping edit the game trailer!
+
+Thanks TTSMaker for the text-to-speech voice lines!
+
+Thanks random uploaders on youtube for the sfx!
+
+Thanks Screenhog for the background music!
 
 Thank god!
 

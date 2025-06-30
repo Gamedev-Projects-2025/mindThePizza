@@ -30,7 +30,7 @@ public class PizzaChecker : MonoBehaviour
     [SerializeField] private GameObject flashingPizzaObject;
     [SerializeField] private List<SpriteRenderer> allBarIngredients;
 
-    [SerializeField] private int audioFailsCount = 1; // Times of failed attempts before audio 
+    [SerializeField] private int audioFailsCount = 1; // Times of failed attempts before playing audio 
     [SerializeField] private AudioSource hintAudioSource;
 
     [System.Serializable]
@@ -39,8 +39,8 @@ public class PizzaChecker : MonoBehaviour
         public string ingredientSpriteName;
         public AudioClip clip;
     }
-
     [SerializeField] private List<IngredientAudioEntry> ingredientAudioList;
+
     // Clone sprite name → Bar sprite name
     private readonly Dictionary<string, string> spriteNameMap = new Dictionary<string, string>()
     {
@@ -65,7 +65,7 @@ public class PizzaChecker : MonoBehaviour
         { "pineappleSlices", "pine_0" }
     };
 
-    // sprite name → audio clip name 
+    // sprite name → audio clip name (gets loaded in the start function)
     private Dictionary<string, AudioClip> ingredientAudioMap = new Dictionary<string, AudioClip>()
     {
         { "shroom_topping", null },

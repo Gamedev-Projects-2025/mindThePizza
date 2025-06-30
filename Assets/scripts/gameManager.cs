@@ -50,10 +50,8 @@ public class gameManager : MonoBehaviour
     public static string GetStatsString()
     {
         return $"Times Reset: {timesReset}\n" +
-               $"Wrong Ingredients Used: {timesPutWrongIngredient}\n" +
-               $"Time Taken to Assemble: {timeTakenToAssemble} seconds\n" +
+               $"Average Time Taken to Assemble: {timeTakenToAssemble} seconds\n" +
                $"Pies Made: {piesMade}\n" +
-               $"Hints Given: {hintsGiven}\n" +
                $"Pies Failed: {piesFailed}";
     }
 

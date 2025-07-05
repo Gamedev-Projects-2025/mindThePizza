@@ -45,7 +45,7 @@ public class pizzaManager : MonoBehaviour
         clone.GetComponent<SpriteRenderer>().color = ingredient.ingredientSprite.GetComponent<SpriteRenderer>().color;
         ingredientClones.Add(clone);
         ingredientCounter++;
-        if(parent!=null)
+        if (parent != null)
         {
             clone.transform.parent = parent.transform;
 

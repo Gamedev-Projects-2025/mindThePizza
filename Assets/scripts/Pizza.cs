@@ -73,5 +73,9 @@ public class Pizza
     }
 
 
+    public List<string> GetSortedIngredientNames()
+    {
+        return GetIngredients().Select(x => x.nameIngredient).OrderBy(name => name).ToList();
+    }
 
 }

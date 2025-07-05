@@ -9,6 +9,7 @@ using UnityEngine.U2D;
 public class PerfectPizzaManager : MonoBehaviour
 {
     public pizzaManager displayPizza;
+    public SetLocIngredient locManager;
     [SerializeField] private int numOfIngredientsMax = 3;
     [SerializeField] private int numOfIngredientsMin = 1;
 
@@ -32,8 +33,13 @@ public class PerfectPizzaManager : MonoBehaviour
     public void CheckPizzaCorrect()
     {
         GenerateRandomPerfectPizza();
+        if (gameManager.scramble)
+        {
+            locManager.setLocation();
+        }
+
         numOfIngredientsMin = Mathf.Min(minNumOfIngredientsLower + gameManager.piesMade / difficultyThreshold, maxNumOfIngredientsLower);
-        numOfIngredientsMax = Mathf.Min(minNumOfIngredientsUpper + gameManager.piesMade/difficultyThreshold,maxNumOfIngredientsUpper);
+        numOfIngredientsMax = Mathf.Min(minNumOfIngredientsUpper + gameManager.piesMade / difficultyThreshold, maxNumOfIngredientsUpper);
     }
 
     private void GenerateRandomPerfectPizza()

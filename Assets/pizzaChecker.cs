@@ -15,7 +15,7 @@ public class PizzaChecker : MonoBehaviour
     private float startTime = 0;
     private bool hadIngredient = false;
     private int hint_timer = 0;
-    
+
     public GameObject successImage;
     public GameObject failureImage;
     public float flashDuration = 2f;
@@ -298,8 +298,4 @@ public class PizzaChecker : MonoBehaviour
             }
         }
     }
-
-
-
-
 }

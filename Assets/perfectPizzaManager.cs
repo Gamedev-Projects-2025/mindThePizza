@@ -9,10 +9,14 @@ using UnityEngine.U2D;
 public class PerfectPizzaManager : MonoBehaviour
 {
     public pizzaManager displayPizza;
-    [SerializeField] private int numOfIngredients = 3;
+    [SerializeField] private int numOfIngredientsMax = 3;
+    [SerializeField] private int numOfIngredientsMin = 1;
+
     [SerializeField] private int difficultyThreshold = 3;
-    [SerializeField] private int minNumOfIngredients = 3;
-    [SerializeField] private int maxNumOfIngredients = 6;
+    [SerializeField] private int minNumOfIngredientsUpper = 3;
+    [SerializeField] private int minNumOfIngredientsLower = 1;
+    [SerializeField] private int maxNumOfIngredientsUpper = 6;
+    [SerializeField] private int maxNumOfIngredientsLower = 5;
     [SerializeField] private string victoryScene;
 
 
@@ -28,8 +32,8 @@ public class PerfectPizzaManager : MonoBehaviour
     public void CheckPizzaCorrect()
     {
         GenerateRandomPerfectPizza();
-        
-        numOfIngredients = Mathf.Min(minNumOfIngredients+gameManager.piesMade/difficultyThreshold,maxNumOfIngredients);
+        numOfIngredientsMin = Mathf.Min(minNumOfIngredientsLower + gameManager.piesMade / difficultyThreshold, maxNumOfIngredientsLower);
+        numOfIngredientsMax = Mathf.Min(minNumOfIngredientsUpper + gameManager.piesMade/difficultyThreshold,maxNumOfIngredientsUpper);
     }
 
     private void GenerateRandomPerfectPizza()
@@ -43,7 +47,7 @@ public class PerfectPizzaManager : MonoBehaviour
         do
         {
             selectedIngredients = new List<string> { "sauce" };
-            int extra = Random.Range(1, numOfIngredients);
+            int extra = Random.Range(numOfIngredientsMin, numOfIngredientsMax);
 
             List<string> ingredientNames = ingredients
                 .OrderBy(x => Random.value)

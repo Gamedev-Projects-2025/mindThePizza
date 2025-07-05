@@ -35,6 +35,7 @@ public class pizzaManager : MonoBehaviour
     public void AddIngredientManually(Ingredient ingredient)
     {
 
+        Debug.Log(ingredient.ToString());
         myPizza.AddIngredient(ingredient);
 
         GameObject clone = new GameObject("IngredientClone");

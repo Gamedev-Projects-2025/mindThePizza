@@ -92,7 +92,7 @@ public class PizzaChecker : MonoBehaviour
                 ingredientAudioMap[entry.ingredientSpriteName] = entry.clip;
         }
 
-        // ✅ Enforce numberOfPizzas limit
+        // ✅ Enforce numberOfPizzas limit and destroy extras
         int limit = Mathf.Min(gameManager.numberOfPizzas, pizzaToCheck.Count, perfectPizza.Count);
 
         // Destroy excess player pizzas
@@ -112,6 +112,7 @@ public class PizzaChecker : MonoBehaviour
             perfectPizzaManagerScript.RemoveAt(i);
         }
 
+        // Destroy excess display pizzas
         for (int i = displayPizzaObject.Count - 1; i >= limit; i--)
         {
             Destroy(displayPizzaObject[i]);
@@ -119,82 +120,45 @@ public class PizzaChecker : MonoBehaviour
         }
     }
 
-
-    public void Check()
+    public IEnumerator Check()
     {
-        if (AllPizzasAssembled())
-            StartCoroutine(CheckFunction());
+        if (AllPizzasAssembled() && gameManager.autoDeliver)
+            yield return StartCoroutine(CheckFunction());
+    }
+
+    public void checkButton()
+    {
+        StartCoroutine(CheckFunction());
     }
 
     private bool AllPizzasAssembled()
     {
-        // Track which player pizzas have already been used
-        HashSet<int> usedPlayerIndexes = new HashSet<int>();
-
-        foreach (var perfect in perfectPizza)
+        for (int i = 0; i < perfectPizza.Count; i++)
         {
-            bool foundMatch = false;
-
-            for (int i = 0; i < pizzaToCheck.Count; i++)
-            {
-                if (usedPlayerIndexes.Contains(i))
-                    continue; // Skip already matched player pizzas
-
-                var player = pizzaToCheck[i];
-
-                if (player.GetIngredients().Count >= perfect.GetIngredients().Count)
-                {
-                    usedPlayerIndexes.Add(i);
-                    foundMatch = true;
-                    break;
-                }
-            }
-
-            if (!foundMatch)
-                return false; // This perfect pizza had no available match
+            if (pizzaToCheck[i].GetIngredients().Count < perfectPizza[i].GetIngredients().Count)
+                return false;
         }
-
-        return true; // All perfect pizzas found a unique match
+        return true;
     }
-
-
 
     public IEnumerator CheckFunction()
     {
         yield return StartCoroutine(slideObject.SlideRoutineUP());
 
-        int perfectCount = perfectPizza.Count;
-        int playerCount = pizzaToCheck.Count;
+        bool allCorrect = true;
 
-        // Track which perfect pizzas and player pizzas were used in a match
-        bool[] perfectMatched = new bool[perfectCount];
-        bool[] playerMatched = new bool[playerCount];
-
-        // Try to match each perfect pizza with a unique player pizza
-        for (int i = 0; i < perfectCount; i++)
+        for (int i = 0; i < perfectPizza.Count; i++)
         {
-            for (int j = 0; j < playerCount; j++)
+            if (!PizzaMatches(pizzaToCheck[i], perfectPizza[i]))
             {
-                if (playerMatched[j]) continue;
-
-                if (PizzaMatches(pizzaToCheck[j], perfectPizza[i]))
-                {
-                    perfectMatched[i] = true;
-                    playerMatched[j] = true;
-                    Debug.Log($"Perfect pizza {i} matched with player pizza {j}");
-                    break;
-                }
+                allCorrect = false;
+                break;
             }
         }
 
-        bool allPerfectMatched = perfectMatched.All(m => m == true);
-        bool extraWrongPizzaExists = playerMatched.Count(m => m) != perfectCount;
-
-        if (allPerfectMatched && !extraWrongPizzaExists)
+        if (allCorrect)
         {
-            // ✅ SUCCESS
-            Debug.Log("SUCCESS: All perfect pizzas matched and no extras.");
-
+            Debug.Log("SUCCESS: All pizzas matched index-wise.");
             gameObject.GetComponent<AudioSource>().clip = right;
             gameManager.piesMade++;
 
@@ -203,12 +167,8 @@ public class PizzaChecker : MonoBehaviour
             gameManager.timeTakenToAssemble = (int)(gameManager.totalTime / gameManager.piesMade);
             startTime = Time.time;
 
-            // Clear only matched player pizzas
-            for (int i = 0; i < playerCount; i++)
-            {
-                if (playerMatched[i])
-                    pizzaObjectToCheck[i].GetComponent<pizzaManager>().ClearPizza();
-            }
+            foreach (var pizza in pizzaObjectToCheck)
+                pizza.GetComponent<pizzaManager>().ClearPizza();
 
             foreach (var ppm in perfectPizzaManagerScript)
                 ppm.CheckPizzaCorrect();
@@ -221,9 +181,7 @@ public class PizzaChecker : MonoBehaviour
         }
         else
         {
-            // ❌ FAILURE
-            Debug.LogWarning("FAIL: Not all perfect pizzas matched, or extras were present.");
-
+            Debug.LogWarning("FAILURE: One or more pizzas didn't match.");
             startTime = Time.time;
             gameObject.GetComponent<AudioSource>().clip = wrong;
             gameManager.piesFailed++;
@@ -239,7 +197,6 @@ public class PizzaChecker : MonoBehaviour
             if (hint_timer % flashFailsCount == 0)
                 yield return StartCoroutine(FlashHint());
 
-            // Clear all pizzas
             foreach (var pizza in pizzaObjectToCheck)
                 pizza.GetComponent<pizzaManager>().ClearPizza();
 
@@ -248,13 +205,14 @@ public class PizzaChecker : MonoBehaviour
         }
     }
 
-
-
     private bool PizzaMatches(Pizza playerPizza, Pizza targetPizza)
     {
+        if (targetPizza.GetIngredients().Count != playerPizza.GetIngredients().Count)
+        {
+            return false;
+        }
         var playerIngredients = playerPizza.GetIngredients().Select(i => i.nameIngredient).ToList();
         var targetIngredients = targetPizza.GetIngredients().Select(i => i.nameIngredient).ToList();
-
         foreach (string required in targetIngredients)
         {
             if (!playerIngredients.Contains(required))
@@ -263,7 +221,6 @@ public class PizzaChecker : MonoBehaviour
 
         return true;
     }
-
 
     private IEnumerator FlashImage(GameObject image)
     {
@@ -274,14 +231,16 @@ public class PizzaChecker : MonoBehaviour
 
     private IEnumerator FlashHint()
     {
-        foreach (GameObject pizza in displayPizzaObject)
+        for (int index = 0; index < displayPizzaObject.Count; index++)
         {
+            var pizza = displayPizzaObject[index];
+
             if (pizza == null || allBarIngredients == null)
-                yield break;
+                continue;
 
             var pizzaManager = pizza.GetComponent<pizzaManager>();
             if (pizzaManager == null)
-                yield break;
+                continue;
 
             var flashIngredientObjects = pizzaManager.GetIngredientClones();
             var flashNames = new List<string>();
@@ -324,22 +283,25 @@ public class PizzaChecker : MonoBehaviour
 
     private IEnumerator PlayAudioHint()
     {
-        foreach (GameObject pizza in displayPizzaObject)
+        for (int index = 0; index < displayPizzaObject.Count; index++)
         {
+            var pizza = displayPizzaObject[index];
+
             if (pizza == null || hintAudioSource == null || ingredientAudioMap == null)
-                yield break;
+                continue;
 
             var pizzaManager = pizza.GetComponent<pizzaManager>();
             if (pizzaManager == null)
-                yield break;
+                continue;
 
             var clones = pizzaManager.GetIngredientClones();
             if (clones.Count == 0)
-                yield break;
+                continue;
 
             foreach (var clone in clones)
             {
                 var sr = clone.GetComponent<SpriteRenderer>();
+
                 if (sr == null || sr.sprite == null)
                     continue;
 
@@ -347,15 +309,38 @@ public class PizzaChecker : MonoBehaviour
 
                 if (ingredientAudioMap.TryGetValue(spriteName, out AudioClip clip) && clip != null)
                 {
+                    
+                    
                     hintAudioSource.Stop();
                     hintAudioSource.clip = clip;
                     hintAudioSource.Play();
 
                     yield return new WaitWhile(() => hintAudioSource.isPlaying);
+                    yield return StartCoroutine(ShakeObject(clone.gameObject));
                     yield return new WaitForSeconds(0.1f);
+
                 }
             }
         }
-
     }
+    private IEnumerator ShakeObject(GameObject obj, float duration = 0.6f, float strength = 0.2f)
+    {
+        if (obj == null) yield break;
+
+        Vector3 originalPos = obj.transform.localPosition;
+        float elapsed = 0f;
+
+        while (elapsed < duration)
+        {
+            float offsetX = Random.Range(-strength, strength);
+            float offsetY = Random.Range(-strength, strength);
+            obj.transform.localPosition = originalPos + new Vector3(offsetX, offsetY, 0f);
+
+            elapsed += Time.deltaTime;
+            yield return null;
+        }
+
+        obj.transform.localPosition = originalPos;
+    }
+
 }

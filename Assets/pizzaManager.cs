@@ -19,7 +19,7 @@ public class pizzaManager : MonoBehaviour
         ingredientCounter = 0;
     }
 
-    private void OnMouseEnter()
+    private IEnumerator OnMouseEnter()
     {
         if (IngredientSelector.currentIngredient != null)
         {
@@ -27,7 +27,7 @@ public class pizzaManager : MonoBehaviour
             Destroy(IngredientSelector.currentIngredient);
             if (PizzaChecker != null)
             {
-                PizzaChecker.Check();
+                yield return StartCoroutine(PizzaChecker.Check());
             }
         }
     }

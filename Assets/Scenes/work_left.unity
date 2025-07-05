@@ -133,7 +133,6 @@ GameObject:
   - component: {fileID: 2924245}
   - component: {fileID: 2924247}
   - component: {fileID: 2924246}
-  - component: {fileID: 2924248}
   m_Layer: 0
   m_Name: instructionController
   m_TagString: Untagged
@@ -362,6 +361,11 @@ MonoBehaviour:
   - {fileID: 417981653}
   - {fileID: 1073784921}
   - {fileID: 633347132}
+  displayPizzaObject:
+  - {fileID: 1076685311}
+  - {fileID: 1223129898}
+  - {fileID: 940319409}
+  - {fileID: 1333519753}
   gameoverScene: badEnding
   successImage: {fileID: 1433717516}
   failureImage: {fileID: 290001579}
@@ -374,7 +378,6 @@ MonoBehaviour:
   hintFlashTime: 0.3
   hintFlashCount: 6
   flashFailsCount: 3
-  flashingPizzaObject: {fileID: 1076685311}
   allBarIngredients:
   - {fileID: 571511930}
   - {fileID: 235740829}
@@ -400,44 +403,6 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: ef73d360db75d8147835536a0df6afab, type: 3}
   - ingredientSpriteName: sausage_topping
     clip: {fileID: 8300000, guid: 24a40d1d4869e964e8f4edea6a23b954, type: 3}
---- !u!114 &2924248
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2924241}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e42995bfd18cc348bf82916aff4c360, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pizzaObjectToCheck: []
-  perfectPizzaObject: []
-  gameoverScene: badEnding
-  successImage: {fileID: 1433717516}
-  failureImage: {fileID: 290001579}
-  flashDuration: 2
-  waitTime: 2
-  right: {fileID: 8300000, guid: dc9ef47d7a9174f48abfcf8a5f852914, type: 3}
-  wrong: {fileID: 8300000, guid: a4b796d69761fb741ab569fbbecf4462, type: 3}
-  slideObject: {fileID: 338913588}
-  ingredientParentObject: {fileID: 726876190}
-  hintFlashTime: 0.3
-  hintFlashCount: 6
-  flashFailsCount: 3
-  flashingPizzaObject: {fileID: 0}
-  allBarIngredients:
-  - {fileID: 571511930}
-  - {fileID: 235740829}
-  - {fileID: 1275503532}
-  - {fileID: 472389870}
-  - {fileID: 795634157}
-  - {fileID: 1813446735}
-  - {fileID: 2098429311}
-  audioFailsCount: 1
-  hintAudioSource: {fileID: 140518383}
-  ingredientAudioList: []
 --- !u!1 &47072221
 GameObject:
   m_ObjectHideFlags: 0
@@ -567,6 +532,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   displayPizza: {fileID: 1076685314}
+  displayPizzaObject: {fileID: 1076685311}
   locManager: {fileID: 2104590667}
   numOfIngredientsMax: 3
   numOfIngredientsMin: 1
@@ -1838,6 +1804,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   displayPizza: {fileID: 1223129901}
+  displayPizzaObject: {fileID: 1223129898}
   locManager: {fileID: 2104590667}
   numOfIngredientsMax: 3
   numOfIngredientsMin: 1
@@ -2733,6 +2700,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   displayPizza: {fileID: 1333519756}
+  displayPizzaObject: {fileID: 1333519753}
   locManager: {fileID: 2104590667}
   numOfIngredientsMax: 3
   numOfIngredientsMin: 1
@@ -3288,7 +3256,7 @@ GameObject:
   - component: {fileID: 940319412}
   - component: {fileID: 940319411}
   m_Layer: 0
-  m_Name: PizzaIdisplat003
+  m_Name: PizzaIdisplay003
   m_TagString: pizza
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3847,6 +3815,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   displayPizza: {fileID: 940319412}
+  displayPizzaObject: {fileID: 940319409}
   locManager: {fileID: 2104590667}
   numOfIngredientsMax: 3
   numOfIngredientsMin: 1
@@ -3959,7 +3928,7 @@ GameObject:
   - component: {fileID: 1076685314}
   - component: {fileID: 1076685313}
   m_Layer: 0
-  m_Name: PizzaIdisplat001
+  m_Name: PizzaIdisplay001
   m_TagString: pizza
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4092,7 +4061,7 @@ GameObject:
   - component: {fileID: 1223129901}
   - component: {fileID: 1223129900}
   m_Layer: 0
-  m_Name: PizzaIdisplat002
+  m_Name: PizzaIdisplay002
   m_TagString: pizza
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4611,7 +4580,7 @@ GameObject:
   - component: {fileID: 1333519756}
   - component: {fileID: 1333519755}
   m_Layer: 0
-  m_Name: PizzaIdisplat004
+  m_Name: PizzaIdisplay004
   m_TagString: pizza
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5156,6 +5125,30 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1628271811}
+        m_TargetAssemblyTypeName: pizzaManager, Assembly-CSharp
+        m_MethodName: ClearPizza
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 349078647}
+        m_TargetAssemblyTypeName: pizzaManager, Assembly-CSharp
+        m_MethodName: ClearPizza
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1292775120}
         m_TargetAssemblyTypeName: pizzaManager, Assembly-CSharp
         m_MethodName: ClearPizza
         m_Mode: 1
@@ -5796,6 +5789,7 @@ GameObject:
   - component: {fileID: 1628271812}
   - component: {fileID: 1628271811}
   - component: {fileID: 1628271810}
+  - component: {fileID: 1628271815}
   m_Layer: 0
   m_Name: PizzaPlayer2
   m_TagString: pizza
@@ -5954,6 +5948,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 338913586}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1628271815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1628271809}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a5941e10c40e59479c60670b8ce6e4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1645939003
 GameObject:
   m_ObjectHideFlags: 0

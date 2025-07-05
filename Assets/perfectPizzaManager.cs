@@ -52,7 +52,7 @@ public class PerfectPizzaManager : MonoBehaviour
 
         do
         {
-            selectedIngredients = new List<string> { "sauce" };
+            selectedIngredients = new List<string>();
             int extra = Random.Range(numOfIngredientsMin, numOfIngredientsMax);
 
             List<string> ingredientNames = ingredients

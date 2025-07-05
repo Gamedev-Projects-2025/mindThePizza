@@ -5,15 +5,16 @@ using System.Collections.Generic;
 
 public class PizzaChecker : MonoBehaviour
 {
-    [SerializeField] private GameObject pizzaObjectToCheck;
-    [SerializeField] private GameObject perfectPizzaObject;
+    [SerializeField] private List<GameObject> pizzaObjectToCheck;
+    [SerializeField] private List<GameObject> perfectPizzaObject;
+    [SerializeField] private List<GameObject> displayPizzaObject;
     [SerializeField] private string gameoverScene;
 
-    private Pizza pizzaToCheck;
-    private Pizza perfectPizza;
-    private PerfectPizzaManager perfectPizzaManagerScript;
+    private List<Pizza> pizzaToCheck;
+    private List<Pizza> perfectPizza;
+    private List<PerfectPizzaManager> perfectPizzaManagerScript;
+
     private float startTime = 0;
-    private bool hadIngredient = false;
     private int hint_timer = 0;
 
     public GameObject successImage;
@@ -23,14 +24,14 @@ public class PizzaChecker : MonoBehaviour
     public AudioClip right, wrong;
     public SlideItem slideObject;
 
-    [SerializeField] private GameObject ingredientParentObject; // Bar object
+    [SerializeField] private GameObject ingredientParentObject;
     [SerializeField] private float hintFlashTime = 0.3f;
     [SerializeField] private int hintFlashCount = 6;
-    [SerializeField] private int flashFailsCount = 3; // Times of failed attempts before flashing
+    [SerializeField] private int flashFailsCount = 3;
     [SerializeField] private GameObject flashingPizzaObject;
     [SerializeField] private List<SpriteRenderer> allBarIngredients;
 
-    [SerializeField] private int audioFailsCount = 1; // Times of failed attempts before playing audio 
+    [SerializeField] private int audioFailsCount = 1;
     [SerializeField] private AudioSource hintAudioSource;
 
     [System.Serializable]
@@ -41,19 +42,6 @@ public class PizzaChecker : MonoBehaviour
     }
     [SerializeField] private List<IngredientAudioEntry> ingredientAudioList;
 
-    // Clone sprite name → Bar sprite name
-    private readonly Dictionary<string, string> spriteNameMap = new Dictionary<string, string>()
-    {
-        { "shroom_topping", "shroomSlice_0" },
-        { "grated_cheese", "Gratedcheese_0" },
-        { "olives_topping", "oliceSliced_0" },
-        { "tomato_sauce_0", "Paste_0" },
-        { "sausage_topping", "pep_0" },
-        { "cornSprite_0", "corn" },
-        { "pineappleSlices", "pine_0" }
-    };
-
-    // FlashingPizzaObject sprite name → Bar sprite name
     private readonly Dictionary<string, string> flashingSpriteMap = new Dictionary<string, string>()
     {
         { "shroom_topping", "shroomSlice_0" },
@@ -65,7 +53,6 @@ public class PizzaChecker : MonoBehaviour
         { "pineappleSlices", "pine_0" }
     };
 
-    // sprite name → audio clip name (gets loaded in the start function)
     private Dictionary<string, AudioClip> ingredientAudioMap = new Dictionary<string, AudioClip>()
     {
         { "shroom_topping", null },
@@ -79,60 +66,130 @@ public class PizzaChecker : MonoBehaviour
 
     void Start()
     {
+        pizzaToCheck = new List<Pizza>();
+        perfectPizza = new List<Pizza>();
+        perfectPizzaManagerScript = new List<PerfectPizzaManager>();
+
         if (pizzaObjectToCheck == null || perfectPizzaObject == null)
         {
             Debug.LogError("Missing references!");
             return;
         }
 
-        pizzaToCheck = pizzaObjectToCheck.GetComponent<pizzaManager>().myPizza;
-        perfectPizza = perfectPizzaObject.GetComponent<PerfectPizzaManager>().displayPizza.myPizza;
-        perfectPizzaManagerScript = perfectPizzaObject.GetComponent<PerfectPizzaManager>();
+        foreach (GameObject pizzaObject in pizzaObjectToCheck)
+            pizzaToCheck.Add(pizzaObject.GetComponent<pizzaManager>().myPizza);
+
+        foreach (GameObject pizzaObjectPerfect in perfectPizzaObject)
+        {
+            perfectPizza.Add(pizzaObjectPerfect.GetComponent<PerfectPizzaManager>().displayPizza.myPizza);
+            perfectPizzaManagerScript.Add(pizzaObjectPerfect.GetComponent<PerfectPizzaManager>());
+        }
 
         startTime = Time.time;
 
         foreach (var entry in ingredientAudioList)
         {
             if (!string.IsNullOrEmpty(entry.ingredientSpriteName) && entry.clip != null)
-            {
                 ingredientAudioMap[entry.ingredientSpriteName] = entry.clip;
-            }
         }
 
+        // ✅ Enforce numberOfPizzas limit
+        int limit = Mathf.Min(gameManager.numberOfPizzas, pizzaToCheck.Count, perfectPizza.Count);
+
+        // Destroy excess player pizzas
+        for (int i = pizzaObjectToCheck.Count - 1; i >= limit; i--)
+        {
+            Destroy(pizzaObjectToCheck[i]);
+            pizzaObjectToCheck.RemoveAt(i);
+            pizzaToCheck.RemoveAt(i);
+        }
+
+        // Destroy excess perfect pizzas
+        for (int i = perfectPizzaObject.Count - 1; i >= limit; i--)
+        {
+            Destroy(perfectPizzaObject[i]);
+            perfectPizzaObject.RemoveAt(i);
+            perfectPizza.RemoveAt(i);
+            perfectPizzaManagerScript.RemoveAt(i);
+        }
     }
 
-    public IEnumerator Check()
+
+    public void Check()
     {
-        foreach (Ingredient ingredient in perfectPizza.GetIngredients())
-        {
-            if (pizzaToCheck.GetIngredients().Last().nameIngredient == ingredient.nameIngredient)
-            {
-                Debug.Log("found it!");
-                hadIngredient = true;
-            }
-            Debug.Log($"{pizzaToCheck.GetIngredients().Last().nameIngredient} =/= {ingredient.nameIngredient}");
-        }
-
-        if (!hadIngredient)
-        {
-            gameManager.timesPutWrongIngredient++;
-            Debug.Log("oh no");
-        }
-
-        hadIngredient = false;
-
-        if ((pizzaToCheck.GetIngredients().Count == perfectPizza.GetIngredients().Count) && gameManager.autoDeliver)
-        {
-            yield return StartCoroutine(CheckFunction());
-        }
+        if (AllPizzasAssembled())
+            StartCoroutine(CheckFunction());
     }
+
+    private bool AllPizzasAssembled()
+    {
+        // Track which player pizzas have already been used
+        HashSet<int> usedPlayerIndexes = new HashSet<int>();
+
+        foreach (var perfect in perfectPizza)
+        {
+            bool foundMatch = false;
+
+            for (int i = 0; i < pizzaToCheck.Count; i++)
+            {
+                if (usedPlayerIndexes.Contains(i))
+                    continue; // Skip already matched player pizzas
+
+                var player = pizzaToCheck[i];
+
+                if (player.GetIngredients().Count >= perfect.GetIngredients().Count)
+                {
+                    usedPlayerIndexes.Add(i);
+                    foundMatch = true;
+                    break;
+                }
+            }
+
+            if (!foundMatch)
+                return false; // This perfect pizza had no available match
+        }
+
+        return true; // All perfect pizzas found a unique match
+    }
+
+
 
     public IEnumerator CheckFunction()
     {
         yield return StartCoroutine(slideObject.SlideRoutineUP());
 
-        if (perfectPizza.CompareTo(pizzaToCheck))
+        int perfectCount = perfectPizza.Count;
+        int playerCount = pizzaToCheck.Count;
+
+        // Track which perfect pizzas and player pizzas were used in a match
+        bool[] perfectMatched = new bool[perfectCount];
+        bool[] playerMatched = new bool[playerCount];
+
+        // Try to match each perfect pizza with a unique player pizza
+        for (int i = 0; i < perfectCount; i++)
         {
+            for (int j = 0; j < playerCount; j++)
+            {
+                if (playerMatched[j]) continue;
+
+                if (PizzaMatches(pizzaToCheck[j], perfectPizza[i]))
+                {
+                    perfectMatched[i] = true;
+                    playerMatched[j] = true;
+                    Debug.Log($"Perfect pizza {i} matched with player pizza {j}");
+                    break;
+                }
+            }
+        }
+
+        bool allPerfectMatched = perfectMatched.All(m => m == true);
+        bool extraWrongPizzaExists = playerMatched.Count(m => m) != perfectCount;
+
+        if (allPerfectMatched && !extraWrongPizzaExists)
+        {
+            // ✅ SUCCESS
+            Debug.Log("SUCCESS: All perfect pizzas matched and no extras.");
+
             gameObject.GetComponent<AudioSource>().clip = right;
             gameManager.piesMade++;
 
@@ -141,8 +198,16 @@ public class PizzaChecker : MonoBehaviour
             gameManager.timeTakenToAssemble = (int)(gameManager.totalTime / gameManager.piesMade);
             startTime = Time.time;
 
-            pizzaObjectToCheck.GetComponent<pizzaManager>().ClearPizza();
-            perfectPizzaManagerScript.CheckPizzaCorrect();
+            // Clear only matched player pizzas
+            for (int i = 0; i < playerCount; i++)
+            {
+                if (playerMatched[i])
+                    pizzaObjectToCheck[i].GetComponent<pizzaManager>().ClearPizza();
+            }
+
+            foreach (var ppm in perfectPizzaManagerScript)
+                ppm.CheckPizzaCorrect();
+
             StartCoroutine(FlashImage(successImage));
             gameObject.GetComponent<AudioSource>().Play();
 
@@ -151,6 +216,9 @@ public class PizzaChecker : MonoBehaviour
         }
         else
         {
+            // ❌ FAILURE
+            Debug.LogWarning("FAIL: Not all perfect pizzas matched, or extras were present.");
+
             startTime = Time.time;
             gameObject.GetComponent<AudioSource>().clip = wrong;
             gameManager.piesFailed++;
@@ -163,21 +231,34 @@ public class PizzaChecker : MonoBehaviour
             if (hint_timer % audioFailsCount == 0)
                 yield return StartCoroutine(PlayAudioHint());
 
-
             if (hint_timer % flashFailsCount == 0)
                 yield return StartCoroutine(FlashHint());
 
+            // Clear all pizzas
+            foreach (var pizza in pizzaObjectToCheck)
+                pizza.GetComponent<pizzaManager>().ClearPizza();
 
-            pizzaObjectToCheck.GetComponent<pizzaManager>().ClearPizza();
             yield return new WaitForSeconds(waitTime);
             yield return StartCoroutine(slideObject.SlideRoutineDOWN());
         }
     }
 
-    public void checkButton()
+
+
+    private bool PizzaMatches(Pizza playerPizza, Pizza targetPizza)
     {
-        StartCoroutine(CheckFunction());
+        var playerIngredients = playerPizza.GetIngredients().Select(i => i.nameIngredient).ToList();
+        var targetIngredients = targetPizza.GetIngredients().Select(i => i.nameIngredient).ToList();
+
+        foreach (string required in targetIngredients)
+        {
+            if (!playerIngredients.Contains(required))
+                return false;
+        }
+
+        return true;
     }
+
 
     private IEnumerator FlashImage(GameObject image)
     {
@@ -188,22 +269,13 @@ public class PizzaChecker : MonoBehaviour
 
     private IEnumerator FlashHint()
     {
-        Debug.Log("entered FlashHint");
-
         if (flashingPizzaObject == null || allBarIngredients == null)
-        {
-            Debug.LogWarning("Missing flashingPizzaObject or allBarIngredients");
             yield break;
-        }
 
         var pizzaManager = flashingPizzaObject.GetComponent<pizzaManager>();
         if (pizzaManager == null)
-        {
-            Debug.LogWarning("pizzaManager missing on flashingPizzaObject");
             yield break;
-        }
 
-        // Extract ingredients (the ones that should flash)
         var flashIngredientObjects = pizzaManager.GetIngredientClones();
         var flashNames = new List<string>();
 
@@ -211,42 +283,23 @@ public class PizzaChecker : MonoBehaviour
         {
             var sr = obj.GetComponent<SpriteRenderer>();
             if (sr != null && sr.sprite != null)
-            {
-                string spriteName = sr.sprite.name;
-                flashNames.Add(spriteName);
-                Debug.Log($"Need to flash ingredient sprite: {spriteName}");
-            }
+                flashNames.Add(sr.sprite.name);
         }
 
-        // Map ingredient sprite names to bar sprite names
         var mappedBarNames = new HashSet<string>();
         foreach (var name in flashNames)
         {
             if (flashingSpriteMap.TryGetValue(name, out var mapped))
-            {
                 mappedBarNames.Add(mapped);
-                Debug.Log($"Mapped {name} → {mapped}");
-            }
-            else
-            {
-                Debug.LogWarning($"No mapping found for: {name}");
-            }
         }
 
-        // Find matching bar ingredient sprites
         var flashTargets = new List<SpriteRenderer>();
         foreach (var sr in allBarIngredients)
         {
             if (sr != null && sr.sprite != null && mappedBarNames.Contains(sr.sprite.name))
-            {
-                Debug.Log($"Matched bar sprite: {sr.sprite.name}");
                 flashTargets.Add(sr);
-            }
         }
 
-        Debug.Log($"Total flash targets: {flashTargets.Count}");
-
-        // Flash them
         for (int i = 0; i < hintFlashCount; i++)
         {
             foreach (var sr in flashTargets)
@@ -287,14 +340,9 @@ public class PizzaChecker : MonoBehaviour
                 hintAudioSource.Stop();
                 hintAudioSource.clip = clip;
                 hintAudioSource.Play();
-                Debug.Log($"Playing audio hint for: {spriteName}");
 
-                yield return new WaitWhile(() => hintAudioSource.isPlaying); // Wait until it finishes
-                yield return new WaitForSeconds(0.1f); // Short delay between clips
-            }
-            else
-            {
-                Debug.LogWarning($"No audio clip mapped for: {spriteName}");
+                yield return new WaitWhile(() => hintAudioSource.isPlaying);
+                yield return new WaitForSeconds(0.1f);
             }
         }
     }

@@ -27,7 +27,7 @@ public class pizzaManager : MonoBehaviour
             Destroy(IngredientSelector.currentIngredient);
             if (PizzaChecker != null)
             {
-                StartCoroutine(PizzaChecker.Check());
+                PizzaChecker.Check();
             }
         }
     }
@@ -62,7 +62,7 @@ public class pizzaManager : MonoBehaviour
             Destroy(clone);
         }
         ingredientClones.Clear();
-        GetComponent<SpriteRenderer>().sprite = originalPizzaSprite;
+
     }
 
     public List<GameObject> GetIngredientClones()

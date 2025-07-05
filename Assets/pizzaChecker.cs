@@ -28,7 +28,6 @@ public class PizzaChecker : MonoBehaviour
     [SerializeField] private float hintFlashTime = 0.3f;
     [SerializeField] private int hintFlashCount = 6;
     [SerializeField] private int flashFailsCount = 3;
-    [SerializeField] private GameObject flashingPizzaObject;
     [SerializeField] private List<SpriteRenderer> allBarIngredients;
 
     [SerializeField] private int audioFailsCount = 1;
@@ -111,6 +110,12 @@ public class PizzaChecker : MonoBehaviour
             perfectPizzaObject.RemoveAt(i);
             perfectPizza.RemoveAt(i);
             perfectPizzaManagerScript.RemoveAt(i);
+        }
+
+        for (int i = displayPizzaObject.Count - 1; i >= limit; i--)
+        {
+            Destroy(displayPizzaObject[i]);
+            displayPizzaObject.RemoveAt(i);
         }
     }
 
@@ -269,81 +274,88 @@ public class PizzaChecker : MonoBehaviour
 
     private IEnumerator FlashHint()
     {
-        if (flashingPizzaObject == null || allBarIngredients == null)
-            yield break;
-
-        var pizzaManager = flashingPizzaObject.GetComponent<pizzaManager>();
-        if (pizzaManager == null)
-            yield break;
-
-        var flashIngredientObjects = pizzaManager.GetIngredientClones();
-        var flashNames = new List<string>();
-
-        foreach (var obj in flashIngredientObjects)
+        foreach (GameObject pizza in displayPizzaObject)
         {
-            var sr = obj.GetComponent<SpriteRenderer>();
-            if (sr != null && sr.sprite != null)
-                flashNames.Add(sr.sprite.name);
-        }
+            if (pizza == null || allBarIngredients == null)
+                yield break;
 
-        var mappedBarNames = new HashSet<string>();
-        foreach (var name in flashNames)
-        {
-            if (flashingSpriteMap.TryGetValue(name, out var mapped))
-                mappedBarNames.Add(mapped);
-        }
+            var pizzaManager = pizza.GetComponent<pizzaManager>();
+            if (pizzaManager == null)
+                yield break;
 
-        var flashTargets = new List<SpriteRenderer>();
-        foreach (var sr in allBarIngredients)
-        {
-            if (sr != null && sr.sprite != null && mappedBarNames.Contains(sr.sprite.name))
-                flashTargets.Add(sr);
-        }
+            var flashIngredientObjects = pizzaManager.GetIngredientClones();
+            var flashNames = new List<string>();
 
-        for (int i = 0; i < hintFlashCount; i++)
-        {
-            foreach (var sr in flashTargets)
-                sr.enabled = false;
+            foreach (var obj in flashIngredientObjects)
+            {
+                var sr = obj.GetComponent<SpriteRenderer>();
+                if (sr != null && sr.sprite != null)
+                    flashNames.Add(sr.sprite.name);
+            }
 
-            yield return new WaitForSeconds(hintFlashTime);
+            var mappedBarNames = new HashSet<string>();
+            foreach (var name in flashNames)
+            {
+                if (flashingSpriteMap.TryGetValue(name, out var mapped))
+                    mappedBarNames.Add(mapped);
+            }
 
-            foreach (var sr in flashTargets)
-                sr.enabled = true;
+            var flashTargets = new List<SpriteRenderer>();
+            foreach (var sr in allBarIngredients)
+            {
+                if (sr != null && sr.sprite != null && mappedBarNames.Contains(sr.sprite.name))
+                    flashTargets.Add(sr);
+            }
 
-            yield return new WaitForSeconds(hintFlashTime);
+            for (int i = 0; i < hintFlashCount; i++)
+            {
+                foreach (var sr in flashTargets)
+                    sr.enabled = false;
+
+                yield return new WaitForSeconds(hintFlashTime);
+
+                foreach (var sr in flashTargets)
+                    sr.enabled = true;
+
+                yield return new WaitForSeconds(hintFlashTime);
+            }
         }
     }
 
     private IEnumerator PlayAudioHint()
     {
-        if (flashingPizzaObject == null || hintAudioSource == null || ingredientAudioMap == null)
-            yield break;
-
-        var pizzaManager = flashingPizzaObject.GetComponent<pizzaManager>();
-        if (pizzaManager == null)
-            yield break;
-
-        var clones = pizzaManager.GetIngredientClones();
-        if (clones.Count == 0)
-            yield break;
-
-        foreach (var clone in clones)
+        foreach (GameObject pizza in displayPizzaObject)
         {
-            var sr = clone.GetComponent<SpriteRenderer>();
-            if (sr == null || sr.sprite == null)
-                continue;
+            if (pizza == null || hintAudioSource == null || ingredientAudioMap == null)
+                yield break;
 
-            string spriteName = sr.sprite.name;
+            var pizzaManager = pizza.GetComponent<pizzaManager>();
+            if (pizzaManager == null)
+                yield break;
 
-            if (ingredientAudioMap.TryGetValue(spriteName, out AudioClip clip) && clip != null)
+            var clones = pizzaManager.GetIngredientClones();
+            if (clones.Count == 0)
+                yield break;
+
+            foreach (var clone in clones)
             {
-                hintAudioSource.Stop();
-                hintAudioSource.clip = clip;
-                hintAudioSource.Play();
+                var sr = clone.GetComponent<SpriteRenderer>();
+                if (sr == null || sr.sprite == null)
+                    continue;
 
-                yield return new WaitWhile(() => hintAudioSource.isPlaying);
-                yield return new WaitForSeconds(0.1f);
+                string spriteName = sr.sprite.name;
+
+                if (ingredientAudioMap.TryGetValue(spriteName, out AudioClip clip) && clip != null)
+                {
+                    hintAudioSource.Stop();
+                    hintAudioSource.clip = clip;
+                    hintAudioSource.Play();
+
+                    yield return new WaitWhile(() => hintAudioSource.isPlaying);
+                    yield return new WaitForSeconds(0.1f);
+                }
             }
         }
+
     }
 }

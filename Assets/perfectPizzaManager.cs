@@ -9,6 +9,7 @@ using UnityEngine.U2D;
 public class PerfectPizzaManager : MonoBehaviour
 {
     public pizzaManager displayPizza;
+    public GameObject displayPizzaObject;
     public SetLocIngredient locManager;
     [SerializeField] private int numOfIngredientsMax = 3;
     [SerializeField] private int numOfIngredientsMin = 1;

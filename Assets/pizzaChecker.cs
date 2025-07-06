@@ -141,9 +141,11 @@ public class PizzaChecker : MonoBehaviour
         return true;
     }
 
+
     public IEnumerator CheckFunction()
     {
         yield return StartCoroutine(slideObject.SlideRoutineUP());
+
 
         bool allCorrect = true;
 
@@ -176,8 +178,12 @@ public class PizzaChecker : MonoBehaviour
             StartCoroutine(FlashImage(successImage));
             gameObject.GetComponent<AudioSource>().Play();
 
+
+
             yield return new WaitForSeconds(waitTime);
             yield return StartCoroutine(slideObject.SlideRoutineDOWN());
+
+
         }
         else
         {

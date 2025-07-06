@@ -1,0 +1,8099 @@
+fileFormatVersion: 2
+guid: 48ec28fc2cea3094c9cab136703d51b9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4927205990171520574
+    second: instruct_0
+  - first:
+      213: 7570674271305833358
+    second: instruct_1
+  - first:
+      213: -6820436701372160311
+    second: instruct_2
+  - first:
+      213: 9200174756190921567
+    second: instruct_3
+  - first:
+      213: -819408801506658880
+    second: instruct_4
+  - first:
+      213: 1182171533052602432
+    second: instruct_5
+  - first:
+      213: -4890918122149426882
+    second: instruct_6
+  - first:
+      213: -3716598388929197967
+    second: instruct_7
+  - first:
+      213: -3329352841462370450
+    second: instruct_8
+  - first:
+      213: -6017776198496612474
+    second: instruct_9
+  - first:
+      213: 8675660280523087798
+    second: instruct_10
+  - first:
+      213: 3598094839333404894
+    second: instruct_11
+  - first:
+      213: -7565167453302103685
+    second: instruct_12
+  - first:
+      213: -619125711420271465
+    second: instruct_13
+  - first:
+      213: 8119163472132089763
+    second: instruct_14
+  - first:
+      213: -4462206862795415154
+    second: instruct_15
+  - first:
+      213: 4660726741997469395
+    second: instruct_16
+  - first:
+      213: -2783035050665974191
+    second: instruct_17
+  - first:
+      213: 6610921275086549869
+    second: instruct_18
+  - first:
+      213: -6160852141239947465
+    second: instruct_19
+  - first:
+      213: 4488980357376856170
+    second: instruct_20
+  - first:
+      213: 8143673160774062148
+    second: instruct_21
+  - first:
+      213: -5712878213783058486
+    second: instruct_22
+  - first:
+      213: 6290337814874892770
+    second: instruct_23
+  - first:
+      213: 1529778817718424793
+    second: instruct_24
+  - first:
+      213: 1045378175013057123
+    second: instruct_25
+  - first:
+      213: -5060884685791567864
+    second: instruct_26
+  - first:
+      213: -3564480380803612553
+    second: instruct_27
+  - first:
+      213: -2036019858766910315
+    second: instruct_28
+  - first:
+      213: -9097661809491336729
+    second: instruct_29
+  - first:
+      213: 1298192538871459822
+    second: instruct_30
+  - first:
+      213: 3466859158972450778
+    second: instruct_31
+  - first:
+      213: -5528973481806166111
+    second: instruct_32
+  - first:
+      213: 8660295459299733293
+    second: instruct_33
+  - first:
+      213: 5629236160260316305
+    second: instruct_34
+  - first:
+      213: -267762418253576520
+    second: instruct_35
+  - first:
+      213: 2483777960308752693
+    second: instruct_36
+  - first:
+      213: -5223413464308208594
+    second: instruct_37
+  - first:
+      213: 7918741178125045043
+    second: instruct_38
+  - first:
+      213: 9050846542309068381
+    second: instruct_39
+  - first:
+      213: -3467997777713041538
+    second: instruct_40
+  - first:
+      213: 5502593992100537213
+    second: instruct_41
+  - first:
+      213: -4720951230814197031
+    second: instruct_42
+  - first:
+      213: 430256431104356891
+    second: instruct_43
+  - first:
+      213: 623606881689637503
+    second: instruct_44
+  - first:
+      213: 7618099412864203472
+    second: instruct_45
+  - first:
+      213: 183553049147202696
+    second: instruct_46
+  - first:
+      213: -5321309261670834011
+    second: instruct_47
+  - first:
+      213: 7708829062158112254
+    second: instruct_48
+  - first:
+      213: -2449286107377247539
+    second: instruct_49
+  - first:
+      213: 2760067244804459848
+    second: instruct_50
+  - first:
+      213: -2124244666021322090
+    second: instruct_51
+  - first:
+      213: 8390447869069276316
+    second: instruct_52
+  - first:
+      213: -7407764451726095922
+    second: instruct_53
+  - first:
+      213: 3682320079750917924
+    second: instruct_54
+  - first:
+      213: -3194181307383624521
+    second: instruct_55
+  - first:
+      213: -7197580109378529790
+    second: instruct_56
+  - first:
+      213: -7824371548337822274
+    second: instruct_57
+  - first:
+      213: 3440694591198949020
+    second: instruct_58
+  - first:
+      213: 4166864177345363731
+    second: instruct_59
+  - first:
+      213: -5804803929054016916
+    second: instruct_60
+  - first:
+      213: 829114290147796283
+    second: instruct_61
+  - first:
+      213: 7302128580455709725
+    second: instruct_62
+  - first:
+      213: 5347057967562603149
+    second: instruct_63
+  - first:
+      213: -6004220615740070198
+    second: instruct_64
+  - first:
+      213: -1289572837580788055
+    second: instruct_65
+  - first:
+      213: 5583864390848326685
+    second: instruct_66
+  - first:
+      213: -3750456737871622206
+    second: instruct_67
+  - first:
+      213: 7058357706187781231
+    second: instruct_68
+  - first:
+      213: 2414920006252683692
+    second: instruct_69
+  - first:
+      213: -7230914058912491088
+    second: instruct_70
+  - first:
+      213: 5058654797578383998
+    second: instruct_71
+  - first:
+      213: 4620206424227568255
+    second: instruct_72
+  - first:
+      213: 3828326382810912250
+    second: instruct_73
+  - first:
+      213: -8776600989755504226
+    second: instruct_74
+  - first:
+      213: -6703596302720528838
+    second: instruct_75
+  - first:
+      213: 8598373965557454598
+    second: instruct_76
+  - first:
+      213: 4135615891671845752
+    second: instruct_77
+  - first:
+      213: 1567727005360299612
+    second: instruct_78
+  - first:
+      213: -7974790796227958570
+    second: instruct_79
+  - first:
+      213: 1042103239145098888
+    second: instruct_80
+  - first:
+      213: 2077194850795868184
+    second: instruct_81
+  - first:
+      213: 8808746388028289905
+    second: instruct_82
+  - first:
+      213: 2453659805125853350
+    second: instruct_83
+  - first:
+      213: -4008440654752481814
+    second: instruct_84
+  - first:
+      213: -4345677074104643869
+    second: instruct_85
+  - first:
+      213: 849833163233422045
+    second: instruct_86
+  - first:
+      213: -5313423950025674667
+    second: instruct_87
+  - first:
+      213: -2207702781679056900
+    second: instruct_88
+  - first:
+      213: 7072155434790565575
+    second: instruct_89
+  - first:
+      213: 3277906468217975146
+    second: instruct_90
+  - first:
+      213: 3122990428689836727
+    second: instruct_91
+  - first:
+      213: -225901342140840919
+    second: instruct_92
+  - first:
+      213: 2097631203482123848
+    second: instruct_93
+  - first:
+      213: 2381258531815351425
+    second: instruct_94
+  - first:
+      213: 3835520328542356264
+    second: instruct_95
+  - first:
+      213: -852982464096415478
+    second: instruct_96
+  - first:
+      213: -5776571086028703273
+    second: instruct_97
+  - first:
+      213: -7702146318031629529
+    second: instruct_98
+  - first:
+      213: 5855273773659793331
+    second: instruct_99
+  - first:
+      213: 8191397089954047625
+    second: instruct_100
+  - first:
+      213: -3019761892787232877
+    second: instruct_101
+  - first:
+      213: -6675923887816402444
+    second: instruct_102
+  - first:
+      213: -885212691340252954
+    second: instruct_103
+  - first:
+      213: -213242869750320778
+    second: instruct_104
+  - first:
+      213: 6390535975900231279
+    second: instruct_105
+  - first:
+      213: -3994964639067617451
+    second: instruct_106
+  - first:
+      213: 5706467060308016566
+    second: instruct_107
+  - first:
+      213: -1514894753254041492
+    second: instruct_108
+  - first:
+      213: -5435482849165722887
+    second: instruct_109
+  - first:
+      213: 1267393976732106108
+    second: instruct_110
+  - first:
+      213: 1553578727657848980
+    second: instruct_111
+  - first:
+      213: -340173806422466770
+    second: instruct_112
+  - first:
+      213: 3682698524239372437
+    second: instruct_113
+  - first:
+      213: -1442667480261223213
+    second: instruct_114
+  - first:
+      213: -665665963431566915
+    second: instruct_115
+  - first:
+      213: 8884789404041766665
+    second: instruct_116
+  - first:
+      213: -5693989830140608517
+    second: instruct_117
+  - first:
+      213: -4395476572016327532
+    second: instruct_118
+  - first:
+      213: -7613118263226721463
+    second: instruct_119
+  - first:
+      213: 7039562731446632515
+    second: instruct_120
+  - first:
+      213: 6282633768047165247
+    second: instruct_121
+  - first:
+      213: -1448141993408581451
+    second: instruct_122
+  - first:
+      213: 9223259923967489461
+    second: instruct_123
+  - first:
+      213: 5578660588485093249
+    second: instruct_124
+  - first:
+      213: 7156193988496420918
+    second: instruct_125
+  - first:
+      213: -3117615132808831641
+    second: instruct_126
+  - first:
+      213: 2872927003339781873
+    second: instruct_127
+  - first:
+      213: -5750581131417288144
+    second: instruct_128
+  - first:
+      213: -3985279577261725076
+    second: instruct_129
+  - first:
+      213: -6159218857262034187
+    second: instruct_130
+  - first:
+      213: -6055775997642893948
+    second: instruct_131
+  - first:
+      213: -4334621604190802302
+    second: instruct_132
+  - first:
+      213: 3592220810439801499
+    second: instruct_133
+  - first:
+      213: -6363881803061452226
+    second: instruct_134
+  - first:
+      213: -6401618849701585953
+    second: instruct_135
+  - first:
+      213: -2067203898457862131
+    second: instruct_136
+  - first:
+      213: -5383989075184917678
+    second: instruct_137
+  - first:
+      213: 1719542101143569118
+    second: instruct_138
+  - first:
+      213: -6055739913937668182
+    second: instruct_139
+  - first:
+      213: 399562067865620558
+    second: instruct_140
+  - first:
+      213: 8290470636951063275
+    second: instruct_141
+  - first:
+      213: -8486312830765323744
+    second: instruct_142
+  - first:
+      213: 1232958721610636596
+    second: instruct_143
+  - first:
+      213: 8540721303190158815
+    second: instruct_144
+  - first:
+      213: 5507216670666182141
+    second: instruct_145
+  - first:
+      213: 547041307921911099
+    second: instruct_146
+  - first:
+      213: -6354649095423203026
+    second: instruct_147
+  - first:
+      213: -3160803131220318031
+    second: instruct_148
+  - first:
+      213: 6270817010260223805
+    second: instruct_149
+  - first:
+      213: 6533714853838712866
+    second: instruct_150
+  - first:
+      213: 1030548804898961263
+    second: instruct_151
+  - first:
+      213: 4971903329348648458
+    second: instruct_152
+  - first:
+      213: -6775239659196228885
+    second: instruct_153
+  - first:
+      213: 3999565949931442
+    second: instruct_154
+  - first:
+      213: -8781599094463312258
+    second: instruct_155
+  - first:
+      213: -307339325420740205
+    second: instruct_156
+  - first:
+      213: -5201053501848618000
+    second: instruct_157
+  - first:
+      213: -6738532020129956901
+    second: instruct_158
+  - first:
+      213: 3572134829027769157
+    second: instruct_159
+  - first:
+      213: -3464404687791254259
+    second: instruct_160
+  - first:
+      213: 1881895511158937549
+    second: instruct_161
+  - first:
+      213: 3784189760078250784
+    second: instruct_162
+  - first:
+      213: -5066800742278399617
+    second: instruct_163
+  - first:
+      213: -2488041061678001377
+    second: instruct_164
+  - first:
+      213: -537665758968069280
+    second: instruct_165
+  - first:
+      213: 8563450168721878349
+    second: instruct_166
+  - first:
+      213: 955175180575527519
+    second: instruct_167
+  - first:
+      213: 3995593220186815789
+    second: instruct_168
+  - first:
+      213: -7528196628765981364
+    second: instruct_169
+  - first:
+      213: -6427438915448765716
+    second: instruct_170
+  - first:
+      213: 2948658327279405224
+    second: instruct_171
+  - first:
+      213: 2423993038758724959
+    second: instruct_172
+  - first:
+      213: 1746872024664392704
+    second: instruct_173
+  - first:
+      213: -7174582854171259898
+    second: instruct_174
+  - first:
+      213: 4895765101761690187
+    second: instruct_175
+  - first:
+      213: -3543841288561610909
+    second: instruct_176
+  - first:
+      213: 4797535979483359123
+    second: instruct_177
+  - first:
+      213: 6435190960666815467
+    second: instruct_178
+  - first:
+      213: -4045936553775957756
+    second: instruct_179
+  - first:
+      213: 2256252040540375613
+    second: instruct_180
+  - first:
+      213: -2175300919413235907
+    second: instruct_181
+  - first:
+      213: -4764651856643971691
+    second: instruct_182
+  - first:
+      213: 3167540198862125955
+    second: instruct_183
+  - first:
+      213: 142602050792646801
+    second: instruct_184
+  - first:
+      213: -5725752821348639937
+    second: instruct_185
+  - first:
+      213: 2880324969458579718
+    second: instruct_186
+  - first:
+      213: 8625697973560503546
+    second: instruct_187
+  - first:
+      213: 7404360046660726314
+    second: instruct_188
+  - first:
+      213: -750232457223794072
+    second: instruct_189
+  - first:
+      213: -1134745824496543622
+    second: instruct_190
+  - first:
+      213: 7352738616700879687
+    second: instruct_191
+  - first:
+      213: -9030401347025464409
+    second: instruct_192
+  - first:
+      213: -5187922252771391319
+    second: instruct_193
+  - first:
+      213: -9062123866401626374
+    second: instruct_194
+  - first:
+      213: 7871665896667317828
+    second: instruct_195
+  - first:
+      213: -4393462751910819960
+    second: instruct_196
+  - first:
+      213: -8070612184537073080
+    second: instruct_197
+  - first:
+      213: -5478758704978242844
+    second: instruct_198
+  - first:
+      213: 6630399378337047673
+    second: instruct_199
+  - first:
+      213: -7373489482468563206
+    second: instruct_200
+  - first:
+      213: 2044864703978392148
+    second: instruct_201
+  - first:
+      213: -6070624913645254868
+    second: instruct_202
+  - first:
+      213: -8453914656807696902
+    second: instruct_203
+  - first:
+      213: -6251179648805895328
+    second: instruct_204
+  - first:
+      213: 8266613362464355718
+    second: instruct_205
+  - first:
+      213: -4225912585291634439
+    second: instruct_206
+  - first:
+      213: -4480043795689161687
+    second: instruct_207
+  - first:
+      213: 6178538571773028788
+    second: instruct_208
+  - first:
+      213: -5700535222160586193
+    second: instruct_209
+  - first:
+      213: -8334585907938630394
+    second: instruct_210
+  - first:
+      213: 9102063710047907286
+    second: instruct_211
+  - first:
+      213: -578664298014774920
+    second: instruct_212
+  - first:
+      213: -829772198847635586
+    second: instruct_213
+  - first:
+      213: 6866242856203394660
+    second: instruct_214
+  - first:
+      213: -8858691816175065932
+    second: instruct_215
+  - first:
+      213: 5081783687474849430
+    second: instruct_216
+  - first:
+      213: 7935698489306062876
+    second: instruct_217
+  - first:
+      213: -6917839217231312646
+    second: instruct_218
+  - first:
+      213: 2006661793997991437
+    second: instruct_219
+  - first:
+      213: -8320775991736212157
+    second: instruct_220
+  - first:
+      213: -8200488123494485352
+    second: instruct_221
+  - first:
+      213: 5992693295995434358
+    second: instruct_222
+  - first:
+      213: -2629792317399745581
+    second: instruct_223
+  - first:
+      213: 617723172147270928
+    second: instruct_224
+  - first:
+      213: -4566414608473334623
+    second: instruct_225
+  - first:
+      213: 9199157207678275551
+    second: instruct_226
+  - first:
+      213: -5741492693413161467
+    second: instruct_227
+  - first:
+      213: 2165067604066223872
+    second: instruct_228
+  - first:
+      213: 5090865752374712349
+    second: instruct_229
+  - first:
+      213: 7780239090006205290
+    second: instruct_230
+  - first:
+      213: 4814709933759548306
+    second: instruct_231
+  - first:
+      213: -8108595565421297270
+    second: instruct_232
+  - first:
+      213: 7472729627634368535
+    second: instruct_233
+  - first:
+      213: 5663623038145473197
+    second: instruct_234
+  - first:
+      213: 7050125627003747779
+    second: instruct_235
+  - first:
+      213: -8007272790898574760
+    second: instruct_236
+  - first:
+      213: -861033482482837797
+    second: instruct_237
+  - first:
+      213: -8746409731144856793
+    second: instruct_238
+  - first:
+      213: 5418782300288293702
+    second: instruct_239
+  - first:
+      213: -8228469109320878236
+    second: instruct_240
+  - first:
+      213: 480599869580140708
+    second: instruct_241
+  - first:
+      213: -583063354525925897
+    second: instruct_242
+  - first:
+      213: -1330757182561923792
+    second: instruct_243
+  - first:
+      213: -3329718026183675398
+    second: instruct_244
+  - first:
+      213: 1945187891594563204
+    second: instruct_245
+  - first:
+      213: -7928866252329801351
+    second: instruct_246
+  - first:
+      213: -4404121149749593588
+    second: instruct_247
+  - first:
+      213: 6925184235581817528
+    second: instruct_248
+  - first:
+      213: 5970470535555474495
+    second: instruct_249
+  - first:
+      213: 8836867637379237301
+    second: instruct_250
+  - first:
+      213: 4047205719862116595
+    second: instruct_251
+  - first:
+      213: 6878423173242463518
+    second: instruct_252
+  - first:
+      213: -3281659778645071305
+    second: instruct_253
+  - first:
+      213: 731785166095498114
+    second: instruct_254
+  - first:
+      213: -6760181331014986521
+    second: instruct_255
+  - first:
+      213: -2935183070024230084
+    second: instruct_256
+  - first:
+      213: 4697893698160090486
+    second: instruct_257
+  - first:
+      213: 8289518674138725341
+    second: instruct_258
+  - first:
+      213: 5620081921551674894
+    second: instruct_259
+  - first:
+      213: -5684277038967092496
+    second: instruct_260
+  - first:
+      213: 4151854896936830337
+    second: instruct_261
+  - first:
+      213: 3810258646065968955
+    second: instruct_262
+  - first:
+      213: -5551468885179373613
+    second: instruct_263
+  - first:
+      213: 7972522793120477857
+    second: instruct_264
+  - first:
+      213: -1818296630678372385
+    second: instruct_265
+  - first:
+      213: -1920911159310032594
+    second: instruct_266
+  - first:
+      213: -3881567863949333251
+    second: instruct_267
+  - first:
+      213: 7487308575014015280
+    second: instruct_268
+  - first:
+      213: 8673190259783714150
+    second: instruct_269
+  - first:
+      213: 1101034371516899824
+    second: instruct_270
+  - first:
+      213: 7387085961883976700
+    second: instruct_271
+  - first:
+      213: 1261240380892345111
+    second: instruct_272
+  - first:
+      213: -7872758612586564722
+    second: instruct_273
+  - first:
+      213: -3618408753029741394
+    second: instruct_274
+  - first:
+      213: -6930465249916438095
+    second: instruct_275
+  - first:
+      213: -374894034729996962
+    second: instruct_276
+  - first:
+      213: -5183577199209770920
+    second: instruct_277
+  - first:
+      213: 6859803045023072152
+    second: instruct_278
+  - first:
+      213: 8487076701423439669
+    second: instruct_279
+  - first:
+      213: -7653584521298180694
+    second: instruct_280
+  - first:
+      213: 3076082524990672868
+    second: instruct_281
+  - first:
+      213: 9101778636674330368
+    second: instruct_282
+  - first:
+      213: 6393168896641023032
+    second: instruct_283
+  - first:
+      213: 1688314380975960161
+    second: instruct_284
+  - first:
+      213: 5867332335773267305
+    second: instruct_285
+  - first:
+      213: -4320242971588857338
+    second: instruct_286
+  - first:
+      213: 2567754645907442698
+    second: instruct_287
+  - first:
+      213: -3618551714037007343
+    second: instruct_288
+  - first:
+      213: -7292802367395377156
+    second: instruct_289
+  - first:
+      213: -750368135446337365
+    second: instruct_290
+  - first:
+      213: -818390323043100279
+    second: instruct_291
+  - first:
+      213: 2222595530764495982
+    second: instruct_292
+  - first:
+      213: -537521647573111348
+    second: instruct_293
+  - first:
+      213: -4132662589163504110
+    second: instruct_294
+  - first:
+      213: -3843478622402635087
+    second: instruct_295
+  - first:
+      213: 6572374386104305996
+    second: instruct_296
+  - first:
+      213: 6878848228028320730
+    second: instruct_297
+  - first:
+      213: 5500357127906591295
+    second: instruct_298
+  - first:
+      213: -7335231315540079142
+    second: instruct_299
+  - first:
+      213: 6008539852308588920
+    second: instruct_300
+  - first:
+      213: 4365741597050320621
+    second: instruct_301
+  - first:
+      213: 5632451636806306877
+    second: instruct_302
+  - first:
+      213: 4972032284136163166
+    second: instruct_303
+  - first:
+      213: -5989700080926301089
+    second: instruct_304
+  - first:
+      213: -6406224704177799229
+    second: instruct_305
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: instruct_0
+      rect:
+        serializedVersion: 2
+        x: 1390
+        y: 755
+        width: 10
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c156a4e14c0f9bb0800000000000000
+      internalID: -4927205990171520574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_1
+      rect:
+        serializedVersion: 2
+        x: 1404
+        y: 745
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8b9f5b7320701960800000000000000
+      internalID: 7570674271305833358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_2
+      rect:
+        serializedVersion: 2
+        x: 1435
+        y: 756
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c6eca1d4f0f851a0800000000000000
+      internalID: -6820436701372160311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_3
+      rect:
+        serializedVersion: 2
+        x: 1449
+        y: 756
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f53a64632369daf70800000000000000
+      internalID: 9200174756190921567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_4
+      rect:
+        serializedVersion: 2
+        x: 1461
+        y: 745
+        width: 25
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c5fd545900e0a4f0800000000000000
+      internalID: -819408801506658880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_5
+      rect:
+        serializedVersion: 2
+        x: 1486
+        y: 745
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 048ed23febae76010800000000000000
+      internalID: 1182171533052602432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_6
+      rect:
+        serializedVersion: 2
+        x: 1515
+        y: 756
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3943cf81e7ff1cb0800000000000000
+      internalID: -4890918122149426882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_7
+      rect:
+        serializedVersion: 2
+        x: 1528
+        y: 744
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1780617e47dfb6cc0800000000000000
+      internalID: -3716598388929197967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_8
+      rect:
+        serializedVersion: 2
+        x: 1556
+        y: 745
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6fa2b8fa33cbc1d0800000000000000
+      internalID: -3329352841462370450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_9
+      rect:
+        serializedVersion: 2
+        x: 1596
+        y: 745
+        width: 29
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68f0fc65e609c7ca0800000000000000
+      internalID: -6017776198496612474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_10
+      rect:
+        serializedVersion: 2
+        x: 1624
+        y: 745
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bf5b8c3f03266870800000000000000
+      internalID: 8675660280523087798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_11
+      rect:
+        serializedVersion: 2
+        x: 1655
+        y: 745
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed042ae51300fe130800000000000000
+      internalID: 3598094839333404894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_12
+      rect:
+        serializedVersion: 2
+        x: 1698
+        y: 735
+        width: 25
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b71e49f7840230790800000000000000
+      internalID: -7565167453302103685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_13
+      rect:
+        serializedVersion: 2
+        x: 1726
+        y: 745
+        width: 10
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 794db7b127c6867f0800000000000000
+      internalID: -619125711420271465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_14
+      rect:
+        serializedVersion: 2
+        x: 1738
+        y: 745
+        width: 25
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a7a2c529201da070800000000000000
+      internalID: 8119163472132089763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_15
+      rect:
+        serializedVersion: 2
+        x: 1764
+        y: 745
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e81e4c4008e0312c0800000000000000
+      internalID: -4462206862795415154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_16
+      rect:
+        serializedVersion: 2
+        x: 1390
+        y: 745
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3de3ceb374a3ea040800000000000000
+      internalID: 4660726741997469395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_17
+      rect:
+        serializedVersion: 2
+        x: 1034
+        y: 675
+        width: 25
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 156e797dd5ca069d0800000000000000
+      internalID: -2783035050665974191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_18
+      rect:
+        serializedVersion: 2
+        x: 1060
+        y: 685
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d633b9f9fd5bebb50800000000000000
+      internalID: 6610921275086549869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_19
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 684
+        width: 34
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73f20bf7e91408aa0800000000000000
+      internalID: -6160852141239947465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_20
+      rect:
+        serializedVersion: 2
+        x: 1135
+        y: 685
+        width: 32
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a605725f9df0c4e30800000000000000
+      internalID: 4488980357376856170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_21
+      rect:
+        serializedVersion: 2
+        x: 1169
+        y: 685
+        width: 25
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44012dab793240170800000000000000
+      internalID: 8143673160774062148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_22
+      rect:
+        serializedVersion: 2
+        x: 1195
+        y: 685
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac7846e5887c7b0b0800000000000000
+      internalID: -5712878213783058486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_23
+      rect:
+        serializedVersion: 2
+        x: 1227
+        y: 684
+        width: 34
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e923dc3ae4cb4750800000000000000
+      internalID: 6290337814874892770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_24
+      rect:
+        serializedVersion: 2
+        x: 1262
+        y: 685
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d41607cabdda3510800000000000000
+      internalID: 1529778817718424793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_25
+      rect:
+        serializedVersion: 2
+        x: 1293
+        y: 685
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 362799959ede18e00800000000000000
+      internalID: 1045378175013057123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_26
+      rect:
+        serializedVersion: 2
+        x: 1338
+        y: 696
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 800ed26213024c9b0800000000000000
+      internalID: -5060884685791567864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_27
+      rect:
+        serializedVersion: 2
+        x: 1351
+        y: 684
+        width: 34
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7700a55aafb688ec0800000000000000
+      internalID: -3564480380803612553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_28
+      rect:
+        serializedVersion: 2
+        x: 1387
+        y: 685
+        width: 29
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59cae8ac9ba9eb3e0800000000000000
+      internalID: -2036019858766910315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_29
+      rect:
+        serializedVersion: 2
+        x: 1415
+        y: 685
+        width: 25
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e1a1a629cc9eb180800000000000000
+      internalID: -9097661809491336729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_30
+      rect:
+        serializedVersion: 2
+        x: 1443
+        y: 685
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eefee796c3b140210800000000000000
+      internalID: 1298192538871459822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_31
+      rect:
+        serializedVersion: 2
+        x: 1487
+        y: 675
+        width: 27
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad7ccd07902cc1030800000000000000
+      internalID: 3466859158972450778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_32
+      rect:
+        serializedVersion: 2
+        x: 1517
+        y: 684
+        width: 34
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a7836c79e32543b0800000000000000
+      internalID: -5528973481806166111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_33
+      rect:
+        serializedVersion: 2
+        x: 1554
+        y: 685
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2f2d7506dc8f2870800000000000000
+      internalID: 8660295459299733293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_34
+      rect:
+        serializedVersion: 2
+        x: 1612
+        y: 675
+        width: 10
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19c991976701f1e40800000000000000
+      internalID: 5629236160260316305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_35
+      rect:
+        serializedVersion: 2
+        x: 1626
+        y: 685
+        width: 10
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b6cbcfcf77b84cf0800000000000000
+      internalID: -267762418253576520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_36
+      rect:
+        serializedVersion: 2
+        x: 1640
+        y: 684
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 531c52135e6287220800000000000000
+      internalID: 2483777960308752693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_37
+      rect:
+        serializedVersion: 2
+        x: 1669
+        y: 685
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2caae80125b287b0800000000000000
+      internalID: -5223413464308208594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_38
+      rect:
+        serializedVersion: 2
+        x: 1689
+        y: 685
+        width: 29
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33dc66e652505ed60800000000000000
+      internalID: 7918741178125045043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_39
+      rect:
+        serializedVersion: 2
+        x: 1733
+        y: 696
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5e87ee0af01b9d70800000000000000
+      internalID: 9050846542309068381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_40
+      rect:
+        serializedVersion: 2
+        x: 1745
+        y: 685
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7fe19935623fdfc0800000000000000
+      internalID: -3467997777713041538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_41
+      rect:
+        serializedVersion: 2
+        x: 1765
+        y: 685
+        width: 29
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d73e952f4142d5c40800000000000000
+      internalID: 5502593992100537213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_42
+      rect:
+        serializedVersion: 2
+        x: 1023
+        y: 684
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9da60654edfcb7eb0800000000000000
+      internalID: -4720951230814197031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_43
+      rect:
+        serializedVersion: 2
+        x: 1597
+        y: 677
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b127d4ac1f398f500800000000000000
+      internalID: 430256431104356891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_44
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 625
+        width: 32
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f729996a72f77a800800000000000000
+      internalID: 623606881689637503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_45
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 625
+        width: 10
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0daf167bd0de8b960800000000000000
+      internalID: 7618099412864203472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_46
+      rect:
+        serializedVersion: 2
+        x: 812
+        y: 625
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88cdbd3968c1c8200800000000000000
+      internalID: 183553049147202696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_47
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 625
+        width: 10
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a02d168b69e626b0800000000000000
+      internalID: -5321309261670834011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_48
+      rect:
+        serializedVersion: 2
+        x: 857
+        y: 625
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef5542c50334bfa60800000000000000
+      internalID: 7708829062158112254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_49
+      rect:
+        serializedVersion: 2
+        x: 857
+        y: 615
+        width: 10
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcada702343620ed0800000000000000
+      internalID: -2449286107377247539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_50
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 625
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84dc2c2298abd4620800000000000000
+      internalID: 2760067244804459848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_51
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 625
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 692e7c12bba2582e0800000000000000
+      internalID: -2124244666021322090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_52
+      rect:
+        serializedVersion: 2
+        x: 954
+        y: 625
+        width: 32
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c94be46e1ebd07470800000000000000
+      internalID: 8390447869069276316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_53
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 625
+        width: 10
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec9891baa75523990800000000000000
+      internalID: -7407764451726095922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_54
+      rect:
+        serializedVersion: 2
+        x: 1002
+        y: 625
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42f67de4a9a3a1330800000000000000
+      internalID: 3682320079750917924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_55
+      rect:
+        serializedVersion: 2
+        x: 1021
+        y: 625
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bcc431460dfba3d0800000000000000
+      internalID: -3194181307383624521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_56
+      rect:
+        serializedVersion: 2
+        x: 1053
+        y: 625
+        width: 20
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2065312660f0d1c90800000000000000
+      internalID: -7197580109378529790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_57
+      rect:
+        serializedVersion: 2
+        x: 1075
+        y: 625
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb5a6a6388f3a6390800000000000000
+      internalID: -7824371548337822274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_58
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 636
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9e6509408dcfbf20800000000000000
+      internalID: 3440694591198949020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_59
+      rect:
+        serializedVersion: 2
+        x: 1133
+        y: 624
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31f78fd64eca3d930800000000000000
+      internalID: 4166864177345363731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_60
+      rect:
+        serializedVersion: 2
+        x: 1161
+        y: 625
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6a81f9e491317fa0800000000000000
+      internalID: -5804803929054016916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_61
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 625
+        width: 32
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b35a576dd0b918b00800000000000000
+      internalID: 829114290147796283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_62
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 625
+        width: 10
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1c3a4e614f565560800000000000000
+      internalID: 7302128580455709725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_63
+      rect:
+        serializedVersion: 2
+        x: 1247
+        y: 625
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8abdfd34e0943a40800000000000000
+      internalID: 5347057967562603149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_64
+      rect:
+        serializedVersion: 2
+        x: 1276
+        y: 636
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac66cb56929bcaca0800000000000000
+      internalID: -6004220615740070198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_65
+      rect:
+        serializedVersion: 2
+        x: 1289
+        y: 624
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ae210036548a1ee0800000000000000
+      internalID: -1289572837580788055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_66
+      rect:
+        serializedVersion: 2
+        x: 1333
+        y: 615
+        width: 10
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1ca772341fdd7d40800000000000000
+      internalID: 5583864390848326685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_67
+      rect:
+        serializedVersion: 2
+        x: 1347
+        y: 636
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cf01b9b773b3fbc0800000000000000
+      internalID: -3750456737871622206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_68
+      rect:
+        serializedVersion: 2
+        x: 1359
+        y: 624
+        width: 24
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f64b6fedfe254f160800000000000000
+      internalID: 7058357706187781231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_69
+      rect:
+        serializedVersion: 2
+        x: 1386
+        y: 625
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca1ecad63f4838120800000000000000
+      internalID: 2414920006252683692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_70
+      rect:
+        serializedVersion: 2
+        x: 1415
+        y: 625
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b9942579f1a6ab90800000000000000
+      internalID: -7230914058912491088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_71
+      rect:
+        serializedVersion: 2
+        x: 1455
+        y: 625
+        width: 29
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e723cfa8cb3f33640800000000000000
+      internalID: 5058654797578383998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_72
+      rect:
+        serializedVersion: 2
+        x: 1485
+        y: 636
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7adf0193454e1040800000000000000
+      internalID: 4620206424227568255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_73
+      rect:
+        serializedVersion: 2
+        x: 1499
+        y: 625
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af553b3df82f02530800000000000000
+      internalID: 3828326382810912250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_74
+      rect:
+        serializedVersion: 2
+        x: 1542
+        y: 615
+        width: 25
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e99084676ef333680800000000000000
+      internalID: -8776600989755504226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_75
+      rect:
+        serializedVersion: 2
+        x: 1568
+        y: 625
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3e88ba0eaa08f2a0800000000000000
+      internalID: -6703596302720528838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_76
+      rect:
+        serializedVersion: 2
+        x: 1594
+        y: 624
+        width: 34
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 607d407c09f835770800000000000000
+      internalID: 8598373965557454598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_77
+      rect:
+        serializedVersion: 2
+        x: 1645
+        y: 625
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87b8f86fdb8a46930800000000000000
+      internalID: 4135615891671845752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_78
+      rect:
+        serializedVersion: 2
+        x: 1674
+        y: 625
+        width: 25
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5e994bb76fa1c510800000000000000
+      internalID: 1567727005360299612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_79
+      rect:
+        serializedVersion: 2
+        x: 1702
+        y: 624
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d827c8e50ad35190800000000000000
+      internalID: -7974790796227958570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_80
+      rect:
+        serializedVersion: 2
+        x: 1731
+        y: 625
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88e078cef5b467e00800000000000000
+      internalID: 1042103239145098888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_81
+      rect:
+        serializedVersion: 2
+        x: 1764
+        y: 625
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81055fa16bda3dc10800000000000000
+      internalID: 2077194850795868184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_82
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 624
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1737eee4b24fe3a70800000000000000
+      internalID: 8808746388028289905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_83
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 555
+        width: 10
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a04e2cb7962d0220800000000000000
+      internalID: 2453659805125853350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_84
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 565
+        width: 10
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aed7e3e46782f58c0800000000000000
+      internalID: -4008440654752481814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_85
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 564
+        width: 24
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ee0f69b9bd01b3c0800000000000000
+      internalID: -4345677074104643869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_86
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 565
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddaefd462c63bcb00800000000000000
+      internalID: 849833163233422045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_87
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 565
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 550baa5b11de246b0800000000000000
+      internalID: -5313423950025674667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_88
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 565
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf7c068540aac51e0800000000000000
+      internalID: -2207702781679056900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_89
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 565
+        width: 10
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c63a07e5e7552260800000000000000
+      internalID: 7072155434790565575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_90
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 565
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a617615d0967d7d20800000000000000
+      internalID: 3277906468217975146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_91
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 555
+        width: 10
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7baa003af37175b20800000000000000
+      internalID: 3122990428689836727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_92
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 565
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 924496b1def6ddcf0800000000000000
+      internalID: -225901342140840919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_93
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 565
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84eb35147784c1d10800000000000000
+      internalID: 2097631203482123848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_94
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 565
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 184e83ba40eeb0120800000000000000
+      internalID: 2381258531815351425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_95
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 555
+        width: 10
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8238e87da618a3530800000000000000
+      internalID: 3835520328542356264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_96
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 565
+        width: 10
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0155ebd7f89924f0800000000000000
+      internalID: -852982464096415478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_97
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 576
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d9777de33f75dfa0800000000000000
+      internalID: -5776571086028703273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_98
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 565
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72354a14bba7c1590800000000000000
+      internalID: -7702146318031629529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_99
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 565
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b727ad797c124150800000000000000
+      internalID: 5855273773659793331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_100
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 565
+        width: 10
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98621e0e040bda170800000000000000
+      internalID: 8191397089954047625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_101
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 565
+        width: 32
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39fd722de86a716d0800000000000000
+      internalID: -3019761892787232877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_102
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 565
+        width: 10
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f99827389a5a53a0800000000000000
+      internalID: -6675923887816402444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_103
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 565
+        width: 29
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e82ffd4fb717b3f0800000000000000
+      internalID: -885212691340252954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_104
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 565
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 671b5a16db86a0df0800000000000000
+      internalID: -213242869750320778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_105
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 576
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6633ef8c9ebfa850800000000000000
+      internalID: 6390535975900231279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_106
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 565
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 557c026b3d80f88c0800000000000000
+      internalID: -3994964639067617451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_107
+      rect:
+        serializedVersion: 2
+        x: 771
+        y: 565
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bd7024ae81713f40800000000000000
+      internalID: 5706467060308016566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_108
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 565
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6890388f330afae0800000000000000
+      internalID: -1514894753254041492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_109
+      rect:
+        serializedVersion: 2
+        x: 841
+        y: 576
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fabfb8a5294194b0800000000000000
+      internalID: -5435482849165722887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_110
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 565
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7d369d5b10b69110800000000000000
+      internalID: 1267393976732106108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_111
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 564
+        width: 24
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49046a02f9b6f8510800000000000000
+      internalID: 1553578727657848980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_112
+      rect:
+        serializedVersion: 2
+        x: 921
+        y: 565
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2fdb42b9b5774bf0800000000000000
+      internalID: -340173806422466770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_113
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 565
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 590a428cbc29b1330800000000000000
+      internalID: 3682698524239372437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_114
+      rect:
+        serializedVersion: 2
+        x: 978
+        y: 576
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3dc950ef19d9afbe0800000000000000
+      internalID: -1442667480261223213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_115
+      rect:
+        serializedVersion: 2
+        x: 991
+        y: 564
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db1e796455413c6f0800000000000000
+      internalID: -665665963431566915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_116
+      rect:
+        serializedVersion: 2
+        x: 1021
+        y: 565
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 907601ca3ec1d4b70800000000000000
+      internalID: 8884789404041766665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_117
+      rect:
+        serializedVersion: 2
+        x: 1064
+        y: 565
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bff38c3ea62eaf0b0800000000000000
+      internalID: -5693989830140608517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_118
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 561
+        width: 27
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4944a6298512003c0800000000000000
+      internalID: -4395476572016327532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_119
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 565
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94b155f8645c85690800000000000000
+      internalID: -7613118263226721463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_120
+      rect:
+        serializedVersion: 2
+        x: 1161
+        y: 565
+        width: 10
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34084fdc10d81b160800000000000000
+      internalID: 7039562731446632515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_121
+      rect:
+        serializedVersion: 2
+        x: 1174
+        y: 564
+        width: 34
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3f335e0026603750800000000000000
+      internalID: 6282633768047165247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_122
+      rect:
+        serializedVersion: 2
+        x: 1222
+        y: 555
+        width: 25
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b03e82978a27ebe0800000000000000
+      internalID: -1448141993408581451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_123
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 565
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b5bd2fa80a9fff70800000000000000
+      internalID: 9223259923967489461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_124
+      rect:
+        serializedVersion: 2
+        x: 1279
+        y: 565
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 187202b8f326b6d40800000000000000
+      internalID: 5578660588485093249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_125
+      rect:
+        serializedVersion: 2
+        x: 1319
+        y: 565
+        width: 20
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6307d147488ef4360800000000000000
+      internalID: 7156193988496420918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_126
+      rect:
+        serializedVersion: 2
+        x: 1340
+        y: 565
+        width: 29
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76d1c86fd810cb4d0800000000000000
+      internalID: -3117615132808831641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_127
+      rect:
+        serializedVersion: 2
+        x: 1370
+        y: 565
+        width: 10
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f6f1bb53efaed720800000000000000
+      internalID: 2872927003339781873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_128
+      rect:
+        serializedVersion: 2
+        x: 1409
+        y: 565
+        width: 52
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0320fc9cde4d130b0800000000000000
+      internalID: -5750581131417288144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_129
+      rect:
+        serializedVersion: 2
+        x: 1464
+        y: 565
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6a22b2e65171b8c0800000000000000
+      internalID: -3985279577261725076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_130
+      rect:
+        serializedVersion: 2
+        x: 1493
+        y: 565
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f2520f051f068aa0800000000000000
+      internalID: -6159218857262034187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_131
+      rect:
+        serializedVersion: 2
+        x: 1538
+        y: 565
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4859825a0df85fba0800000000000000
+      internalID: -6055775997642893948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_132
+      rect:
+        serializedVersion: 2
+        x: 1569
+        y: 576
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28e2976ed9458d3c0800000000000000
+      internalID: -4334621604190802302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_133
+      rect:
+        serializedVersion: 2
+        x: 1581
+        y: 564
+        width: 24
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9ab7017bc12ad130800000000000000
+      internalID: 3592220810439801499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_134
+      rect:
+        serializedVersion: 2
+        x: 1606
+        y: 565
+        width: 25
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3223f7a733fea7a0800000000000000
+      internalID: -6363881803061452226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_135
+      rect:
+        serializedVersion: 2
+        x: 1646
+        y: 565
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdb971cc291e827a0800000000000000
+      internalID: -6401618849701585953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_136
+      rect:
+        serializedVersion: 2
+        x: 1670
+        y: 561
+        width: 27
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d00dd12c101df43e0800000000000000
+      internalID: -2067203898457862131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_137
+      rect:
+        serializedVersion: 2
+        x: 1711
+        y: 555
+        width: 25
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 253e403367a3845b0800000000000000
+      internalID: -5383989075184917678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_138
+      rect:
+        serializedVersion: 2
+        x: 1739
+        y: 565
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed2cdf23e6a0dd710800000000000000
+      internalID: 1719542101143569118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_139
+      rect:
+        serializedVersion: 2
+        x: 1768
+        y: 565
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa7379902a0b5fba0800000000000000
+      internalID: -6055739913937668182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_140
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 564
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e40d9d075978b8500800000000000000
+      internalID: 399562067865620558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_141
+      rect:
+        serializedVersion: 2
+        x: 1396
+        y: 557
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bea46489e1bad0370800000000000000
+      internalID: 8290470636951063275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_142
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 505
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02aa46d517f8a3a80800000000000000
+      internalID: -8486312830765323744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_143
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 505
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43d5250cc695c1110800000000000000
+      internalID: 1232958721610636596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_144
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 504
+        width: 34
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fddb24a46ccb68670800000000000000
+      internalID: 8540721303190158815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_145
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 505
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfdca2c22609d6c40800000000000000
+      internalID: 5507216670666182141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_146
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 505
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3d8624db2b779700800000000000000
+      internalID: 547041307921911099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_147
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 505
+        width: 24
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e29ea0be050cfc7a0800000000000000
+      internalID: -6354649095423203026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_148
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 505
+        width: 10
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b8abae7c429224d0800000000000000
+      internalID: -3160803131220318031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_149
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 505
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d37a90cb8da660750800000000000000
+      internalID: 6270817010260223805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_150
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 505
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 220ffbeda0b6caa50800000000000000
+      internalID: 6533714853838712866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_151
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 505
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f67b4bf8dae3d4e00800000000000000
+      internalID: 1030548804898961263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_152
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 504
+        width: 34
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0e786b5cbfbff440800000000000000
+      internalID: 4971903329348648458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_153
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 505
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bea587d3d6389f1a0800000000000000
+      internalID: -6775239659196228885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_154
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 505
+        width: 10
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bf83b385953e0000800000000000000
+      internalID: 3999565949931442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_155
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 505
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7e4f96862e712680800000000000000
+      internalID: -8781599094463312258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_156
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 495
+        width: 10
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 391e9ca038c1cbbf0800000000000000
+      internalID: -307339325420740205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_157
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 516
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fbf28c756522d7b0800000000000000
+      internalID: -5201053501848618000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_158
+      rect:
+        serializedVersion: 2
+        x: 862
+        y: 505
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdbfe8874dceb72a0800000000000000
+      internalID: -6738532020129956901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_159
+      rect:
+        serializedVersion: 2
+        x: 893
+        y: 505
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54b300673b5c29130800000000000000
+      internalID: 3572134829027769157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_160
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 505
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d05110aaa46fbefc0800000000000000
+      internalID: -3464404687791254259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_161
+      rect:
+        serializedVersion: 2
+        x: 965
+        y: 516
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc7d7072ff5dd1a10800000000000000
+      internalID: 1881895511158937549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_162
+      rect:
+        serializedVersion: 2
+        x: 978
+        y: 505
+        width: 29
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 023822c8984248430800000000000000
+      internalID: 3784189760078250784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_163
+      rect:
+        serializedVersion: 2
+        x: 1006
+        y: 505
+        width: 32
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f797fc8e19b1fa9b0800000000000000
+      internalID: -5066800742278399617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_164
+      rect:
+        serializedVersion: 2
+        x: 1042
+        y: 505
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f13d81c26d3b87dd0800000000000000
+      internalID: -2488041061678001377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_165
+      rect:
+        serializedVersion: 2
+        x: 1071
+        y: 505
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06341d447d3d988f0800000000000000
+      internalID: -537665758968069280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_166
+      rect:
+        serializedVersion: 2
+        x: 1112
+        y: 505
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4d2d6eae8c77d670800000000000000
+      internalID: 8563450168721878349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_167
+      rect:
+        serializedVersion: 2
+        x: 1141
+        y: 504
+        width: 24
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f52597814c6714d00800000000000000
+      internalID: 955175180575527519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_168
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 516
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2db13c3dd2337730800000000000000
+      internalID: 3995593220186815789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_169
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 505
+        width: 25
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c454c1f5d09768790800000000000000
+      internalID: -7528196628765981364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_170
+      rect:
+        serializedVersion: 2
+        x: 1205
+        y: 505
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce287254c562dc6a0800000000000000
+      internalID: -6427438915448765716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_171
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 505
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a88c71402dbbe820800000000000000
+      internalID: 2948658327279405224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_172
+      rect:
+        serializedVersion: 2
+        x: 1276
+        y: 505
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f55cb3d63d0c3a120800000000000000
+      internalID: 2423993038758724959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_173
+      rect:
+        serializedVersion: 2
+        x: 1305
+        y: 516
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0044032e9d22e3810800000000000000
+      internalID: 1746872024664392704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_174
+      rect:
+        serializedVersion: 2
+        x: 1318
+        y: 504
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60c838d18e2ce6c90800000000000000
+      internalID: -7174582854171259898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_175
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 505
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4a7242db6041f340800000000000000
+      internalID: 4895765101761690187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_176
+      rect:
+        serializedVersion: 2
+        x: 1385
+        y: 504
+        width: 24
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36f2ce6cf1fb1dec0800000000000000
+      internalID: -3543841288561610909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_177
+      rect:
+        serializedVersion: 2
+        x: 1437
+        y: 505
+        width: 32
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 397e24e0e85449240800000000000000
+      internalID: 4797535979483359123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_178
+      rect:
+        serializedVersion: 2
+        x: 1473
+        y: 505
+        width: 10
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: beba95865146e4950800000000000000
+      internalID: 6435190960666815467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_179
+      rect:
+        serializedVersion: 2
+        x: 1484
+        y: 505
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4097a600422f9d7c0800000000000000
+      internalID: -4045936553775957756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_180
+      rect:
+        serializedVersion: 2
+        x: 1513
+        y: 516
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3ac828d641df4f10800000000000000
+      internalID: 2256252040540375613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_181
+      rect:
+        serializedVersion: 2
+        x: 1526
+        y: 504
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3f1bcac657cfc1e0800000000000000
+      internalID: -2175300919413235907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_182
+      rect:
+        serializedVersion: 2
+        x: 1570
+        y: 505
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 595a45e616e80edb0800000000000000
+      internalID: -4764651856643971691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_183
+      rect:
+        serializedVersion: 2
+        x: 1599
+        y: 505
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38b72fc470d55fb20800000000000000
+      internalID: 3167540198862125955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_184
+      rect:
+        serializedVersion: 2
+        x: 1630
+        y: 504
+        width: 24
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 198ecb54fcf9af100800000000000000
+      internalID: 142602050792646801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_185
+      rect:
+        serializedVersion: 2
+        x: 1670
+        y: 504
+        width: 34
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3bd2d3352a0a80b0800000000000000
+      internalID: -5725752821348639937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_186
+      rect:
+        serializedVersion: 2
+        x: 1707
+        y: 516
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60934429c48f8f720800000000000000
+      internalID: 2880324969458579718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_187
+      rect:
+        serializedVersion: 2
+        x: 1735
+        y: 505
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afc61e52b92a4b770800000000000000
+      internalID: 8625697973560503546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_188
+      rect:
+        serializedVersion: 2
+        x: 1765
+        y: 505
+        width: 29
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2eae428b3291c660800000000000000
+      internalID: 7404360046660726314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_189
+      rect:
+        serializedVersion: 2
+        x: 1424
+        y: 497
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86215381e83a695f0800000000000000
+      internalID: -750232457223794072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_190
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 432
+        width: 15
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a78968c4fa29040f0800000000000000
+      internalID: -1134745824496543622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_191
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 445
+        width: 25
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 743c0ceb0dc2a0660800000000000000
+      internalID: 7352738616700879687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_192
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 445
+        width: 32
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a3965be1d19da280800000000000000
+      internalID: -9030401347025464409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_193
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 445
+        width: 10
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a88739a23cc008b0800000000000000
+      internalID: -5187922252771391319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_194
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 456
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af6aa805b5edc3280800000000000000
+      internalID: -9062123866401626374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_195
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 445
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44689695d66cd3d60800000000000000
+      internalID: 7871665896667317828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_196
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 445
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 887027a97e84703c0800000000000000
+      internalID: -4393462751910819960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_197
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 445
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84a7ab46afc6fff80800000000000000
+      internalID: -8070612184537073080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_198
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 435
+        width: 10
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e251bb4cf987f3b0800000000000000
+      internalID: -5478758704978242844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_199
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 445
+        width: 10
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97420c0fa19e30c50800000000000000
+      internalID: 6630399378337047673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_200
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 445
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af6e162d16a1ca990800000000000000
+      internalID: -7373489482468563206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_201
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 445
+        width: 25
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45acd563d91d06c10800000000000000
+      internalID: 2044864703978392148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_202
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 445
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c27c989fdcec0cba0800000000000000
+      internalID: -6070624913645254868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_203
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 445
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af5428f0969adaa80800000000000000
+      internalID: -8453914656807696902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_204
+      rect:
+        serializedVersion: 2
+        x: 746
+        y: 445
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06306c5ca395f39a0800000000000000
+      internalID: -6251179648805895328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_205
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 445
+        width: 24
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6857f250e09e8b270800000000000000
+      internalID: 8266613362464355718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_206
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 445
+        width: 10
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f8e6ddb4ea8a55c0800000000000000
+      internalID: -4225912585291634439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_207
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 445
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92c31c377efa3d1c0800000000000000
+      internalID: -4480043795689161687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_208
+      rect:
+        serializedVersion: 2
+        x: 841
+        y: 445
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b9a49188149eb550800000000000000
+      internalID: 6178538571773028788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_209
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 445
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2a048d0b61a3e0b0800000000000000
+      internalID: -5700535222160586193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_210
+      rect:
+        serializedVersion: 2
+        x: 913
+        y: 456
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6056757764a955c80800000000000000
+      internalID: -8334585907938630394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_211
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 445
+        width: 29
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6dd216038b6015e70800000000000000
+      internalID: 9102063710047907286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_212
+      rect:
+        serializedVersion: 2
+        x: 954
+        y: 445
+        width: 32
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 879e0a803eb28f7f0800000000000000
+      internalID: -578664298014774920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_213
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 445
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7f113bd49e0c74f0800000000000000
+      internalID: -829772198847635586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_214
+      rect:
+        serializedVersion: 2
+        x: 1019
+        y: 445
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46e1191bf7bc94f50800000000000000
+      internalID: 6866242856203394660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_215
+      rect:
+        serializedVersion: 2
+        x: 1060
+        y: 445
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b4a9328aba9f0580800000000000000
+      internalID: -8858691816175065932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_216
+      rect:
+        serializedVersion: 2
+        x: 1089
+        y: 444
+        width: 24
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 696205dd65f168640800000000000000
+      internalID: 5081783687474849430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_217
+      rect:
+        serializedVersion: 2
+        x: 1116
+        y: 456
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1021bb1bb3412e60800000000000000
+      internalID: 7935698489306062876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_218
+      rect:
+        serializedVersion: 2
+        x: 1128
+        y: 445
+        width: 25
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af849ab52e5eeff90800000000000000
+      internalID: -6917839217231312646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_219
+      rect:
+        serializedVersion: 2
+        x: 1153
+        y: 445
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0e2997154819db10800000000000000
+      internalID: 2006661793997991437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_220
+      rect:
+        serializedVersion: 2
+        x: 1194
+        y: 445
+        width: 25
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 345e6f4225aa68c80800000000000000
+      internalID: -8320775991736212157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_221
+      rect:
+        serializedVersion: 2
+        x: 1220
+        y: 445
+        width: 32
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8923d4eef73023e80800000000000000
+      internalID: -8200488123494485352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_222
+      rect:
+        serializedVersion: 2
+        x: 1256
+        y: 445
+        width: 10
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6753ca35dc25a2350800000000000000
+      internalID: 5992693295995434358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_223
+      rect:
+        serializedVersion: 2
+        x: 1270
+        y: 456
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3db365012d9118bd0800000000000000
+      internalID: -2629792317399745581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_224
+      rect:
+        serializedVersion: 2
+        x: 1282
+        y: 445
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0159d55c3f7929800800000000000000
+      internalID: 617723172147270928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_225
+      rect:
+        serializedVersion: 2
+        x: 1327
+        y: 445
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1acdac48b16d0a0c0800000000000000
+      internalID: -4566414608473334623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_226
+      rect:
+        serializedVersion: 2
+        x: 1358
+        y: 445
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdf43acbdb8f9af70800000000000000
+      internalID: 9199157207678275551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_227
+      rect:
+        serializedVersion: 2
+        x: 1358
+        y: 435
+        width: 10
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5069b98a0de1250b0800000000000000
+      internalID: -5741492693413161467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_228
+      rect:
+        serializedVersion: 2
+        x: 1387
+        y: 445
+        width: 10
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 007c21fc38ddb0e10800000000000000
+      internalID: 2165067604066223872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_229
+      rect:
+        serializedVersion: 2
+        x: 1401
+        y: 445
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d181f71ed6366a640800000000000000
+      internalID: 5090865752374712349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_230
+      rect:
+        serializedVersion: 2
+        x: 1430
+        y: 445
+        width: 25
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a63ad6b1b36f8fb60800000000000000
+      internalID: 7780239090006205290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_231
+      rect:
+        serializedVersion: 2
+        x: 1458
+        y: 445
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29b4842ec2941d240800000000000000
+      internalID: 4814709933759548306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_232
+      rect:
+        serializedVersion: 2
+        x: 1503
+        y: 445
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8181cf5b4b787f80800000000000000
+      internalID: -8108595565421297270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_233
+      rect:
+        serializedVersion: 2
+        x: 1531
+        y: 445
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7100fad010874b760800000000000000
+      internalID: 7472729627634368535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_234
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 456
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: daa2162652b399e40800000000000000
+      internalID: 5663623038145473197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_235
+      rect:
+        serializedVersion: 2
+        x: 1573
+        y: 444
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cdbf6397e317d160800000000000000
+      internalID: 7050125627003747779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_236
+      rect:
+        serializedVersion: 2
+        x: 1603
+        y: 445
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85af6de22d370e090800000000000000
+      internalID: -8007272790898574760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_237
+      rect:
+        serializedVersion: 2
+        x: 1659
+        y: 445
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd694e01c9efc04f0800000000000000
+      internalID: -861033482482837797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_238
+      rect:
+        serializedVersion: 2
+        x: 1685
+        y: 444
+        width: 34
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72b4713a0b28e9680800000000000000
+      internalID: -8746409731144856793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_239
+      rect:
+        serializedVersion: 2
+        x: 1720
+        y: 445
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64b9bdbcac1633b40800000000000000
+      internalID: 5418782300288293702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_240
+      rect:
+        serializedVersion: 2
+        x: 1751
+        y: 445
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46777adf0fa9ecd80800000000000000
+      internalID: -8228469109320878236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_241
+      rect:
+        serializedVersion: 2
+        x: 1776
+        y: 432
+        width: 16
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a06c69f80f6ba600800000000000000
+      internalID: 480599869580140708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_242
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 444
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fd3fefd7fa88e7f0800000000000000
+      internalID: -583063354525925897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_243
+      rect:
+        serializedVersion: 2
+        x: 1646
+        y: 437
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03dc813a463388de0800000000000000
+      internalID: -1330757182561923792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_244
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 385
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af17b17c8177ac1d0800000000000000
+      internalID: -3329718026183675398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_245
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 385
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48e82e3d412befa10800000000000000
+      internalID: 1945187891594563204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_246
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 385
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 979ac46072207f190800000000000000
+      internalID: -7928866252329801351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_247
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 385
+        width: 20
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0af369f52b61e2c0800000000000000
+      internalID: -4404121149749593588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_248
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 385
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b24dfdfe523b1060800000000000000
+      internalID: 6925184235581817528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_249
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 385
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3468b5b15f5bd250800000000000000
+      internalID: 5970470535555474495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_250
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 385
+        width: 32
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b58225eb4cd2aa70800000000000000
+      internalID: 8836867637379237301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_251
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 385
+        width: 29
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f08f41c8209a2830800000000000000
+      internalID: 4047205719862116595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_252
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 385
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e15aeefbe61157f50800000000000000
+      internalID: 6878423173242463518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_253
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 375
+        width: 10
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73a6c2c71d33572d0800000000000000
+      internalID: -3281659778645071305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_254
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 385
+        width: 10
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28bb50d3bb2d72a00800000000000000
+      internalID: 731785166095498114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_255
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 385
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e4df9b75e20f22a0800000000000000
+      internalID: -6760181331014986521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_256
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 385
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3b17709c822447d0800000000000000
+      internalID: -2935183070024230084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_257
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 385
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67dd06f8d65423140800000000000000
+      internalID: 4697893698160090486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_258
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 396
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddb710b70594a0370800000000000000
+      internalID: 8289518674138725341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_259
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 385
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0eaeae2bba8efd40800000000000000
+      internalID: 5620081921551674894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_260
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 384
+        width: 24
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fa057f46246d11b0800000000000000
+      internalID: -5684277038967092496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_261
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 375
+        width: 10
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 185c2e2080a5e9930800000000000000
+      internalID: 4151854896936830337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_262
+      rect:
+        serializedVersion: 2
+        x: 862
+        y: 385
+        width: 10
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b377f1d0d02c0e430800000000000000
+      internalID: 3810258646065968955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_263
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 385
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d7ef3d367835f2b0800000000000000
+      internalID: -5551468885179373613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_264
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 381
+        width: 27
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a2b6a77d3714ae60800000000000000
+      internalID: 7972522793120477857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_265
+      rect:
+        serializedVersion: 2
+        x: 933
+        y: 384
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdf302029dc14c6e0800000000000000
+      internalID: -1818296630678372385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_266
+      rect:
+        serializedVersion: 2
+        x: 961
+        y: 385
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e21ed306a7d8755e0800000000000000
+      internalID: -1920911159310032594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_267
+      rect:
+        serializedVersion: 2
+        x: 1004
+        y: 385
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfc6ab9d796e12ac0800000000000000
+      internalID: -3881567863949333251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_268
+      rect:
+        serializedVersion: 2
+        x: 1028
+        y: 385
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0315271ca7348e760800000000000000
+      internalID: 7487308575014015280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_269
+      rect:
+        serializedVersion: 2
+        x: 1055
+        y: 385
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66549c7b69c5d5870800000000000000
+      internalID: 8673190259783714150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_270
+      rect:
+        serializedVersion: 2
+        x: 1079
+        y: 385
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f1a2c76de8a74f00800000000000000
+      internalID: 1101034371516899824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_271
+      rect:
+        serializedVersion: 2
+        x: 1106
+        y: 385
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf38e5b3b83348660800000000000000
+      internalID: 7387085961883976700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_272
+      rect:
+        serializedVersion: 2
+        x: 1145
+        y: 375
+        width: 25
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 713777fa173d08110800000000000000
+      internalID: 1261240380892345111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_273
+      rect:
+        serializedVersion: 2
+        x: 1171
+        y: 385
+        width: 25
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e837166e0c75eb290800000000000000
+      internalID: -7872758612586564722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_274
+      rect:
+        serializedVersion: 2
+        x: 1199
+        y: 384
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea48f770964d8cdc0800000000000000
+      internalID: -3618408753029741394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_275
+      rect:
+        serializedVersion: 2
+        x: 1227
+        y: 385
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b9ba8a039a02df90800000000000000
+      internalID: -6930465249916438095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_276
+      rect:
+        serializedVersion: 2
+        x: 1254
+        y: 385
+        width: 32
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5d61879cdb1ccaf0800000000000000
+      internalID: -374894034729996962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_277
+      rect:
+        serializedVersion: 2
+        x: 1317
+        y: 396
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8509947400c3018b0800000000000000
+      internalID: -5183577199209770920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_278
+      rect:
+        serializedVersion: 2
+        x: 1331
+        y: 385
+        width: 10
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89f3ebf468ae23f50800000000000000
+      internalID: 6859803045023072152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_279
+      rect:
+        serializedVersion: 2
+        x: 1343
+        y: 385
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53f86d12b4728c570800000000000000
+      internalID: 8487076701423439669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_280
+      rect:
+        serializedVersion: 2
+        x: 1372
+        y: 384
+        width: 24
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa50895ad6109c590800000000000000
+      internalID: -7653584521298180694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_281
+      rect:
+        serializedVersion: 2
+        x: 1413
+        y: 396
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ef0bd932c070ba20800000000000000
+      internalID: 3076082524990672868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_282
+      rect:
+        serializedVersion: 2
+        x: 1427
+        y: 384
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00f663f5273005e70800000000000000
+      internalID: 9101778636674330368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_283
+      rect:
+        serializedVersion: 2
+        x: 1456
+        y: 385
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83c3d513d3919b850800000000000000
+      internalID: 6393168896641023032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_284
+      rect:
+        serializedVersion: 2
+        x: 1489
+        y: 385
+        width: 10
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16071430cf81e6710800000000000000
+      internalID: 1688314380975960161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_285
+      rect:
+        serializedVersion: 2
+        x: 1503
+        y: 384
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 965bde44ca3fc6150800000000000000
+      internalID: 5867332335773267305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_286
+      rect:
+        serializedVersion: 2
+        x: 1534
+        y: 385
+        width: 10
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 602711f28e96b04c0800000000000000
+      internalID: -4320242971588857338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_287
+      rect:
+        serializedVersion: 2
+        x: 1547
+        y: 385
+        width: 29
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0c0ca3fe3f72a320800000000000000
+      internalID: 2567754645907442698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_288
+      rect:
+        serializedVersion: 2
+        x: 1577
+        y: 385
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11c7173536258cdc0800000000000000
+      internalID: -3618551714037007343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_289
+      rect:
+        serializedVersion: 2
+        x: 1622
+        y: 385
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cff4542c2e2caca90800000000000000
+      internalID: -7292802367395377156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_290
+      rect:
+        serializedVersion: 2
+        x: 1622
+        y: 375
+        width: 10
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba8e2fb08282695f0800000000000000
+      internalID: -750368135446337365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_291
+      rect:
+        serializedVersion: 2
+        x: 1649
+        y: 385
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9891663565e74a4f0800000000000000
+      internalID: -818390323043100279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_292
+      rect:
+        serializedVersion: 2
+        x: 1678
+        y: 385
+        width: 10
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6ca6920cde38de10800000000000000
+      internalID: 2222595530764495982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_293
+      rect:
+        serializedVersion: 2
+        x: 1690
+        y: 385
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccd6251d8e65a88f0800000000000000
+      internalID: -537521647573111348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_294
+      rect:
+        serializedVersion: 2
+        x: 1735
+        y: 385
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21efc5c5545d5a6c0800000000000000
+      internalID: -4132662589163504110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_295
+      rect:
+        serializedVersion: 2
+        x: 1765
+        y: 385
+        width: 29
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ba12e97e8839aac0800000000000000
+      internalID: -3843478622402635087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_296
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 384
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c498f96aea3c53b50800000000000000
+      internalID: 6572374386104305996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_297
+      rect:
+        serializedVersion: 2
+        x: 1302
+        y: 377
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adb04778404967f50800000000000000
+      internalID: 6878848228028320730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_298
+      rect:
+        serializedVersion: 2
+        x: 1608
+        y: 335
+        width: 10
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3209aa6aa1355c40800000000000000
+      internalID: 5500357127906591295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_299
+      rect:
+        serializedVersion: 2
+        x: 1622
+        y: 325
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: add89e37bf5043a90800000000000000
+      internalID: -7335231315540079142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_300
+      rect:
+        serializedVersion: 2
+        x: 1653
+        y: 325
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 879a1ab392f926350800000000000000
+      internalID: 6008539852308588920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_301
+      rect:
+        serializedVersion: 2
+        x: 1682
+        y: 325
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de6b4511ada369c30800000000000000
+      internalID: 4365741597050320621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_302
+      rect:
+        serializedVersion: 2
+        x: 1706
+        y: 325
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3c4862fbec7a2e40800000000000000
+      internalID: 5632451636806306877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_303
+      rect:
+        serializedVersion: 2
+        x: 1735
+        y: 325
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e57c5bbf405300540800000000000000
+      internalID: 4972032284136163166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_304
+      rect:
+        serializedVersion: 2
+        x: 1764
+        y: 325
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f54624dd28f40eca0800000000000000
+      internalID: -5989700080926301089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruct_305
+      rect:
+        serializedVersion: 2
+        x: 1608
+        y: 325
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cf762cb2948817a0800000000000000
+      internalID: -6406224704177799229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      instruct_0: -4927205990171520574
+      instruct_1: 7570674271305833358
+      instruct_10: 8675660280523087798
+      instruct_100: 8191397089954047625
+      instruct_101: -3019761892787232877
+      instruct_102: -6675923887816402444
+      instruct_103: -885212691340252954
+      instruct_104: -213242869750320778
+      instruct_105: 6390535975900231279
+      instruct_106: -3994964639067617451
+      instruct_107: 5706467060308016566
+      instruct_108: -1514894753254041492
+      instruct_109: -5435482849165722887
+      instruct_11: 3598094839333404894
+      instruct_110: 1267393976732106108
+      instruct_111: 1553578727657848980
+      instruct_112: -340173806422466770
+      instruct_113: 3682698524239372437
+      instruct_114: -1442667480261223213
+      instruct_115: -665665963431566915
+      instruct_116: 8884789404041766665
+      instruct_117: -5693989830140608517
+      instruct_118: -4395476572016327532
+      instruct_119: -7613118263226721463
+      instruct_12: -7565167453302103685
+      instruct_120: 7039562731446632515
+      instruct_121: 6282633768047165247
+      instruct_122: -1448141993408581451
+      instruct_123: 9223259923967489461
+      instruct_124: 5578660588485093249
+      instruct_125: 7156193988496420918
+      instruct_126: -3117615132808831641
+      instruct_127: 2872927003339781873
+      instruct_128: -5750581131417288144
+      instruct_129: -3985279577261725076
+      instruct_13: -619125711420271465
+      instruct_130: -6159218857262034187
+      instruct_131: -6055775997642893948
+      instruct_132: -4334621604190802302
+      instruct_133: 3592220810439801499
+      instruct_134: -6363881803061452226
+      instruct_135: -6401618849701585953
+      instruct_136: -2067203898457862131
+      instruct_137: -5383989075184917678
+      instruct_138: 1719542101143569118
+      instruct_139: -6055739913937668182
+      instruct_14: 8119163472132089763
+      instruct_140: 399562067865620558
+      instruct_141: 8290470636951063275
+      instruct_142: -8486312830765323744
+      instruct_143: 1232958721610636596
+      instruct_144: 8540721303190158815
+      instruct_145: 5507216670666182141
+      instruct_146: 547041307921911099
+      instruct_147: -6354649095423203026
+      instruct_148: -3160803131220318031
+      instruct_149: 6270817010260223805
+      instruct_15: -4462206862795415154
+      instruct_150: 6533714853838712866
+      instruct_151: 1030548804898961263
+      instruct_152: 4971903329348648458
+      instruct_153: -6775239659196228885
+      instruct_154: 3999565949931442
+      instruct_155: -8781599094463312258
+      instruct_156: -307339325420740205
+      instruct_157: -5201053501848618000
+      instruct_158: -6738532020129956901
+      instruct_159: 3572134829027769157
+      instruct_16: 4660726741997469395
+      instruct_160: -3464404687791254259
+      instruct_161: 1881895511158937549
+      instruct_162: 3784189760078250784
+      instruct_163: -5066800742278399617
+      instruct_164: -2488041061678001377
+      instruct_165: -537665758968069280
+      instruct_166: 8563450168721878349
+      instruct_167: 955175180575527519
+      instruct_168: 3995593220186815789
+      instruct_169: -7528196628765981364
+      instruct_17: -2783035050665974191
+      instruct_170: -6427438915448765716
+      instruct_171: 2948658327279405224
+      instruct_172: 2423993038758724959
+      instruct_173: 1746872024664392704
+      instruct_174: -7174582854171259898
+      instruct_175: 4895765101761690187
+      instruct_176: -3543841288561610909
+      instruct_177: 4797535979483359123
+      instruct_178: 6435190960666815467
+      instruct_179: -4045936553775957756
+      instruct_18: 6610921275086549869
+      instruct_180: 2256252040540375613
+      instruct_181: -2175300919413235907
+      instruct_182: -4764651856643971691
+      instruct_183: 3167540198862125955
+      instruct_184: 142602050792646801
+      instruct_185: -5725752821348639937
+      instruct_186: 2880324969458579718
+      instruct_187: 8625697973560503546
+      instruct_188: 7404360046660726314
+      instruct_189: -750232457223794072
+      instruct_19: -6160852141239947465
+      instruct_190: -1134745824496543622
+      instruct_191: 7352738616700879687
+      instruct_192: -9030401347025464409
+      instruct_193: -5187922252771391319
+      instruct_194: -9062123866401626374
+      instruct_195: 7871665896667317828
+      instruct_196: -4393462751910819960
+      instruct_197: -8070612184537073080
+      instruct_198: -5478758704978242844
+      instruct_199: 6630399378337047673
+      instruct_2: -6820436701372160311
+      instruct_20: 4488980357376856170
+      instruct_200: -7373489482468563206
+      instruct_201: 2044864703978392148
+      instruct_202: -6070624913645254868
+      instruct_203: -8453914656807696902
+      instruct_204: -6251179648805895328
+      instruct_205: 8266613362464355718
+      instruct_206: -4225912585291634439
+      instruct_207: -4480043795689161687
+      instruct_208: 6178538571773028788
+      instruct_209: -5700535222160586193
+      instruct_21: 8143673160774062148
+      instruct_210: -8334585907938630394
+      instruct_211: 9102063710047907286
+      instruct_212: -578664298014774920
+      instruct_213: -829772198847635586
+      instruct_214: 6866242856203394660
+      instruct_215: -8858691816175065932
+      instruct_216: 5081783687474849430
+      instruct_217: 7935698489306062876
+      instruct_218: -6917839217231312646
+      instruct_219: 2006661793997991437
+      instruct_22: -5712878213783058486
+      instruct_220: -8320775991736212157
+      instruct_221: -8200488123494485352
+      instruct_222: 5992693295995434358
+      instruct_223: -2629792317399745581
+      instruct_224: 617723172147270928
+      instruct_225: -4566414608473334623
+      instruct_226: 9199157207678275551
+      instruct_227: -5741492693413161467
+      instruct_228: 2165067604066223872
+      instruct_229: 5090865752374712349
+      instruct_23: 6290337814874892770
+      instruct_230: 7780239090006205290
+      instruct_231: 4814709933759548306
+      instruct_232: -8108595565421297270
+      instruct_233: 7472729627634368535
+      instruct_234: 5663623038145473197
+      instruct_235: 7050125627003747779
+      instruct_236: -8007272790898574760
+      instruct_237: -861033482482837797
+      instruct_238: -8746409731144856793
+      instruct_239: 5418782300288293702
+      instruct_24: 1529778817718424793
+      instruct_240: -8228469109320878236
+      instruct_241: 480599869580140708
+      instruct_242: -583063354525925897
+      instruct_243: -1330757182561923792
+      instruct_244: -3329718026183675398
+      instruct_245: 1945187891594563204
+      instruct_246: -7928866252329801351
+      instruct_247: -4404121149749593588
+      instruct_248: 6925184235581817528
+      instruct_249: 5970470535555474495
+      instruct_25: 1045378175013057123
+      instruct_250: 8836867637379237301
+      instruct_251: 4047205719862116595
+      instruct_252: 6878423173242463518
+      instruct_253: -3281659778645071305
+      instruct_254: 731785166095498114
+      instruct_255: -6760181331014986521
+      instruct_256: -2935183070024230084
+      instruct_257: 4697893698160090486
+      instruct_258: 8289518674138725341
+      instruct_259: 5620081921551674894
+      instruct_26: -5060884685791567864
+      instruct_260: -5684277038967092496
+      instruct_261: 4151854896936830337
+      instruct_262: 3810258646065968955
+      instruct_263: -5551468885179373613
+      instruct_264: 7972522793120477857
+      instruct_265: -1818296630678372385
+      instruct_266: -1920911159310032594
+      instruct_267: -3881567863949333251
+      instruct_268: 7487308575014015280
+      instruct_269: 8673190259783714150
+      instruct_27: -3564480380803612553
+      instruct_270: 1101034371516899824
+      instruct_271: 7387085961883976700
+      instruct_272: 1261240380892345111
+      instruct_273: -7872758612586564722
+      instruct_274: -3618408753029741394
+      instruct_275: -6930465249916438095
+      instruct_276: -374894034729996962
+      instruct_277: -5183577199209770920
+      instruct_278: 6859803045023072152
+      instruct_279: 8487076701423439669
+      instruct_28: -2036019858766910315
+      instruct_280: -7653584521298180694
+      instruct_281: 3076082524990672868
+      instruct_282: 9101778636674330368
+      instruct_283: 6393168896641023032
+      instruct_284: 1688314380975960161
+      instruct_285: 5867332335773267305
+      instruct_286: -4320242971588857338
+      instruct_287: 2567754645907442698
+      instruct_288: -3618551714037007343
+      instruct_289: -7292802367395377156
+      instruct_29: -9097661809491336729
+      instruct_290: -750368135446337365
+      instruct_291: -818390323043100279
+      instruct_292: 2222595530764495982
+      instruct_293: -537521647573111348
+      instruct_294: -4132662589163504110
+      instruct_295: -3843478622402635087
+      instruct_296: 6572374386104305996
+      instruct_297: 6878848228028320730
+      instruct_298: 5500357127906591295
+      instruct_299: -7335231315540079142
+      instruct_3: 9200174756190921567
+      instruct_30: 1298192538871459822
+      instruct_300: 6008539852308588920
+      instruct_301: 4365741597050320621
+      instruct_302: 5632451636806306877
+      instruct_303: 4972032284136163166
+      instruct_304: -5989700080926301089
+      instruct_305: -6406224704177799229
+      instruct_31: 3466859158972450778
+      instruct_32: -5528973481806166111
+      instruct_33: 8660295459299733293
+      instruct_34: 5629236160260316305
+      instruct_35: -267762418253576520
+      instruct_36: 2483777960308752693
+      instruct_37: -5223413464308208594
+      instruct_38: 7918741178125045043
+      instruct_39: 9050846542309068381
+      instruct_4: -819408801506658880
+      instruct_40: -3467997777713041538
+      instruct_41: 5502593992100537213
+      instruct_42: -4720951230814197031
+      instruct_43: 430256431104356891
+      instruct_44: 623606881689637503
+      instruct_45: 7618099412864203472
+      instruct_46: 183553049147202696
+      instruct_47: -5321309261670834011
+      instruct_48: 7708829062158112254
+      instruct_49: -2449286107377247539
+      instruct_5: 1182171533052602432
+      instruct_50: 2760067244804459848
+      instruct_51: -2124244666021322090
+      instruct_52: 8390447869069276316
+      instruct_53: -7407764451726095922
+      instruct_54: 3682320079750917924
+      instruct_55: -3194181307383624521
+      instruct_56: -7197580109378529790
+      instruct_57: -7824371548337822274
+      instruct_58: 3440694591198949020
+      instruct_59: 4166864177345363731
+      instruct_6: -4890918122149426882
+      instruct_60: -5804803929054016916
+      instruct_61: 829114290147796283
+      instruct_62: 7302128580455709725
+      instruct_63: 5347057967562603149
+      instruct_64: -6004220615740070198
+      instruct_65: -1289572837580788055
+      instruct_66: 5583864390848326685
+      instruct_67: -3750456737871622206
+      instruct_68: 7058357706187781231
+      instruct_69: 2414920006252683692
+      instruct_7: -3716598388929197967
+      instruct_70: -7230914058912491088
+      instruct_71: 5058654797578383998
+      instruct_72: 4620206424227568255
+      instruct_73: 3828326382810912250
+      instruct_74: -8776600989755504226
+      instruct_75: -6703596302720528838
+      instruct_76: 8598373965557454598
+      instruct_77: 4135615891671845752
+      instruct_78: 1567727005360299612
+      instruct_79: -7974790796227958570
+      instruct_8: -3329352841462370450
+      instruct_80: 1042103239145098888
+      instruct_81: 2077194850795868184
+      instruct_82: 8808746388028289905
+      instruct_83: 2453659805125853350
+      instruct_84: -4008440654752481814
+      instruct_85: -4345677074104643869
+      instruct_86: 849833163233422045
+      instruct_87: -5313423950025674667
+      instruct_88: -2207702781679056900
+      instruct_89: 7072155434790565575
+      instruct_9: -6017776198496612474
+      instruct_90: 3277906468217975146
+      instruct_91: 3122990428689836727
+      instruct_92: -225901342140840919
+      instruct_93: 2097631203482123848
+      instruct_94: 2381258531815351425
+      instruct_95: 3835520328542356264
+      instruct_96: -852982464096415478
+      instruct_97: -5776571086028703273
+      instruct_98: -7702146318031629529
+      instruct_99: 5855273773659793331
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

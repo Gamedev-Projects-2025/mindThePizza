@@ -2,8 +2,10 @@ using UnityEngine;
 
 public class IngredientSelector : MonoBehaviour
 {
-    public GameObject ingredientPrefab; // Assign the ingredient prefab in the Inspector
-    public static GameObject currentIngredient; // Tracks the currently selected ingredient
+    public GameObject ingredientPrefab;           // Assign the ingredient prefab
+    public static GameObject currentIngredient;   // Currently selected ingredient
+    public Transform spawnLocation;               // Assign this in the Inspector (where ingredient spawns)
+
     private Camera mainCamera;
 
     private void Start()
@@ -13,19 +15,11 @@ public class IngredientSelector : MonoBehaviour
 
     private void Update()
     {
-        if (currentIngredient != null)
-        {
-            Vector3 mousePosition = Input.mousePosition;
-            mousePosition.z = 10f; // Set the distance to the camera
-            Vector3 worldPosition = mainCamera.ScreenToWorldPoint(mousePosition);
-
-            currentIngredient.transform.position = worldPosition;
-        }
     }
 
     private void OnMouseDown()
     {
-        if (ingredientPrefab != null)
+        if (ingredientPrefab != null && spawnLocation != null)
         {
             UIAudioManager.Instance.PlayClick();
 
@@ -34,8 +28,12 @@ public class IngredientSelector : MonoBehaviour
                 Debug.Log("Holding something");
                 Destroy(currentIngredient);
             }
-            currentIngredient = Instantiate(ingredientPrefab);
+
+            currentIngredient = Instantiate(ingredientPrefab, spawnLocation.position, Quaternion.identity);
+        }
+        else
+        {
+            Debug.LogWarning("Missing ingredientPrefab or spawnLocation!");
         }
     }
-
 }

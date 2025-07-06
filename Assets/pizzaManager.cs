@@ -19,7 +19,7 @@ public class pizzaManager : MonoBehaviour
         ingredientCounter = 0;
     }
 
-    private IEnumerator OnMouseEnter()
+    private IEnumerator OnMouseDown()
     {
         if (IngredientSelector.currentIngredient != null)
         {

@@ -12,7 +12,7 @@ now added instructions, tutorial, and try again buttons
 ![Untitled Diagram drawio(2)](https://github.com/user-attachments/assets/5309393a-09ac-470a-a41e-74f93fb7863c)
 
 
-https://lidx7.itch.io/mindthepizza-version-02
+[The Game](https://necrocracy.itch.io/mind-the-pizza)
 
 [playtest
 ](https://github.com/Gamedev-Projects-2025/mindThePizza/blob/main/playtest.md)
